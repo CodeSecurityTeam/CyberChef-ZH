@@ -1,4 +1,9 @@
-# CyberChef
+# CyberChef汉化版
+![img.png](./img/1.png)
+
+支持中文搜索描述，快速找到功能
+
+![img.png](./img/2.png)
 
 [![](https://github.com/gchq/CyberChef/workflows/Master%20Build,%20Test%20&%20Deploy/badge.svg)](https://github.com/gchq/CyberChef/actions?query=workflow%3A%22Master+Build%2C+Test+%26+Deploy%22)
 [![npm](https://img.shields.io/npm/v/cyberchef.svg)](https://www.npmjs.com/package/cyberchef)
