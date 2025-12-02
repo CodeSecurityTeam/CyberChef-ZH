@@ -20,17 +20,17 @@ class StripHTMLTags extends Operation {
 
         this.name = "Strip HTML tags";
         this.module = "Default";
-        this.description = "Removes all HTML tags from the input.";
+        this.description = "移除输入中的所有 HTML 标签。";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Remove indentation",
+                "name": "移除缩进",
                 "type": "boolean",
                 "value": true
             },
             {
-                "name": "Remove excess line breaks",
+                "name": "移除多余换行",
                 "type": "boolean",
                 "value": true
             }

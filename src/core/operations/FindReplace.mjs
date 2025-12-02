@@ -21,39 +21,39 @@ class FindReplace extends Operation {
 
         this.name = "Find / Replace";
         this.module = "Regex";
-        this.description = "Replaces all occurrences of the first string with the second.<br><br>Includes support for regular expressions (regex), simple strings and extended strings (which support \\n, \\r, \\t, \\b, \\f and escaped hex bytes using \\x notation, e.g. \\x00 for a null byte).";
+        this.description = "将第一个字符串的所有出现替换为第二个字符串。<br><br>支持正则表达式（regex）、简单字符串和扩展字符串（支持 \\n、\\r、\\t、\\b、\\f 以及使用 \\x 表示的十六进制转义字节，例如 \\x00 表示空字节）。";
         this.infoURL = "https://wikipedia.org/wiki/Regular_expression";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Find",
+                "name": "查找",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["Regex", "Extended (\\n, \\t, \\x...)", "Simple string"]
             },
             {
-                "name": "Replace",
+                "name": "替换",
                 "type": "binaryString",
                 "value": ""
             },
             {
-                "name": "Global match",
+                "name": "全局匹配",
                 "type": "boolean",
                 "value": true
             },
             {
-                "name": "Case insensitive",
+                "name": "忽略大小写",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Multiline matching",
+                "name": "多行匹配",
                 "type": "boolean",
                 "value": true
             },
             {
-                "name": "Dot matches all",
+                "name": "点匹配所有",
                 "type": "boolean",
                 "value": false
             }

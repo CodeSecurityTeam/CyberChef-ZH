@@ -20,7 +20,7 @@ class PHPSerialize extends Operation {
 
         this.name = "PHP Serialize";
         this.module = "Default";
-        this.description = "Performs PHP serialization on JSON data.<br><br>This function does not support <code>object</code> tags.<br><br>Since PHP doesn't distinguish dicts and arrays, this operation is not always symmetric to <code>PHP Deserialize</code>.<br><br>Example:<br><code>[5,&quot;abc&quot;,true]</code><br>becomes<br><code>a:3:{i:0;i:5;i:1;s:3:&quot;abc&quot;;i:2;b:1;}<code>";
+        this.description = "对 JSON 数据执行 PHP 序列化。<br><br>该功能不支持 <code>object</code> 标签。<br><br>由于 PHP 不区分字典与数组，本操作并不总是与 <code>PHP Deserialize</code> 对称。<br><br>示例：<br><code>[5,&quot;abc&quot;,true]</code><br>将变为<br><code>a:3:{i:0;i:5;i:1;s:3:&quot;abc&quot;;i:2;b:1;}<code>";
         this.infoURL = "https://www.phpinternalsbook.com/php5/classes_objects/serialization.html";
         this.inputType = "JSON";
         this.outputType = "string";

@@ -21,13 +21,13 @@ class Keccak extends Operation {
 
         this.name = "Keccak";
         this.module = "Crypto";
-        this.description = "The Keccak hash algorithm was designed by Guido Bertoni, Joan Daemen, Micha\xebl Peeters, and Gilles Van Assche, building upon RadioGat\xfan. It was selected as the winner of the SHA-3 design competition.<br><br>This version of the algorithm is Keccak[c=2d] and differs from the SHA-3 specification.";
+        this.description = "Keccak 哈希算法由 Guido Bertoni、Joan Daemen、Micha\xebl Peeters 和 Gilles Van Assche 设计，基于 RadioGat\xfan，并在 SHA-3 竞赛中胜出。<br><br>此处实现为 Keccak[c=2d]，与 SHA-3 规范存在差异。";
         this.infoURL = "https://wikipedia.org/wiki/SHA-3";
         this.inputType = "ArrayBuffer";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Size",
+                "name": "输出位数",
                 "type": "option",
                 "value": ["512", "384", "256", "224"]
             }

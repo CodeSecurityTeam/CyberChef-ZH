@@ -21,19 +21,19 @@ class HMAC extends Operation {
 
         this.name = "HMAC";
         this.module = "Crypto";
-        this.description = "Keyed-Hash Message Authentication Codes (HMAC) are a mechanism for message authentication using cryptographic hash functions.";
+        this.description = "带密钥的哈希消息认证码（HMAC）是一种使用密码学哈希函数进行消息认证的机制。";
         this.infoURL = "https://wikipedia.org/wiki/HMAC";
         this.inputType = "ArrayBuffer";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Key",
+                "name": "密钥",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["Hex", "Decimal", "Base64", "UTF8", "Latin1"]
             },
             {
-                "name": "Hashing function",
+                "name": "哈希函数",
                 "type": "option",
                 "value": [
                     "MD2",

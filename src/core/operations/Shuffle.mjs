@@ -21,13 +21,13 @@ class Shuffle extends Operation {
 
         this.name = "Shuffle";
         this.module = "Default";
-        this.description = "Randomly reorders input elements.";
+        this.description = "随机重新排列输入的元素。";
         this.infoURL = "https://wikipedia.org/wiki/Shuffling";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "Delimiter",
+                name: "分隔符",
                 type: "option",
                 value: INPUT_DELIM_OPTIONS
             }

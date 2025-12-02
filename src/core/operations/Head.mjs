@@ -21,17 +21,17 @@ class Head extends Operation {
 
         this.name = "Head";
         this.module = "Default";
-        this.description = "Like the UNIX head utility.<br>Gets the first n lines.<br>You can select all but the last n lines by entering a negative value for n.<br>The delimiter can be changed so that instead of lines, fields (i.e. commas) are selected instead.";
+        this.description = "类似 UNIX 的 head 工具。<br>获取前 n 行。<br>输入负值可选择除最后 n 行以外的全部行。<br>可通过更改分隔符按字段（如逗号）进行选择而非按行。";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "option",
                 "value": INPUT_DELIM_OPTIONS
             },
             {
-                "name": "Number",
+                "name": "数量",
                 "type": "number",
                 "value": 10
             }

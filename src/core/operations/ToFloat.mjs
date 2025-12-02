@@ -23,13 +23,13 @@ class ToFloat extends Operation {
 
         this.name = "To Float";
         this.module = "Default";
-        this.description = "Convert to IEEE754 Floating Point Numbers";
+        this.description = "转换为 IEEE754 浮点数";
         this.infoURL = "https://wikipedia.org/wiki/IEEE_754";
         this.inputType = "byteArray";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Endianness",
+                "name": "字节序",
                 "type": "option",
                 "value": [
                     "Big Endian",
@@ -37,7 +37,7 @@ class ToFloat extends Operation {
                 ]
             },
             {
-                "name": "Size",
+                "name": "大小",
                 "type": "option",
                 "value": [
                     "Float (4 bytes)",
@@ -45,7 +45,7 @@ class ToFloat extends Operation {
                 ]
             },
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "option",
                 "value": DELIM_OPTIONS
             }

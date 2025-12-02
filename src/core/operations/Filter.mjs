@@ -23,22 +23,22 @@ class Filter extends Operation {
 
         this.name = "Filter";
         this.module = "Regex";
-        this.description = "Splits up the input using the specified delimiter and then filters each branch based on a regular expression.";
+        this.description = "按指定分隔符拆分输入，并根据正则表达式过滤各段内容。";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "option",
                 "value": INPUT_DELIM_OPTIONS
             },
             {
-                "name": "Regex",
+                "name": "正则表达式",
                 "type": "string",
                 "value": ""
             },
             {
-                "name": "Invert condition",
+                "name": "反转条件",
                 "type": "boolean",
                 "value": false
             }

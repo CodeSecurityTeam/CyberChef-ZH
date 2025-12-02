@@ -21,24 +21,24 @@ class ParseDateTime extends Operation {
 
         this.name = "Parse DateTime";
         this.module = "Default";
-        this.description = "Parses a DateTime string in your specified format and displays it in whichever timezone you choose with the following information:<ul><li>Date</li><li>Time</li><li>Period (AM/PM)</li><li>Timezone</li><li>UTC offset</li><li>Daylight Saving Time</li><li>Leap year</li><li>Days in this month</li><li>Day of year</li><li>Week number</li><li>Quarter</li></ul>Run with no input to see format string examples if required.";
+        this.description = "按照指定格式解析日期时间字符串，并在所选时区显示以下信息：<ul><li>日期</li><li>时间</li><li>上下午</li><li>时区</li><li>UTC 偏移</li><li>夏令时</li><li>闰年</li><li>本月天数</li><li>一年中的第几天</li><li>周序号</li><li>季度</li></ul>如需查看格式字符串示例，可在无输入时运行。";
         this.infoURL = "https://momentjs.com/docs/#/parsing/string-format/";
         this.inputType = "string";
         this.outputType = "html";
         this.args = [
             {
-                "name": "Built in formats",
+                "name": "内置格式",
                 "type": "populateOption",
                 "value": DATETIME_FORMATS,
                 "target": 1
             },
             {
-                "name": "Input format string",
+                "name": "输入格式字符串",
                 "type": "binaryString",
                 "value": "DD/MM/YYYY HH:mm:ss"
             },
             {
-                "name": "Input timezone",
+                "name": "输入时区",
                 "type": "option",
                 "value": ["UTC"].concat(moment.tz.names())
             }

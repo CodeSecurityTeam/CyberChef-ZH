@@ -20,28 +20,28 @@ class LevenshteinDistance extends Operation {
 
         this.name = "Levenshtein Distance";
         this.module = "Default";
-        this.description = "Levenshtein Distance (also known as Edit Distance) is a string metric to measure a difference between two strings that counts operations (insertions, deletions, and substitutions) on single character that are required to change one string to another.";
+        this.description = "莱文斯坦距离（亦称编辑距离）用于度量两个字符串的差异，统计将一个字符串变为另一个字符串所需的单字符操作次数（插入、删除、替换）。";
         this.infoURL = "https://wikipedia.org/wiki/Levenshtein_distance";
         this.inputType = "string";
         this.outputType = "number";
         this.args = [
             {
-                name: "Sample delimiter",
+                name: "样本分隔符",
                 type: "binaryString",
                 value: "\\n"
             },
             {
-                name: "Insertion cost",
+                name: "插入代价",
                 type: "number",
                 value: 1
             },
             {
-                name: "Deletion cost",
+                name: "删除代价",
                 type: "number",
                 value: 1
             },
             {
-                name: "Substitution cost",
+                name: "替换代价",
                 type: "number",
                 value: 1
             },

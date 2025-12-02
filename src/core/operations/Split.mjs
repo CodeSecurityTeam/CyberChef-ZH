@@ -20,17 +20,17 @@ class Split extends Operation {
 
         this.name = "Split";
         this.module = "Default";
-        this.description = "Splits a string into sections around a given delimiter.";
+        this.description = "按给定分隔符将字符串拆分为多个部分。";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Split delimiter",
+                "name": "拆分分隔符",
                 "type": "editableOptionShort",
                 "value": SPLIT_DELIM_OPTIONS
             },
             {
-                "name": "Join delimiter",
+                "name": "连接分隔符",
                 "type": "editableOptionShort",
                 "value": JOIN_DELIM_OPTIONS
             }

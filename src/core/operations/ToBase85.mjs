@@ -22,18 +22,18 @@ class ToBase85 extends Operation {
 
         this.name = "To Base85";
         this.module = "Default";
-        this.description = "Base85 (also called Ascii85) is a notation for encoding arbitrary byte data. It is usually more efficient that Base64.<br><br>This operation encodes data in an ASCII string (with an alphabet of your choosing, presets included).<br><br>e.g. <code>hello world</code> becomes <code>BOu!rD]j7BEbo7</code><br><br>Base85 is commonly used in Adobe's PostScript and PDF file formats.<br><br><strong>Options</strong><br><u>Alphabet</u><ul><li>Standard - The standard alphabet, referred to as Ascii85</li><li>Z85 (ZeroMQ) - A string-safe variant of Base85, which avoids quote marks and backslash characters</li><li>IPv6 - A variant of Base85 suitable for encoding IPv6 addresses (RFC 1924)</li></ul><u>Include delimiter</u><br>Adds a '<~' and '~>' delimiter to the start and end of the data. This is standard for Adobe's implementation of Base85.";
+        this.description = "Base85（亦称 Ascii85）是一种用于编码任意字节数据的表示法，通常比 Base64 更高效。<br><br>该操作将数据编码为 ASCII 字符串（可选择字母表，提供预设）。<br><br>例如：<code>hello world</code> 变为 <code>BOu!rD]j7BEbo7</code><br><br>Base85 常用于 Adobe 的 PostScript 和 PDF 文件格式。<br><br><strong>选项</strong><br><u>字母表</u><ul><li>Standard - 标准字母表，亦称 Ascii85</li><li>Z85 (ZeroMQ) - 字符串安全的 Base85 变体，避免引号和反斜杠字符</li><li>IPv6 - 适用于编码 IPv6 地址的 Base85 变体（RFC 1924）</li></ul><u>包含定界符</u><br>在数据开头和结尾添加 '<~' 与 '~>' 定界符，这是 Adobe 的 Base85 实现中的标准做法。";
         this.infoURL = "https://wikipedia.org/wiki/Ascii85";
         this.inputType = "ArrayBuffer";
         this.outputType = "string";
         this.args = [
             {
-                name: "Alphabet",
+                name: "字母表",
                 type: "editableOption",
                 value: ALPHABET_OPTIONS
             },
             {
-                name: "Include delimeter",
+                name: "包含定界符",
                 type: "boolean",
                 value: false
             }

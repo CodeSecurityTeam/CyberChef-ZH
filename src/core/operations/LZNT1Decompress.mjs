@@ -20,7 +20,7 @@ class LZNT1Decompress extends Operation {
 
         this.name = "LZNT1 Decompress";
         this.module = "Compression";
-        this.description = "Decompresses data using the LZNT1 algorithm.<br><br>Similar to the Windows API <code>RtlDecompressBuffer</code>.";
+        this.description = "使用 LZNT1 算法解压数据。<br><br>类似于 Windows API <code>RtlDecompressBuffer</code>。";
         this.infoURL = "https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-xca/5655f4a3-6ba4-489b-959f-e1f407c52f15";
         this.inputType = "byteArray";
         this.outputType = "byteArray";

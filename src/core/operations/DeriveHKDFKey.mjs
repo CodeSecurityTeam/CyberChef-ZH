@@ -22,25 +22,25 @@ class DeriveHKDFKey extends Operation {
 
         this.name = "Derive HKDF key";
         this.module = "Crypto";
-        this.description = "A simple Hashed Message Authenticaton Code (HMAC)-based key derivation function (HKDF), defined in RFC5869.";
+        this.description = "一种基于 HMAC 的简单密钥派生函数（HKDF），定义于 RFC5869。";
         this.infoURL = "https://wikipedia.org/wiki/HKDF";
         this.inputType = "ArrayBuffer";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Salt",
+                "name": "盐值",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["Hex", "Decimal", "Base64", "UTF8", "Latin1"]
             },
             {
-                "name": "Info",
+                "name": "信息",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["Hex", "Decimal", "Base64", "UTF8", "Latin1"]
             },
             {
-                "name": "Hashing function",
+                "name": "哈希函数",
                 "type": "option",
                 "value": [
                     "MD2",
@@ -67,7 +67,7 @@ class DeriveHKDFKey extends Operation {
                 "defaultIndex": 6
             },
             {
-                "name": "Extract mode",
+                "name": "提取模式",
                 "type": "argSelector",
                 "value": [
                     {
@@ -85,7 +85,7 @@ class DeriveHKDFKey extends Operation {
                 ]
             },
             {
-                "name": "L (number of output octets)",
+                "name": "L（输出字节数）",
                 "type": "number",
                 "value": 16,
                 "min": 0

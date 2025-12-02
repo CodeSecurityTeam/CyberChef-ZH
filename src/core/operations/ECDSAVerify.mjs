@@ -24,13 +24,13 @@ class ECDSAVerify extends Operation {
 
         this.name = "ECDSA Verify";
         this.module = "Ciphers";
-        this.description = "Verify a message against a signature and a public PEM encoded EC key.";
+        this.description = "使用PEM编码的EC公钥与签名对消息进行验证。";
         this.infoURL = "https://wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "Input Format",
+                name: "输入格式",
                 type: "option",
                 value: [
                     "Auto",
@@ -41,7 +41,7 @@ class ECDSAVerify extends Operation {
                 ]
             },
             {
-                name: "Message Digest Algorithm",
+                name: "消息摘要算法",
                 type: "option",
                 value: [
                     "SHA-256",
@@ -52,17 +52,17 @@ class ECDSAVerify extends Operation {
                 ]
             },
             {
-                name: "ECDSA Public Key (PEM)",
+                name: "ECDSA公钥（PEM）",
                 type: "text",
                 value: "-----BEGIN PUBLIC KEY-----"
             },
             {
-                name: "Message",
+                name: "消息",
                 type: "text",
                 value: ""
             },
             {
-                name: "Message format",
+                name: "消息格式",
                 type: "option",
                 value: ["Raw", "Hex", "Base64"]
             }

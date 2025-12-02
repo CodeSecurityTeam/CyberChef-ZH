@@ -25,14 +25,14 @@ class RandomizeColourPalette extends Operation {
 
         this.name = "Randomize Colour Palette";
         this.module = "Image";
-        this.description = "Randomizes each colour in an image's colour palette. This can often reveal text or symbols that were previously a very similar colour to their surroundings, a technique sometimes used in Steganography.";
+        this.description = "随机化图像调色板中的每种颜色。这常常能显现与周围颜色非常相近而不易辨识的文本或符号，该技术有时用于隐写术。";
         this.infoURL = "https://wikipedia.org/wiki/Indexed_color";
         this.inputType = "ArrayBuffer";
         this.outputType = "ArrayBuffer";
         this.presentType = "html";
         this.args = [
             {
-                name: "Seed",
+                name: "种子",
                 type: "string",
                 value: ""
             }

@@ -20,13 +20,13 @@ class HAS160 extends Operation {
 
         this.name = "HAS-160";
         this.module = "Crypto";
-        this.description = "HAS-160 is a cryptographic hash function designed for use with the Korean KCDSA digital signature algorithm. It is derived from SHA-1, with assorted changes intended to increase its security. It produces a 160-bit output.<br><br>HAS-160 is used in the same way as SHA-1. First it divides input in blocks of 512 bits each and pads the final block. A digest function updates the intermediate hash value by processing the input blocks in turn.<br><br>The message digest algorithm consists, by default, of 80 rounds.";
+        this.description = "HAS-160 是为韩国 KCDSA 数字签名算法设计的密码学哈希函数。它源自 SHA-1，并进行了多项修改以增强安全性，输出长度为 160 位。<br><br>HAS-160 的使用方式与 SHA-1 相同：首先将输入按 512 位分块并对最后一块进行填充；摘要函数通过依次处理各输入块来更新中间哈希值。<br><br>消息摘要算法默认包含 80 轮。";
         this.infoURL = "https://wikipedia.org/wiki/HAS-160";
         this.inputType = "ArrayBuffer";
         this.outputType = "string";
         this.args = [
             {
-                name: "Rounds",
+                name: "轮数",
                 type: "number",
                 value: 80,
                 min: 1,

@@ -19,13 +19,13 @@ class URLEncode extends Operation {
 
         this.name = "URL Encode";
         this.module = "URL";
-        this.description = "Encodes problematic characters into percent-encoding, a format supported by URIs/URLs.<br><br>e.g. <code>=</code> becomes <code>%3d</code>";
+        this.description = "将问题字符编码为百分号编码（URIs/URLs 支持的格式）。<br><br>例如：<code>=</code> 变为 <code>%3d</code>";
         this.infoURL = "https://wikipedia.org/wiki/Percent-encoding";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Encode all special chars",
+                "name": "编码所有特殊字符",
                 "type": "boolean",
                 "value": false
             }

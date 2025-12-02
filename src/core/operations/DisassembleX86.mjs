@@ -21,18 +21,18 @@ class DisassembleX86 extends Operation {
 
         this.name = "Disassemble x86";
         this.module = "Shellcode";
-        this.description = "Disassembly is the process of translating machine language into assembly language.<br><br>This operation supports 64-bit, 32-bit and 16-bit code written for Intel or AMD x86 processors. It is particularly useful for reverse engineering shellcode.<br><br>Input should be in hexadecimal.";
+        this.description = "反汇编是将机器语言翻译为汇编语言的过程。<br><br>此操作支持针对 Intel 或 AMD x86 处理器编写的 64 位、32 位与 16 位代码，特别适合用于逆向工程 shellcode。<br><br>输入应为十六进制。";
         this.infoURL = "https://wikipedia.org/wiki/X86";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Bit mode",
+                "name": "位模式",
                 "type": "option",
                 "value": ["64", "32", "16"]
             },
             {
-                "name": "Compatibility",
+                "name": "兼容性",
                 "type": "option",
                 "value": [
                     "Full x86 architecture",
@@ -45,22 +45,22 @@ class DisassembleX86 extends Operation {
                 ]
             },
             {
-                "name": "Code Segment (CS)",
+                "name": "代码段（CS）",
                 "type": "number",
                 "value": 16
             },
             {
-                "name": "Offset (IP)",
+                "name": "偏移（IP）",
                 "type": "number",
                 "value": 0
             },
             {
-                "name": "Show instruction hex",
+                "name": "显示指令十六进制",
                 "type": "boolean",
                 "value": true
             },
             {
-                "name": "Show instruction position",
+                "name": "显示指令位置",
                 "type": "boolean",
                 "value": true
             }

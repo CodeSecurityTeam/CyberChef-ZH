@@ -20,33 +20,33 @@ class JavaScriptParser extends Operation {
 
         this.name = "JavaScript Parser";
         this.module = "Code";
-        this.description = "Returns an Abstract Syntax Tree for valid JavaScript code.";
+        this.description = "返回有效 JavaScript 代码的抽象语法树。";
         this.infoURL = "https://wikipedia.org/wiki/Abstract_syntax_tree";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Location info",
+                "name": "位置信息",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Range info",
+                "name": "区间信息",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Include tokens array",
+                "name": "包含标记数组",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Include comments array",
+                "name": "包含注释数组",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Report errors and try to continue",
+                "name": "报告错误并尝试继续",
                 "type": "boolean",
                 "value": false
             }

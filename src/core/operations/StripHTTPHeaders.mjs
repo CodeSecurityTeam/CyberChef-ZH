@@ -19,7 +19,7 @@ class StripHTTPHeaders extends Operation {
 
         this.name = "Strip HTTP headers";
         this.module = "Default";
-        this.description = "Removes HTTP headers from a request or response by looking for the first instance of a double newline.";
+        this.description = "通过查找首个双换行，从请求或响应中移除 HTTP 头部。";
         this.infoURL = "https://wikipedia.org/wiki/Hypertext_Transfer_Protocol#Message_format";
         this.inputType = "string";
         this.outputType = "string";

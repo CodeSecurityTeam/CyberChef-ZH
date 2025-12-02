@@ -25,27 +25,27 @@ class SharpenImage extends Operation {
 
         this.name = "Sharpen Image";
         this.module = "Image";
-        this.description = "Sharpens an image (Unsharp mask)";
+        this.description = "对图像进行锐化（反锐化掩模，Unsharp mask）";
         this.infoURL = "https://wikipedia.org/wiki/Unsharp_masking";
         this.inputType = "ArrayBuffer";
         this.outputType = "ArrayBuffer";
         this.presentType = "html";
         this.args = [
             {
-                name: "Radius",
+                name: "半径",
                 type: "number",
                 value: 2,
                 min: 1
             },
             {
-                name: "Amount",
+                name: "强度",
                 type: "number",
                 value: 1,
                 min: 0,
                 step: 0.1
             },
             {
-                name: "Threshold",
+                name: "阈值",
                 type: "number",
                 value: 10,
                 min: 0,

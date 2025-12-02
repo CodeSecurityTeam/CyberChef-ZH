@@ -19,38 +19,38 @@ class FormatMACAddresses extends Operation {
 
         this.name = "Format MAC addresses";
         this.module = "Default";
-        this.description = "Displays given MAC addresses in multiple different formats.<br><br>Expects addresses in a list separated by newlines, spaces or commas.<br><br>WARNING: There are no validity checks.";
+        this.description = "以多种不同格式显示给定的 MAC 地址。<br><br>期望输入为以换行、空格或逗号分隔的地址列表。<br><br>警告：不进行有效性检查。";
         this.infoURL = "https://wikipedia.org/wiki/MAC_address#Notational_conventions";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Output case",
+                "name": "输出大小写",
                 "type": "option",
                 "value": ["Both", "Upper only", "Lower only"]
             },
             {
-                "name": "No delimiter",
+                "name": "无分隔符",
                 "type": "boolean",
                 "value": true
             },
             {
-                "name": "Dash delimiter",
+                "name": "连字符分隔",
                 "type": "boolean",
                 "value": true
             },
             {
-                "name": "Colon delimiter",
+                "name": "冒号分隔",
                 "type": "boolean",
                 "value": true
             },
             {
-                "name": "Cisco style",
+                "name": "Cisco 风格",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "IPv6 interface ID",
+                "name": "IPv6 接口ID",
                 "type": "boolean",
                 "value": false
             }

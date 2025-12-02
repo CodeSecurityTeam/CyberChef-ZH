@@ -28,32 +28,32 @@ class SeriesChart extends Operation {
 
         this.name = "Series chart";
         this.module = "Charts";
-        this.description = "A time series graph is a line graph of repeated measurements taken over regular time intervals.";
+        this.description = "时间序列图是按固定时间间隔进行的重复测量的折线图。";
         this.inputType = "string";
         this.outputType = "html";
         this.args = [
             {
-                name: "Record delimiter",
+                name: "记录分隔符",
                 type: "option",
                 value: RECORD_DELIMITER_OPTIONS,
             },
             {
-                name: "Field delimiter",
+                name: "字段分隔符",
                 type: "option",
                 value: FIELD_DELIMITER_OPTIONS,
             },
             {
-                name: "X label",
+                name: "X 轴标签",
                 type: "string",
                 value: "",
             },
             {
-                name: "Point radius",
+                name: "点半径",
                 type: "number",
                 value: 1,
             },
             {
-                name: "Series colours",
+                name: "系列颜色",
                 type: "string",
                 value: "mediumseagreen, dodgerblue, tomato",
             },

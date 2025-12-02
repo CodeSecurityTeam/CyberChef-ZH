@@ -23,41 +23,41 @@ class Salsa20 extends Operation {
 
         this.name = "Salsa20";
         this.module = "Ciphers";
-        this.description = "Salsa20 is a stream cipher designed by Daniel J. Bernstein and submitted to the eSTREAM project; Salsa20/8 and Salsa20/12 are round-reduced variants. It is closely related to the ChaCha stream cipher.<br><br><b>Key:</b> Salsa20 uses a key of 16 or 32 bytes (128 or 256 bits).<br><br><b>Nonce:</b> Salsa20 uses a nonce of 8 bytes (64 bits).<br><br><b>Counter:</b> Salsa uses a counter of 8 bytes (64 bits). The counter starts at zero at the start of the keystream, and is incremented at every 64 bytes.";
+        this.description = "Salsa20 是由 Daniel J. Bernstein 设计并提交给 eSTREAM 项目的流密码；Salsa20/8 与 Salsa20/12 是减轮变体。它与 ChaCha 流密码关系密切。<br><br><b>密钥：</b>Salsa20 使用 16 或 32 字节的密钥（128 或 256 位）。<br><br><b>随机数（Nonce）：</b>Salsa20 使用 8 字节随机数（64 位）。<br><br><b>计数器：</b>Salsa20 使用 8 字节计数器（64 位），密钥流开始时计数器从 0 开始，每处理 64 字节递增一次。";
         this.infoURL = "https://wikipedia.org/wiki/Salsa20";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Key",
+                "name": "密钥",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["Hex", "UTF8", "Latin1", "Base64"]
             },
             {
-                "name": "Nonce",
+                "name": "随机数（Nonce）",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["Hex", "UTF8", "Latin1", "Base64", "Integer"]
             },
             {
-                "name": "Counter",
+                "name": "计数器",
                 "type": "number",
                 "value": 0,
                 "min": 0
             },
             {
-                "name": "Rounds",
+                "name": "轮数",
                 "type": "option",
                 "value": ["20", "12", "8"]
             },
             {
-                "name": "Input",
+                "name": "输入",
                 "type": "option",
                 "value": ["Hex", "Raw"]
             },
             {
-                "name": "Output",
+                "name": "输出",
                 "type": "option",
                 "value": ["Raw", "Hex"]
             }

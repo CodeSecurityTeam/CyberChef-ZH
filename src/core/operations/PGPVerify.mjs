@@ -26,22 +26,22 @@ class PGPVerify extends Operation {
         this.name = "PGP Verify";
         this.module = "PGP";
         this.description = [
-            "Input: the ASCII-armoured encrypted PGP message you want to verify.",
+            "输入：需要验证的 ASCII 封装加密 PGP 消息。",
             "<br><br>",
-            "Argument: the ASCII-armoured PGP public key of the signer",
+            "参数：签名者的 ASCII 封装 PGP 公钥",
             "<br><br>",
-            "This operation uses PGP to decrypt a clearsigned message.",
+            "本操作使用 PGP 解密明文签名消息。",
             "<br><br>",
-            "Pretty Good Privacy is an encryption standard (OpenPGP) used for encrypting, decrypting, and signing messages.",
+            "Pretty Good Privacy（OpenPGP）是一种用于消息加密、解密与签名的加密标准。",
             "<br><br>",
-            "This function uses the Keybase implementation of PGP.",
+            "该功能使用 Keybase 的 PGP 实现。",
         ].join("\n");
         this.infoURL = "https://wikipedia.org/wiki/Pretty_Good_Privacy";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Public key of signer",
+                "name": "签名者公钥",
                 "type": "text",
                 "value": ""
             }

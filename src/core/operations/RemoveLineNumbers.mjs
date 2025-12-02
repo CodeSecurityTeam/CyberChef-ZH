@@ -19,7 +19,7 @@ class RemoveLineNumbers extends Operation {
 
         this.name = "Remove line numbers";
         this.module = "Default";
-        this.description = "Removes line numbers from the output if they can be trivially detected.";
+        this.description = "在可简单检测的情况下，从输出中移除行号。";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [];

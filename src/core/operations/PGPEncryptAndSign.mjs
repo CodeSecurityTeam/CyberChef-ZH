@@ -25,33 +25,33 @@ class PGPEncryptAndSign extends Operation {
         this.name = "PGP Encrypt and Sign";
         this.module = "PGP";
         this.description = [
-            "Input: the cleartext you want to sign.",
+            "输入：要签名的明文。",
             "<br><br>",
-            "Arguments: the ASCII-armoured private key of the signer (plus the private key password if necessary)",
-            "and the ASCII-armoured PGP public key of the recipient.",
+            "参数：签名者的 ASCII 封装私钥（必要时包含私钥密码）",
+            "以及收件人的 ASCII 封装 PGP 公钥。",
             "<br><br>",
-            "This operation uses PGP to produce an encrypted digital signature.",
+            "本操作使用 PGP 生成加密的数字签名。",
             "<br><br>",
-            "Pretty Good Privacy is an encryption standard (OpenPGP) used for encrypting, decrypting, and signing messages.",
+            "Pretty Good Privacy（OpenPGP）是一种用于消息加密、解密与签名的加密标准。",
             "<br><br>",
-            "This function uses the Keybase implementation of PGP.",
+            "该功能使用 Keybase 的 PGP 实现。",
         ].join("\n");
         this.infoURL = "https://wikipedia.org/wiki/Pretty_Good_Privacy";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Private key of signer",
+                "name": "签名者私钥",
                 "type": "text",
                 "value": ""
             },
             {
-                "name": "Private key passphrase",
+                "name": "私钥口令",
                 "type": "string",
                 "value": ""
             },
             {
-                "name": "Public key of recipient",
+                "name": "收件人公钥",
                 "type": "text",
                 "value": ""
             }

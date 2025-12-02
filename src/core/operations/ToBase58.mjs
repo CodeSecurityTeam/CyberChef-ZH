@@ -22,13 +22,13 @@ class ToBase58 extends Operation {
 
         this.name = "To Base58";
         this.module = "Default";
-        this.description = "Base58 (similar to Base64) is a notation for encoding arbitrary byte data. It differs from Base64 by removing easily misread characters (i.e. l, I, 0 and O) to improve human readability.<br><br>This operation encodes data in an ASCII string (with an alphabet of your choosing, presets included).<br><br>e.g. <code>hello world</code> becomes <code>StV1DL6CwTryKyV</code><br><br>Base58 is commonly used in cryptocurrencies (Bitcoin, Ripple, etc).";
+        this.description = "Base58（类似 Base64）是一种用于编码任意字节数据的表示法。它通过移除易混淆字符（如 l、I、0、O）来提升人类可读性。<br><br>该操作将数据编码为 ASCII 字符串（可选择字母表，提供预设）。<br><br>例如：<code>hello world</code> 变为 <code>StV1DL6CwTryKyV</code><br><br>Base58 常用于加密货币（比特币、瑞波等）。";
         this.infoURL = "https://wikipedia.org/wiki/Base58";
         this.inputType = "ArrayBuffer";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Alphabet",
+                "name": "字母表",
                 "type": "editableOption",
                 "value": ALPHABET_OPTIONS
             }

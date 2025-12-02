@@ -22,7 +22,7 @@ class LZMADecompress extends Operation {
 
         this.name = "LZMA Decompress";
         this.module = "Compression";
-        this.description = "Decompresses data using the Lempel-Ziv-Markov chain Algorithm.";
+        this.description = "使用 Lempel-Ziv-Markov 链算法解压数据。";
         this.infoURL = "https://wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm";
         this.inputType = "ArrayBuffer";
         this.outputType = "ArrayBuffer";

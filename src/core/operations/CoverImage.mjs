@@ -24,26 +24,26 @@ class CoverImage extends Operation {
 
         this.name = "Cover Image";
         this.module = "Image";
-        this.description = "Scales the image to the given width and height, keeping the aspect ratio. The image may be clipped.";
+        this.description = "将图像缩放到给定宽高并保持纵横比。图像可能会被裁剪。";
         this.infoURL = "";
         this.inputType = "ArrayBuffer";
         this.outputType = "ArrayBuffer";
         this.presentType = "html";
         this.args = [
             {
-                name: "Width",
+                name: "宽度",
                 type: "number",
                 value: 100,
                 min: 1
             },
             {
-                name: "Height",
+                name: "高度",
                 type: "number",
                 value: 100,
                 min: 1
             },
             {
-                name: "Horizontal align",
+                name: "水平对齐",
                 type: "option",
                 value: [
                     "Left",
@@ -53,7 +53,7 @@ class CoverImage extends Operation {
                 defaultIndex: 1
             },
             {
-                name: "Vertical align",
+                name: "垂直对齐",
                 type: "option",
                 value: [
                     "Top",
@@ -63,7 +63,7 @@ class CoverImage extends Operation {
                 defaultIndex: 1
             },
             {
-                name: "Resizing algorithm",
+                name: "缩放算法",
                 type: "option",
                 value: [
                     "Nearest Neighbour",

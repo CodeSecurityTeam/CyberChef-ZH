@@ -23,7 +23,7 @@ class FromQuotedPrintable extends Operation {
 
         this.name = "From Quoted Printable";
         this.module = "Default";
-        this.description = "Converts QP-encoded text back to standard text.<br><br>e.g. The quoted-printable encoded string <code>hello=20world</code> becomes <code>hello world</code>";
+        this.description = "将 QP（Quoted-Printable）编码文本转换回标准文本。<br><br>例如：<code>hello=20world</code> 变为 <code>hello world</code>";
         this.infoURL = "https://wikipedia.org/wiki/Quoted-printable";
         this.inputType = "string";
         this.outputType = "byteArray";

@@ -22,13 +22,13 @@ class RegularExpression extends Operation {
 
         this.name = "Regular expression";
         this.module = "Regex";
-        this.description = "Define your own regular expression (regex) to search the input data with, optionally choosing from a list of pre-defined patterns.<br><br>Supports extended regex syntax including the 'dot matches all' flag, named capture groups, full unicode coverage (including <code>\\p{}</code> categories and scripts as well as astral codes) and recursive matching.";
+        this.description = "定义自定正则表达式用于搜索输入数据，并可选择预定义模式。<br><br>支持扩展正则语法，包括“点匹配全部”标志、命名捕获组、完整 Unicode 覆盖（包含 <code>\\p{}</code> 类与脚本以及增补平面）以及递归匹配。";
         this.infoURL = "https://wikipedia.org/wiki/Regular_expression";
         this.inputType = "string";
         this.outputType = "html";
         this.args = [
             {
-                "name": "Built in regexes",
+                "name": "内置正则",
                 "type": "populateOption",
                 "value": [
                     {
@@ -91,42 +91,42 @@ class RegularExpression extends Operation {
                 "target": 1
             },
             {
-                "name": "Regex",
+                "name": "正则表达式",
                 "type": "text",
                 "value": ""
             },
             {
-                "name": "Case insensitive",
+                "name": "不区分大小写",
                 "type": "boolean",
                 "value": true
             },
             {
-                "name": "^ and $ match at newlines",
+                "name": "^ 与 $ 在换行处匹配",
                 "type": "boolean",
                 "value": true
             },
             {
-                "name": "Dot matches all",
+                "name": "点匹配全部",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Unicode support",
+                "name": "Unicode 支持",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Astral support",
+                "name": "增补平面支持",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Display total",
+                "name": "显示总数",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Output format",
+                "name": "输出格式",
                 "type": "option",
                 "value": ["Highlight matches", "List matches", "List capture groups", "List matches with capture groups"]
             }

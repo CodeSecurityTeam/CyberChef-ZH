@@ -23,41 +23,41 @@ class XSalsa20 extends Operation {
 
         this.name = "XSalsa20";
         this.module = "Ciphers";
-        this.description = "XSalsa20 is a variant of the Salsa20 stream cipher designed by Daniel J. Bernstein; XSalsa uses longer nonces.<br><br><b>Key:</b> XSalsa20 uses a key of 16 or 32 bytes (128 or 256 bits).<br><br><b>Nonce:</b> XSalsa20 uses a nonce of 24 bytes (192 bits).<br><br><b>Counter:</b> XSalsa uses a counter of 8 bytes (64 bits). The counter starts at zero at the start of the keystream, and is incremented at every 64 bytes.";
+        this.description = "XSalsa20 是 Daniel J. Bernstein 设计的 Salsa20 流密码的一个变体；XSalsa 使用更长的随机数。<br><br><b>密钥：</b>XSalsa20 使用 16 或 32 字节（128 或 256 位）的密钥。<br><br><b>随机数：</b>XSalsa20 使用 24 字节（192 位）的随机数。<br><br><b>计数器：</b>XSalsa 使用 8 字节（64 位）的计数器。密钥流开始时计数器为零，每输出 64 字节递增一次。";
         this.infoURL = "https://en.wikipedia.org/wiki/Salsa20#XSalsa20_with_192-bit_nonce";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Key",
+                "name": "密钥",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["Hex", "UTF8", "Latin1", "Base64"]
             },
             {
-                "name": "Nonce",
+                "name": "随机数",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["Hex", "UTF8", "Latin1", "Base64", "Integer"]
             },
             {
-                "name": "Counter",
+                "name": "计数器",
                 "type": "number",
                 "value": 0,
                 "min": 0
             },
             {
-                "name": "Rounds",
+                "name": "轮数",
                 "type": "option",
                 "value": ["20", "12", "8"]
             },
             {
-                "name": "Input",
+                "name": "输入",
                 "type": "option",
                 "value": ["Hex", "Raw"]
             },
             {
-                "name": "Output",
+                "name": "输出",
                 "type": "option",
                 "value": ["Raw", "Hex"]
             }

@@ -22,18 +22,18 @@ class RSAEncrypt extends Operation {
 
         this.name = "RSA Encrypt";
         this.module = "Ciphers";
-        this.description = "Encrypt a message with a PEM encoded RSA public key.";
+        this.description = "使用 PEM 编码的 RSA 公钥对消息进行加密。";
         this.infoURL = "https://wikipedia.org/wiki/RSA_(cryptosystem)";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "RSA Public Key (PEM)",
+                name: "RSA 公钥（PEM）",
                 type: "text",
                 value: "-----BEGIN RSA PUBLIC KEY-----"
             },
             {
-                name: "Encryption Scheme",
+                name: "加密方案",
                 type: "argSelector",
                 value: [
                     {
@@ -50,7 +50,7 @@ class RSAEncrypt extends Operation {
                     }]
             },
             {
-                name: "Message Digest Algorithm",
+                name: "消息摘要算法",
                 type: "option",
                 value: Object.keys(MD_ALGORITHMS)
             }

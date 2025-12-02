@@ -20,12 +20,12 @@ class Reverse extends Operation {
 
         this.name = "Reverse";
         this.module = "Default";
-        this.description = "Reverses the input string.";
+        this.description = "反转输入字符串。";
         this.inputType = "byteArray";
         this.outputType = "byteArray";
         this.args = [
             {
-                "name": "By",
+                "name": "按",
                 "type": "option",
                 "value": ["Byte", "Character", "Line"],
                 "defaultIndex": 1

@@ -20,18 +20,18 @@ class SetUnion extends Operation {
 
         this.name = "Set Union";
         this.module = "Default";
-        this.description = "Calculates the union of two sets.";
+        this.description = "计算两个集合的并集。";
         this.infoURL = "https://wikipedia.org/wiki/Union_(set_theory)";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "Sample delimiter",
+                name: "样本分隔符",
                 type: "binaryString",
                 value: "\\n\\n"
             },
             {
-                name: "Item delimiter",
+                name: "项分隔符",
                 type: "binaryString",
                 value: ","
             },

@@ -20,7 +20,7 @@ class YAMLToJSON extends Operation {
 
         this.name = "YAML to JSON";
         this.module = "Default";
-        this.description = "Convert YAML to JSON";
+        this.description = "将 YAML 转换为 JSON";
         this.infoURL = "https://en.wikipedia.org/wiki/YAML";
         this.inputType = "string";
         this.outputType = "JSON";

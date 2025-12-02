@@ -22,23 +22,23 @@ class ParseTLV extends Operation {
 
         this.name = "Parse TLV";
         this.module = "Default";
-        this.description = "Converts a Type-Length-Value (TLV) encoded string into a JSON object.  Can optionally include a <code>Key</code> / <code>Type</code> entry. <br><br>Tags: Key-Length-Value, KLV, Length-Value, LV";
+        this.description = "将类型-长度-值（TLV）编码的字符串转换为 JSON 对象，可选包含 <code>Key</code>/<code>Type</code> 条目。<br><br>标签：Key-Length-Value、KLV、Length-Value、LV";
         this.infoURL = "https://wikipedia.org/wiki/Type-length-value";
         this.inputType = "ArrayBuffer";
         this.outputType = "JSON";
         this.args = [
             {
-                name: "Type/Key size",
+                name: "类型/键大小",
                 type: "number",
                 value: 1
             },
             {
-                name: "Length size",
+                name: "长度大小",
                 type: "number",
                 value: 1
             },
             {
-                name: "Use BER",
+                name: "使用 BER",
                 type: "boolean",
                 value: false
             }

@@ -21,13 +21,13 @@ class ADD extends Operation {
 
         this.name = "ADD";
         this.module = "Default";
-        this.description = "ADD the input with the given key (e.g. <code>fe023da5</code>), MOD 255";
+        this.description = "将输入与给定密钥相加（例如 <code>fe023da5</code>），按 255 取模";
         this.infoURL = "https://wikipedia.org/wiki/Bitwise_operation#Bitwise_operators";
         this.inputType = "byteArray";
         this.outputType = "byteArray";
         this.args = [
             {
-                "name": "Key",
+                "name": "密钥",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": BITWISE_OP_DELIMS

@@ -19,7 +19,7 @@ class DechunkHTTPResponse extends Operation {
 
         this.name = "Dechunk HTTP response";
         this.module = "Default";
-        this.description = "Parses an HTTP response transferred using Transfer-Encoding: Chunked";
+        this.description = "解析使用 Transfer-Encoding: Chunked 传输的 HTTP 响应。";
         this.infoURL = "https://wikipedia.org/wiki/Chunked_transfer_encoding";
         this.inputType = "string";
         this.outputType = "string";

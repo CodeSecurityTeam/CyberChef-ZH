@@ -22,23 +22,23 @@ class HammingDistance extends Operation {
 
         this.name = "Hamming Distance";
         this.module = "Default";
-        this.description = "In information theory, the Hamming distance between two strings of equal length is the number of positions at which the corresponding symbols are different. In other words, it measures the minimum number of substitutions required to change one string into the other, or the minimum number of errors that could have transformed one string into the other. In a more general context, the Hamming distance is one of several string metrics for measuring the edit distance between two sequences.";
+        this.description = "在信息论中，两个等长字符串的汉明距离是对应符号不同的位置数量。换言之，它衡量将一个字符串变为另一个字符串所需的最少替换次数，或导致一个字符串变成另一个字符串的最少错误数。在更一般的语境中，汉明距离是用于度量两序列编辑距离的多个字符串度量之一。";
         this.infoURL = "https://wikipedia.org/wiki/Hamming_distance";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "binaryShortString",
                 "value": "\\n\\n"
             },
             {
-                "name": "Unit",
+                "name": "单位",
                 "type": "option",
                 "value": ["Byte", "Bit"]
             },
             {
-                "name": "Input type",
+                "name": "输入类型",
                 "type": "option",
                 "value": ["Raw string", "Hex"]
             }

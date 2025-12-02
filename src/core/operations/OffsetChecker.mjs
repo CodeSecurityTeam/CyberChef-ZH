@@ -21,12 +21,12 @@ class OffsetChecker extends Operation {
 
         this.name = "Offset checker";
         this.module = "Default";
-        this.description = "Compares multiple inputs (separated by the specified delimiter) and highlights matching characters which appear at the same position in all samples.";
+        this.description = "比较多个输入（由指定分隔符分隔），并高亮所有样本中相同位置出现的匹配字符。";
         this.inputType = "string";
         this.outputType = "html";
         this.args = [
             {
-                "name": "Sample delimiter",
+                "name": "样本分隔符",
                 "type": "binaryString",
                 "value": "\\n\\n"
             }

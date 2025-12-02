@@ -20,18 +20,18 @@ class RailFenceCipherDecode extends Operation {
 
         this.name = "Rail Fence Cipher Decode";
         this.module = "Ciphers";
-        this.description = "Decodes Strings that were created using the Rail fence Cipher provided a key and an offset";
+        this.description = "解密通过栅栏密码按给定密钥与偏移生成的字符串";
         this.infoURL = "https://wikipedia.org/wiki/Rail_fence_cipher";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "Key",
+                name: "密钥",
                 type: "number",
                 value: 2
             },
             {
-                name: "Offset",
+                name: "偏移",
                 type: "number",
                 value: 0
             }

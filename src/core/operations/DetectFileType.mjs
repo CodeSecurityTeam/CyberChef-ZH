@@ -28,8 +28,8 @@ class DetectFileType extends Operation {
 
         this.name = "Detect File Type";
         this.module = "Default";
-        this.description = "Attempts to guess the MIME (Multipurpose Internet Mail Extensions) type of the data based on 'magic bytes'.<br><br>Currently supports the following file types: " +
-            exts + ".";
+        this.description = "尝试根据“魔术字节”推测数据的 MIME（多用途互联网邮件扩展）类型。<br><br>目前支持以下文件类型：" +
+            exts + "。";
         this.infoURL = "https://wikipedia.org/wiki/List_of_file_signatures";
         this.inputType = "ArrayBuffer";
         this.outputType = "string";

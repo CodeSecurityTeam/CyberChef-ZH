@@ -22,23 +22,23 @@ class ShowBase64Offsets extends Operation {
 
         this.name = "Show Base64 offsets";
         this.module = "Default";
-        this.description = "When a string is within a block of data and the whole block is Base64'd, the string itself could be represented in Base64 in three distinct ways depending on its offset within the block.<br><br>This operation shows all possible offsets for a given string so that each possible encoding can be considered.";
+        this.description = "当某字符串位于数据块中且整个数据块被进行 Base64 编码时，该字符串本身可能因在块内的位置不同而以三种不同方式被表示为 Base64。<br><br>此操作展示给定字符串的所有可能偏移，以便考虑每一种可能的编码方式。";
         this.infoURL = "https://wikipedia.org/wiki/Base64#Output_padding";
         this.inputType = "byteArray";
         this.outputType = "html";
         this.args = [
             {
-                name: "Alphabet",
+                name: "字母表",
                 type: "binaryString",
                 value: "A-Za-z0-9+/="
             },
             {
-                name: "Show variable chars and padding",
+                name: "显示可变字符与填充",
                 type: "boolean",
                 value: true
             },
             {
-                name: "Input format",
+                name: "输入格式",
                 type: "option",
                 value: ["Raw", "Base64"]
             }

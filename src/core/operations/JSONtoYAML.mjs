@@ -21,7 +21,7 @@ class JSONtoYAML extends Operation {
 
         this.name = "JSON to YAML";
         this.module = "Default";
-        this.description = "Format a JSON object into YAML";
+        this.description = "将 JSON 对象格式化为 YAML";
         this.infoURL = "https://en.wikipedia.org/wiki/YAML";
         this.inputType = "JSON";
         this.outputType = "string";

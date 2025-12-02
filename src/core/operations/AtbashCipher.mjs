@@ -20,7 +20,7 @@ class AtbashCipher extends Operation {
 
         this.name = "Atbash Cipher";
         this.module = "Ciphers";
-        this.description = "Atbash is a mono-alphabetic substitution cipher originally used to encode the Hebrew alphabet. It has been modified here for use with the Latin alphabet.";
+        this.description = "Atbash 是一种单表替换密码，最初用于编码希伯来字母，此处已修改为适用于拉丁字母。";
         this.infoURL = "https://wikipedia.org/wiki/Atbash";
         this.inputType = "string";
         this.outputType = "string";

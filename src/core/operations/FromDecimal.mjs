@@ -21,17 +21,17 @@ class FromDecimal extends Operation {
 
         this.name = "From Decimal";
         this.module = "Default";
-        this.description = "Converts the data from an ordinal integer array back into its raw form.<br><br>e.g. <code>72 101 108 108 111</code> becomes <code>Hello</code>";
+        this.description = "将序数整数数组转换回其原始形式。<br><br>例如：<code>72 101 108 108 111</code> 变为 <code>Hello</code>";
         this.inputType = "string";
         this.outputType = "byteArray";
         this.args = [
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "option",
                 "value": DELIM_OPTIONS
             },
             {
-                "name": "Support signed values",
+                "name": "支持有符号值",
                 "type": "boolean",
                 "value": false
             }

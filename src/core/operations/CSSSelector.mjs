@@ -22,18 +22,18 @@ class CSSSelector extends Operation {
 
         this.name = "CSS selector";
         this.module = "Code";
-        this.description = "Extract information from an HTML document with a CSS selector";
+        this.description = "使用 CSS 选择器从 HTML 文档中提取信息";
         this.infoURL = "https://wikipedia.org/wiki/Cascading_Style_Sheets#Selector";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "CSS selector",
+                "name": "CSS 选择器",
                 "type": "string",
                 "value": ""
             },
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "binaryShortString",
                 "value": "\\n"
             }

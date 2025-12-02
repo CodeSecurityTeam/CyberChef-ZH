@@ -29,58 +29,58 @@ class HeatmapChart extends Operation {
 
         this.name = "Heatmap chart";
         this.module = "Charts";
-        this.description = "A heatmap is a graphical representation of data where the individual values contained in a matrix are represented as colors.";
+        this.description = "热力图是一种数据可视化图表，将矩阵中的各个数值用颜色表示。";
         this.infoURL = "https://wikipedia.org/wiki/Heat_map";
         this.inputType = "string";
         this.outputType = "html";
         this.args = [
             {
-                name: "Record delimiter",
+                name: "记录分隔符",
                 type: "option",
                 value: RECORD_DELIMITER_OPTIONS,
             },
             {
-                name: "Field delimiter",
+                name: "字段分隔符",
                 type: "option",
                 value: FIELD_DELIMITER_OPTIONS,
             },
             {
-                name: "Number of vertical bins",
+                name: "垂直分箱数量",
                 type: "number",
                 value: 25,
             },
             {
-                name: "Number of horizontal bins",
+                name: "水平分箱数量",
                 type: "number",
                 value: 25,
             },
             {
-                name: "Use column headers as labels",
+                name: "使用列名作为标签",
                 type: "boolean",
                 value: true,
             },
             {
-                name: "X label",
+                name: "X 轴标签",
                 type: "string",
                 value: "",
             },
             {
-                name: "Y label",
+                name: "Y 轴标签",
                 type: "string",
                 value: "",
             },
             {
-                name: "Draw bin edges",
+                name: "绘制分箱边框",
                 type: "boolean",
                 value: false,
             },
             {
-                name: "Min colour value",
+                name: "最小颜色值",
                 type: "string",
                 value: COLOURS.min,
             },
             {
-                name: "Max colour value",
+                name: "最大颜色值",
                 type: "string",
                 value: COLOURS.max,
             },

@@ -22,24 +22,24 @@ class SM2Decrypt extends Operation {
 
         this.name = "SM2 Decrypt";
         this.module = "Crypto";
-        this.description = "Decrypts a message utilizing the SM2 standard";
+        this.description = "使用 SM2 标准对消息进行解密";
         this.infoURL = ""; // Usually a Wikipedia link. Remember to remove localisation (i.e. https://wikipedia.org/etc rather than https://en.wikipedia.org/etc)
         this.inputType = "string";
         this.outputType = "ArrayBuffer";
         this.args = [
             {
-                name: "Private Key",
+                name: "私钥",
                 type: "string",
                 value: "DEADBEEF"
             },
             {
-                "name": "Input Format",
+                "name": "输入格式",
                 "type": "option",
                 "value": ["C1C3C2", "C1C2C3"],
                 "defaultIndex": 0
             },
             {
-                name: "Curve",
+                name: "曲线",
                 type: "option",
                 "value": ["sm2p256v1"],
                 "defaultIndex": 0

@@ -22,13 +22,13 @@ class Streebog extends Operation {
 
         this.name = "Streebog";
         this.module = "Hashing";
-        this.description = "Streebog is a cryptographic hash function defined in the Russian national standard GOST R 34.11-2012 <i>Information Technology \u2013 Cryptographic Information Security \u2013 Hash Function</i>. It was created to replace an obsolete GOST hash function defined in the old standard GOST R 34.11-94, and as an asymmetric reply to SHA-3 competition by the US National Institute of Standards and Technology.";
+        this.description = "Streebog 是一种密码哈希函数，定义于俄罗斯国家标准 GOST R 34.11-2012 <i>信息技术–密码信息安全–哈希函数</i>。它用于替代旧标准 GOST R 34.11-94 中已过时的 GOST 哈希函数，并被视为对美国国家标准与技术研究院（NIST）发起的 SHA-3 竞赛的非对称回应。";
         this.infoURL = "https://wikipedia.org/wiki/Streebog";
         this.inputType = "ArrayBuffer";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Digest length",
+                "name": "摘要长度",
                 "type": "option",
                 "value": ["256", "512"]
             }

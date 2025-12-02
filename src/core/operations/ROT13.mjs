@@ -20,28 +20,28 @@ class ROT13 extends Operation {
 
         this.name = "ROT13";
         this.module = "Default";
-        this.description = "A simple caesar substitution cipher which rotates alphabet characters by the specified amount (default 13).";
+        this.description = "一种简单的凯撒替换密码，将字母字符按指定位移量（默认 13）旋转。";
         this.infoURL = "https://wikipedia.org/wiki/ROT13";
         this.inputType = "byteArray";
         this.outputType = "byteArray";
         this.args = [
             {
-                name: "Rotate lower case chars",
+                name: "旋转小写字符",
                 type: "boolean",
                 value: true
             },
             {
-                name: "Rotate upper case chars",
+                name: "旋转大写字符",
                 type: "boolean",
                 value: true
             },
             {
-                name: "Rotate numbers",
+                name: "旋转数字",
                 type: "boolean",
                 value: false
             },
             {
-                name: "Amount",
+                name: "位移量",
                 type: "number",
                 value: 13
             },

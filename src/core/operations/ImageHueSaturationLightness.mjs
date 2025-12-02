@@ -24,28 +24,28 @@ class ImageHueSaturationLightness extends Operation {
 
         this.name = "Image Hue/Saturation/Lightness";
         this.module = "Image";
-        this.description = "Adjusts the hue / saturation / lightness (HSL) values of an image.";
+        this.description = "调整图像的色相/饱和度/亮度（HSL）值。";
         this.infoURL = "";
         this.inputType = "ArrayBuffer";
         this.outputType = "ArrayBuffer";
         this.presentType = "html";
         this.args = [
             {
-                name: "Hue",
+                name: "色相",
                 type: "number",
                 value: 0,
                 min: -360,
                 max: 360
             },
             {
-                name: "Saturation",
+                name: "饱和度",
                 type: "number",
                 value: 0,
                 min: -100,
                 max: 100
             },
             {
-                name: "Lightness",
+                name: "亮度",
                 type: "number",
                 value: 0,
                 min: -100,

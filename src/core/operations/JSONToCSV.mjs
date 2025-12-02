@@ -22,18 +22,18 @@ class JSONToCSV extends Operation {
 
         this.name = "JSON to CSV";
         this.module = "Default";
-        this.description = "Converts JSON data to a CSV based on the definition in RFC 4180.";
+        this.description = "根据 RFC 4180 的定义将 JSON 数据转换为 CSV。";
         this.infoURL = "https://wikipedia.org/wiki/Comma-separated_values";
         this.inputType = "JSON";
         this.outputType = "string";
         this.args = [
             {
-                name: "Cell delimiter",
+                name: "单元格分隔符",
                 type: "binaryShortString",
                 value: ","
             },
             {
-                name: "Row delimiter",
+                name: "行分隔符",
                 type: "binaryShortString",
                 value: "\\r\\n"
             }

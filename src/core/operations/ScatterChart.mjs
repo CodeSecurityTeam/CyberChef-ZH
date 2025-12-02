@@ -28,48 +28,48 @@ class ScatterChart extends Operation {
 
         this.name = "Scatter chart";
         this.module = "Charts";
-        this.description = "Plots two-variable data as single points on a graph.";
+        this.description = "将双变量数据以单个点绘制在图表上。";
         this.infoURL = "https://wikipedia.org/wiki/Scatter_plot";
         this.inputType = "string";
         this.outputType = "html";
         this.args = [
             {
-                name: "Record delimiter",
+                name: "记录分隔符",
                 type: "option",
                 value: RECORD_DELIMITER_OPTIONS,
             },
             {
-                name: "Field delimiter",
+                name: "字段分隔符",
                 type: "option",
                 value: FIELD_DELIMITER_OPTIONS,
             },
             {
-                name: "Use column headers as labels",
+                name: "使用列标题作为标签",
                 type: "boolean",
                 value: true,
             },
             {
-                name: "X label",
+                name: "X 轴标签",
                 type: "string",
                 value: "",
             },
             {
-                name: "Y label",
+                name: "Y 轴标签",
                 type: "string",
                 value: "",
             },
             {
-                name: "Colour",
+                name: "颜色",
                 type: "string",
                 value: COLOURS.max,
             },
             {
-                name: "Point radius",
+                name: "点半径",
                 type: "number",
                 value: 10,
             },
             {
-                name: "Use colour from third column",
+                name: "使用第三列颜色",
                 type: "boolean",
                 value: false,
             }

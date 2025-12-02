@@ -24,36 +24,36 @@ class ResizeImage extends Operation {
 
         this.name = "Resize Image";
         this.module = "Image";
-        this.description = "Resizes an image to the specified width and height values.";
+        this.description = "将图像调整为指定的宽度与高度。";
         this.infoURL = "https://wikipedia.org/wiki/Image_scaling";
         this.inputType = "ArrayBuffer";
         this.outputType = "ArrayBuffer";
         this.presentType = "html";
         this.args = [
             {
-                name: "Width",
+                name: "宽度",
                 type: "number",
                 value: 100,
                 min: 1
             },
             {
-                name: "Height",
+                name: "高度",
                 type: "number",
                 value: 100,
                 min: 1
             },
             {
-                name: "Unit type",
+                name: "单位类型",
                 type: "option",
                 value: ["Pixels", "Percent"]
             },
             {
-                name: "Maintain aspect ratio",
+                name: "保持纵横比",
                 type: "boolean",
                 value: false
             },
             {
-                name: "Resizing algorithm",
+                name: "缩放算法",
                 type: "option",
                 value: [
                     "Nearest Neighbour",

@@ -33,18 +33,18 @@ class HASSHServerFingerprint extends Operation {
 
         this.name = "HASSH Server Fingerprint";
         this.module = "Crypto";
-        this.description = "Generates a HASSH fingerprint to help identify SSH servers based on hashing together values from the Server Key Exchange Init message.<br><br>Input: A hex stream of the SSH_MSG_KEXINIT packet application layer from Server to Client.";
+        this.description = "生成 HASSH 指纹，用于基于服务器密钥交换初始化消息的字段散列来识别 SSH 服务器。<br><br>输入：来自服务器到客户端的 SSH_MSG_KEXINIT 包应用层的十六进制流。";
         this.infoURL = "https://engineering.salesforce.com/open-sourcing-hassh-abed3ae5044c";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "Input format",
+                name: "输入格式",
                 type: "option",
                 value: ["Hex", "Base64", "Raw"]
             },
             {
-                name: "Output format",
+                name: "输出格式",
                 type: "option",
                 value: ["Hash digest", "HASSH algorithms string", "Full details"]
             }

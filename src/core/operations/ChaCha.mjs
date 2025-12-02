@@ -101,41 +101,41 @@ class ChaCha extends Operation {
 
         this.name = "ChaCha";
         this.module = "Ciphers";
-        this.description = "ChaCha is a stream cipher designed by Daniel J. Bernstein. It is a variant of the Salsa stream cipher. Several parameterizations exist; 'ChaCha' may refer to the original construction, or to the variant as described in RFC-8439. ChaCha is often used with Poly1305, in the ChaCha20-Poly1305 AEAD construction.<br><br><b>Key:</b> ChaCha uses a key of 16 or 32 bytes (128 or 256 bits).<br><br><b>Nonce:</b> ChaCha uses a nonce of 8 or 12 bytes (64 or 96 bits).<br><br><b>Counter:</b> ChaCha uses a counter of 4 or 8 bytes (32 or 64 bits); together, the nonce and counter must add up to 16 bytes. The counter starts at zero at the start of the keystream, and is incremented at every 64 bytes.";
+        this.description = "ChaCha 是 Daniel J. Bernstein 设计的流密码，是 Salsa 流密码的变体。存在多种参数化形式；“ChaCha”可指原始构造或 RFC-8439 中的变体。ChaCha 常与 Poly1305 一同用于 ChaCha20-Poly1305 AEAD 构造。<br><br><b>密钥：</b>ChaCha 使用 16 或 32 字节密钥（128 或 256 位）。<br><br><b>随机数：</b>ChaCha 使用 8 或 12 字节随机数（64 或 96 位）。<br><br><b>计数器：</b>ChaCha 使用 4 或 8 字节计数器（32 或 64 位）；随机数与计数器合计需为 16 字节。计数器从密钥流开始处为 0，每处理 64 字节递增。";
         this.infoURL = "https://wikipedia.org/wiki/Salsa20#ChaCha_variant";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Key",
+                "name": "密钥",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["Hex", "UTF8", "Latin1", "Base64"]
             },
             {
-                "name": "Nonce",
+                "name": "随机数",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["Hex", "UTF8", "Latin1", "Base64", "Integer"]
             },
             {
-                "name": "Counter",
+                "name": "计数器",
                 "type": "number",
                 "value": 0,
                 "min": 0
             },
             {
-                "name": "Rounds",
+                "name": "轮次",
                 "type": "option",
                 "value": ["20", "12", "8"]
             },
             {
-                "name": "Input",
+                "name": "输入",
                 "type": "option",
                 "value": ["Hex", "Raw"]
             },
             {
-                "name": "Output",
+                "name": "输出",
                 "type": "option",
                 "value": ["Raw", "Hex"]
             }

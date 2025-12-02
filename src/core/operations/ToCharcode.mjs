@@ -23,18 +23,18 @@ class ToCharcode extends Operation {
 
         this.name = "To Charcode";
         this.module = "Default";
-        this.description = "Converts text to its unicode character code equivalent.<br><br>e.g. <code>Γειά σου</code> becomes <code>0393 03b5 03b9 03ac 20 03c3 03bf 03c5</code>";
+        this.description = "将文本转换为对应的 Unicode 字符码。<br><br>例如：<code>Γειά σου</code> 变为 <code>0393 03b5 03b9 03ac 20 03c3 03bf 03c5</code>";
         this.infoURL = "https://wikipedia.org/wiki/Plane_(Unicode)";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "option",
                 "value": DELIM_OPTIONS
             },
             {
-                "name": "Base",
+                "name": "进制",
                 "type": "number",
                 "value": 16
             }

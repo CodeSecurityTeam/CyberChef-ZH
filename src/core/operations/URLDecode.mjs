@@ -19,13 +19,13 @@ class URLDecode extends Operation {
 
         this.name = "URL Decode";
         this.module = "URL";
-        this.description = "Converts URI/URL percent-encoded characters back to their raw values.<br><br>e.g. <code>%3d</code> becomes <code>=</code>";
+        this.description = "将 URI/URL 百分号编码字符还原为原始值。<br><br>例如：<code>%3d</code> 变为 <code>=</code>";
         this.infoURL = "https://wikipedia.org/wiki/Percent-encoding";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Treat \"+\" as space",
+                "name": "将 \"+\" 视为空格",
                 "type": "boolean",
                 "value": true
             },

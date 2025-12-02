@@ -25,20 +25,20 @@ class PGPEncrypt extends Operation {
         this.name = "PGP Encrypt";
         this.module = "PGP";
         this.description = [
-            "Input: the message you want to encrypt.",
+            "输入：要加密的消息。",
             "<br><br>",
-            "Arguments: the ASCII-armoured PGP public key of the recipient.",
+            "参数：收件人的 ASCII 封装 PGP 公钥。",
             "<br><br>",
-            "Pretty Good Privacy is an encryption standard (OpenPGP) used for encrypting, decrypting, and signing messages.",
+            "Pretty Good Privacy（OpenPGP）是一种用于消息加密、解密与签名的加密标准。",
             "<br><br>",
-            "This function uses the Keybase implementation of PGP.",
+            "该功能使用 Keybase 的 PGP 实现。",
         ].join("\n");
         this.infoURL = "https://wikipedia.org/wiki/Pretty_Good_Privacy";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Public key of recipient",
+                "name": "收件人公钥",
                 "type": "text",
                 "value": ""
             }

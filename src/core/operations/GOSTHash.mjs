@@ -22,13 +22,13 @@ class GOSTHash extends Operation {
 
         this.name = "GOST Hash";
         this.module = "Hashing";
-        this.description = "The GOST hash function, defined in the standards GOST R 34.11-94 and GOST 34.311-95 is a 256-bit cryptographic hash function. It was initially defined in the Russian national standard GOST R 34.11-94 <i>Information Technology – Cryptographic Information Security – Hash Function</i>. The equivalent standard used by other member-states of the CIS is GOST 34.311-95.<br><br>This function must not be confused with a different Streebog hash function, which is defined in the new revision of the standard GOST R 34.11-2012.<br><br>The GOST hash function is based on the GOST block cipher.";
+        this.description = "GOST 哈希函数定义于标准 GOST R 34.11-94 与 GOST 34.311-95，是一种 256 位的密码学哈希函数。最初在俄罗斯国家标准 GOST R 34.11-94（信息技术—密码信息安全—哈希函数）中定义，独联体其它成员国采用等效标准 GOST 34.311-95。<br><br>注意不要与新修订标准 GOST R 34.11-2012 中定义的 Streebog 哈希函数混淆。<br><br>GOST 哈希函数基于 GOST 分组密码。";
         this.infoURL = "https://wikipedia.org/wiki/GOST_(hash_function)";
         this.inputType = "ArrayBuffer";
         this.outputType = "string";
         this.args = [
             {
-                name: "Algorithm",
+                name: "算法",
                 type: "argSelector",
                 value: [
                     {
@@ -44,7 +44,7 @@ class GOSTHash extends Operation {
                 ]
             },
             {
-                name: "Digest length",
+                name: "摘要长度",
                 type: "option",
                 value: ["256", "512"]
             },

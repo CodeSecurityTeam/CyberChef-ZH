@@ -20,7 +20,7 @@ class FromHTMLEntity extends Operation {
 
         this.name = "From HTML Entity";
         this.module = "Encodings";
-        this.description = "Converts HTML entities back to characters<br><br>e.g. <code>&amp;<span>amp;</span></code> becomes <code>&amp;</code>";
+        this.description = "将 HTML 实体转换回字符。<br><br>例如：<code>&amp;<span>amp;</span></code> 变为 <code>&amp;</code>";
         this.infoURL = "https://wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references";
         this.inputType = "string";
         this.outputType = "string";

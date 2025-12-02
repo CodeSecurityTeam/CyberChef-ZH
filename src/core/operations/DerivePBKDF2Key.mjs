@@ -21,34 +21,34 @@ class DerivePBKDF2Key extends Operation {
 
         this.name = "Derive PBKDF2 key";
         this.module = "Ciphers";
-        this.description = "PBKDF2 is a password-based key derivation function. It is part of RSA Laboratories' Public-Key Cryptography Standards (PKCS) series, specifically PKCS #5 v2.0, also published as Internet Engineering Task Force's RFC 2898.<br><br>In many applications of cryptography, user security is ultimately dependent on a password, and because a password usually can't be used directly as a cryptographic key, some processing is required.<br><br>A salt provides a large set of keys for any given password, and an iteration count increases the cost of producing keys from a password, thereby also increasing the difficulty of attack.<br><br>If you leave the salt argument empty, a random salt will be generated.";
+        this.description = "PBKDF2 是一种基于口令的密钥派生函数。它属于 RSA 实验室的 PKCS 标准系列，具体为 PKCS #5 v2.0，同时也作为 IETF 的 RFC 2898 发布。<br><br>在很多密码学应用中，用户安全最终取决于口令；由于口令通常不能直接用作密钥，因此需要进行处理。<br><br>盐值为任意口令提供更大的密钥空间；迭代次数提高从口令派生密钥的成本，从而增加攻击难度。<br><br>如果盐值参数为空，将自动生成随机盐。";
         this.infoURL = "https://wikipedia.org/wiki/PBKDF2";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Passphrase",
+                "name": "口令",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["UTF8", "Latin1", "Hex", "Base64"]
             },
             {
-                "name": "Key size",
+                "name": "密钥长度",
                 "type": "number",
                 "value": 128
             },
             {
-                "name": "Iterations",
+                "name": "迭代次数",
                 "type": "number",
                 "value": 1
             },
             {
-                "name": "Hashing function",
+                "name": "哈希函数",
                 "type": "option",
                 "value": ["SHA1", "SHA256", "SHA384", "SHA512", "MD5"]
             },
             {
-                "name": "Salt",
+                "name": "盐值",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["Hex", "UTF8", "Latin1", "Base64"]

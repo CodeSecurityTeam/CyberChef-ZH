@@ -20,13 +20,13 @@ class SHA0 extends Operation {
 
         this.name = "SHA0";
         this.module = "Crypto";
-        this.description = "SHA-0 is a retronym applied to the original version of the 160-bit hash function published in 1993 under the name 'SHA'. It was withdrawn shortly after publication due to an undisclosed 'significant flaw' and replaced by the slightly revised version SHA-1. The message digest algorithm consists, by default, of 80 rounds.";
+        this.description = "SHA-0 是 1993 年以 ‘SHA’ 名称发布的 160 位哈希函数的原始版本的回溯命名。由于未公开的“重大缺陷”，它在发布后不久被撤回，并由略作修订的 SHA-1 取代。该消息摘要算法默认包含 80 轮运算。";
         this.infoURL = "https://wikipedia.org/wiki/SHA-1#SHA-0";
         this.inputType = "ArrayBuffer";
         this.outputType = "string";
         this.args = [
             {
-                name: "Rounds",
+                name: "轮数",
                 type: "number",
                 value: 80,
                 min: 16

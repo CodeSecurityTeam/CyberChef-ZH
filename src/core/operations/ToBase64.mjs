@@ -20,13 +20,13 @@ class ToBase64 extends Operation {
 
         this.name = "To Base64";
         this.module = "Default";
-        this.description = "Base64 is a notation for encoding arbitrary byte data using a restricted set of symbols that can be conveniently used by humans and processed by computers.<br><br>This operation encodes raw data into an ASCII Base64 string.<br><br>e.g. <code>hello</code> becomes <code>aGVsbG8=</code>";
+        this.description = "Base64 是一种使用受限符号集来编码任意字节数据的表示法，便于人类使用并可由计算机处理。<br><br>该操作将原始数据编码为 ASCII Base64 字符串。<br><br>例如：<code>hello</code> 变为 <code>aGVsbG8=</code>";
         this.infoURL = "https://wikipedia.org/wiki/Base64";
         this.inputType = "ArrayBuffer";
         this.outputType = "string";
         this.args = [
             {
-                name: "Alphabet",
+                name: "字母表",
                 type: "editableOption",
                 value: ALPHABET_OPTIONS
             }

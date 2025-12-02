@@ -23,13 +23,13 @@ class CompareSSDEEPHashes extends Operation {
 
         this.name = "Compare SSDEEP hashes";
         this.module = "Crypto";
-        this.description = "Compares two SSDEEP fuzzy hashes to determine the similarity between them on a scale of 0 to 100.";
+        this.description = "比较两个 SSDEEP 模糊哈希，得到 0 到 100 的相似度分值。";
         this.infoURL = "https://forensics.wiki/ssdeep/";
         this.inputType = "string";
         this.outputType = "Number";
         this.args = [
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "option",
                 "value": HASH_DELIM_OPTIONS
             }

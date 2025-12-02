@@ -23,13 +23,13 @@ class CompareCTPHHashes extends Operation {
 
         this.name = "Compare CTPH hashes";
         this.module = "Crypto";
-        this.description = "Compares two Context Triggered Piecewise Hashing (CTPH) fuzzy hashes to determine the similarity between them on a scale of 0 to 100.";
+        this.description = "比较两个上下文触发分块哈希（CTPH）模糊哈希，得到 0 到 100 的相似度分值。";
         this.infoURL = "https://forensics.wiki/context_triggered_piecewise_hashing/";
         this.inputType = "string";
         this.outputType = "Number";
         this.args = [
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "option",
                 "value": HASH_DELIM_OPTIONS
             }

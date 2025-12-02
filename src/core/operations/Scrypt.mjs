@@ -23,34 +23,34 @@ class Scrypt extends Operation {
 
         this.name = "Scrypt";
         this.module = "Crypto";
-        this.description = "scrypt is a password-based key derivation function (PBKDF) created by Colin Percival. The algorithm was specifically designed to make it costly to perform large-scale custom hardware attacks by requiring large amounts of memory. In 2016, the scrypt algorithm was published by IETF as RFC 7914.<br><br>Enter the password in the input to generate its hash.";
+        this.description = "scrypt 是一种基于密码的密钥派生函数（PBKDF），由 Colin Percival 创建。该算法通过需要大量内存来提高成本，从而针对大规模的定制硬件攻击具有抵抗性。2016 年，scrypt 算法由 IETF 发布为 RFC 7914。<br><br>在输入中填入密码即可生成其哈希。";
         this.infoURL = "https://wikipedia.org/wiki/Scrypt";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Salt",
+                "name": "盐值",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["Hex", "Base64", "UTF8", "Latin1"]
             },
             {
-                "name": "Iterations (N)",
+                "name": "迭代次数 (N)",
                 "type": "number",
                 "value": 16384
             },
             {
-                "name": "Memory factor (r)",
+                "name": "内存因子 (r)",
                 "type": "number",
                 "value": 8
             },
             {
-                "name": "Parallelization factor (p)",
+                "name": "并行因子 (p)",
                 "type": "number",
                 "value": 1
             },
             {
-                "name": "Key length",
+                "name": "密钥长度",
                 "type": "number",
                 "value": 64
             }

@@ -19,7 +19,7 @@ class GenericCodeBeautify extends Operation {
 
         this.name = "Generic Code Beautify";
         this.module = "Code";
-        this.description = "Attempts to pretty print C-style languages such as C, C++, C#, Java, PHP, JavaScript etc.<br><br>This will not do a perfect job, and the resulting code may not work any more. This operation is designed purely to make obfuscated or minified code more easy to read and understand.<br><br>Things which will not work properly:<ul><li>For loop formatting</li><li>Do-While loop formatting</li><li>Switch/Case indentation</li><li>Certain bit shift operators</li></ul>";
+        this.description = "尝试美化 C 风格语言的代码，如 C、C++、C#、Java、PHP、JavaScript 等。<br><br>这并不能做到完美，结果代码可能无法正常工作。本操作仅用于让混淆或压缩的代码更易读、更易理解。<br><br>以下内容可能无法正确处理：<ul><li>for 循环格式化</li><li>do-while 循环格式化</li><li>switch/case 缩进</li><li>某些位移运算符</li></ul>";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [];

@@ -22,11 +22,11 @@ class ExtractEXIF extends Operation {
         this.name = "Extract EXIF";
         this.module = "Image";
         this.description = [
-            "Extracts EXIF data from an image.",
+            "从图像中提取 EXIF 数据。",
             "<br><br>",
-            "EXIF data is metadata embedded in images (JPEG, JPG, TIFF) and audio files.",
+            "EXIF 是嵌入在图像（JPEG、JPG、TIFF）与音频文件中的元数据。",
             "<br><br>",
-            "EXIF data from photos usually contains information about the image file itself as well as the device used to create it.",
+            "照片的 EXIF 通常包含图像文件本身的信息以及用于拍摄的设备信息。",
         ].join("\n");
         this.infoURL = "https://wikipedia.org/wiki/Exif";
         this.inputType = "ArrayBuffer";

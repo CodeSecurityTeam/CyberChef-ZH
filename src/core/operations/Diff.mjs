@@ -22,38 +22,38 @@ class Diff extends Operation {
 
         this.name = "Diff";
         this.module = "Diff";
-        this.description = "Compares two inputs (separated by the specified delimiter) and highlights the differences between them.";
+        this.description = "比较两个输入（由指定分隔符分隔），并高亮显示它们之间的差异。";
         this.infoURL = "https://wikipedia.org/wiki/File_comparison";
         this.inputType = "string";
         this.outputType = "html";
         this.args = [
             {
-                "name": "Sample delimiter",
+                "name": "样本分隔符",
                 "type": "binaryString",
                 "value": "\\n\\n"
             },
             {
-                "name": "Diff by",
+                "name": "比较维度",
                 "type": "option",
                 "value": ["Character", "Word", "Line", "Sentence", "CSS", "JSON"]
             },
             {
-                "name": "Show added",
+                "name": "显示新增",
                 "type": "boolean",
                 "value": true
             },
             {
-                "name": "Show removed",
+                "name": "显示删除",
                 "type": "boolean",
                 "value": true
             },
             {
-                "name": "Show subtraction",
+                "name": "显示减法",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Ignore whitespace",
+                "name": "忽略空白",
                 "type": "boolean",
                 "value": false,
                 "hint": "Relevant for word and line"

@@ -20,18 +20,18 @@ class SetDifference extends Operation {
 
         this.name = "Set Difference";
         this.module = "Default";
-        this.description = "Calculates the difference, or relative complement, of two sets.";
+        this.description = "计算两个集合的差（相对补集）。";
         this.infoURL = "https://wikipedia.org/wiki/Complement_(set_theory)#Relative_complement";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "Sample delimiter",
+                name: "样本分隔符",
                 type: "binaryString",
                 value: "\\n\\n"
             },
             {
-                name: "Item delimiter",
+                name: "项分隔符",
                 type: "binaryString",
                 value: ","
             },

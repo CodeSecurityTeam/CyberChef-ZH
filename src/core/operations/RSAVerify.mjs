@@ -23,28 +23,28 @@ class RSAVerify extends Operation {
 
         this.name = "RSA Verify";
         this.module = "Ciphers";
-        this.description = "Verify a message against a signature and a public PEM encoded RSA key.";
+        this.description = "使用 PEM 编码的 RSA 公钥，将消息与签名进行校验。";
         this.infoURL = "https://wikipedia.org/wiki/RSA_(cryptosystem)";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "RSA Public Key (PEM)",
+                name: "RSA 公钥（PEM）",
                 type: "text",
                 value: "-----BEGIN RSA PUBLIC KEY-----"
             },
             {
-                name: "Message",
+                name: "消息",
                 type: "text",
                 value: ""
             },
             {
-                name: "Message format",
+                name: "消息格式",
                 type: "option",
                 value: ["Raw", "Hex", "Base64"]
             },
             {
-                name: "Message Digest Algorithm",
+                name: "消息摘要算法",
                 type: "option",
                 value: Object.keys(MD_ALGORITHMS)
             }

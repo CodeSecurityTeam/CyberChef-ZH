@@ -21,13 +21,13 @@ class LuhnChecksum extends Operation {
 
         this.name = "Luhn Checksum";
         this.module = "Default";
-        this.description = "The Luhn mod N algorithm using the english alphabet. The Luhn mod N algorithm is an extension to the Luhn algorithm (also known as mod 10 algorithm) that allows it to work with sequences of values in any even-numbered base. This can be useful when a check digit is required to validate an identification string composed of letters, a combination of letters and digits or any arbitrary set of N characters where N is divisible by 2.";
+        this.description = "使用英文字母的 Luhn mod N 算法。Luhn mod N 是 Luhn 算法（亦称 mod 10 算法）的扩展，使其可在任意偶数进制下处理值序列。适用于验证仅由字母、字母与数字组合或任意 N 个字符（N 可被 2 整除）构成的标识字符串的校验位。";
         this.infoURL = "https://en.wikipedia.org/wiki/Luhn_mod_N_algorithm";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Radix",
+                "name": "基数",
                 "type": "number",
                 "value": 10
             }

@@ -23,7 +23,7 @@ class NormaliseImage extends Operation {
 
         this.name = "Normalise Image";
         this.module = "Image";
-        this.description = "Normalise the image colours.";
+        this.description = "归一化图像颜色。";
         this.infoURL = "";
         this.inputType = "ArrayBuffer";
         this.outputType = "ArrayBuffer";

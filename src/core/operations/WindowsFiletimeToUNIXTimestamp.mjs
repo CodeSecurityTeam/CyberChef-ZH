@@ -21,18 +21,18 @@ class WindowsFiletimeToUNIXTimestamp extends Operation {
 
         this.name = "Windows Filetime to UNIX Timestamp";
         this.module = "Default";
-        this.description = "Converts a Windows Filetime value to a UNIX timestamp.<br><br>A Windows Filetime is a 64-bit value representing the number of 100-nanosecond intervals since January 1, 1601 UTC.<br><br>A UNIX timestamp is a 32-bit value representing the number of seconds since January 1, 1970 UTC (the UNIX epoch).<br><br>This operation also supports UNIX timestamps in milliseconds, microseconds and nanoseconds.";
+        this.description = "将 Windows 文件时间（Filetime）值转换为 UNIX 时间戳。<br><br>Windows 文件时间是一个 64 位值，表示自 1601 年 1 月 1 日 UTC 起经过的 100 纳秒间隔数。<br><br>UNIX 时间戳是一个 32 位值，表示自 1970 年 1 月 1 日 UTC（UNIX 纪元）起经过的秒数。<br><br>该操作亦支持以毫秒、微秒和纳秒为单位的 UNIX 时间戳。";
         this.infoURL = "https://msdn.microsoft.com/en-us/library/windows/desktop/ms724284(v=vs.85).aspx";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Output units",
+                "name": "输出单位",
                 "type": "option",
                 "value": ["Seconds (s)", "Milliseconds (ms)", "Microseconds (μs)", "Nanoseconds (ns)"]
             },
             {
-                "name": "Input format",
+                "name": "输入格式",
                 "type": "option",
                 "value": ["Decimal", "Hex (big endian)", "Hex (little endian)"]
             }

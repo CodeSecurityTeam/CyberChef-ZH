@@ -21,7 +21,7 @@ class StripIPv4Header extends Operation {
 
         this.name = "Strip IPv4 header";
         this.module = "Default";
-        this.description = "Strips the IPv4 header from an IPv4 packet, outputting the payload.";
+        this.description = "从 IPv4 包中去除 IPv4 头部，输出有效负载。";
         this.infoURL = "https://wikipedia.org/wiki/IPv4";
         this.inputType = "ArrayBuffer";
         this.outputType = "ArrayBuffer";

@@ -22,13 +22,13 @@ class FromBase62 extends Operation {
 
         this.name = "From Base62";
         this.module = "Default";
-        this.description = "Base62 is a notation for encoding arbitrary byte data using a restricted set of symbols that can be conveniently used by humans and processed by computers. The high number base results in shorter strings than with the decimal or hexadecimal system.";
+        this.description = "Base62 是一种使用受限字符集对任意字节数据进行编码的表示法，便于人类使用并能被计算机处理。较高的进制可使字符串比十进制或十六进制更短。";
         this.infoURL = "https://wikipedia.org/wiki/List_of_numeral_systems";
         this.inputType = "string";
         this.outputType = "byteArray";
         this.args = [
             {
-                name: "Alphabet",
+                name: "字母表",
                 type: "string",
                 value: "0-9A-Za-z"
             }

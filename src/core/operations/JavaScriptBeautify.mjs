@@ -22,27 +22,27 @@ class JavaScriptBeautify extends Operation {
 
         this.name = "JavaScript Beautify";
         this.module = "Code";
-        this.description = "Parses and pretty prints valid JavaScript code. Also works with JavaScript Object Notation (JSON).";
+        this.description = "解析并美化有效的 JavaScript 代码，也适用于 JavaScript 对象表示（JSON）。";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Indent string",
+                "name": "缩进字符串",
                 "type": "binaryShortString",
                 "value": "\\t"
             },
             {
-                "name": "Quotes",
+                "name": "引号",
                 "type": "option",
                 "value": ["Auto", "Single", "Double"]
             },
             {
-                "name": "Semicolons before closing braces",
+                "name": "在右花括号前添加分号",
                 "type": "boolean",
                 "value": true
             },
             {
-                "name": "Include comments",
+                "name": "包含注释",
                 "type": "boolean",
                 "value": true
             }

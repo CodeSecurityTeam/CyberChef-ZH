@@ -26,14 +26,14 @@ class ParseTCP extends Operation {
 
         this.name = "Parse TCP";
         this.module = "Default";
-        this.description = "Parses a TCP header and payload (if present).";
+        this.description = "解析 TCP 头部及（若存在）负载。";
         this.infoURL = "https://wikipedia.org/wiki/Transmission_Control_Protocol";
         this.inputType = "string";
         this.outputType = "json";
         this.presentType = "html";
         this.args = [
             {
-                name: "Input format",
+                name: "输入格式",
                 type: "option",
                 value: ["Hex", "Raw"]
             }

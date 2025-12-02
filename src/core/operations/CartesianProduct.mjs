@@ -20,18 +20,18 @@ class CartesianProduct extends Operation {
 
         this.name = "Cartesian Product";
         this.module = "Default";
-        this.description = "Calculates the cartesian product of multiple sets of data, returning all possible combinations.";
+        this.description = "计算多个数据集合的笛卡尔积，返回所有可能的组合。";
         this.infoURL = "https://wikipedia.org/wiki/Cartesian_product";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "Sample delimiter",
+                name: "样本分隔符",
                 type: "binaryString",
                 value: "\\n\\n"
             },
             {
-                name: "Item delimiter",
+                name: "项分隔符",
                 type: "binaryString",
                 value: ","
             },

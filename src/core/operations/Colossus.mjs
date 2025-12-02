@@ -26,43 +26,43 @@ class Colossus extends Operation {
         super();
         this.name = "Colossus";
         this.module = "Bletchley";
-        this.description = "Colossus is the name of the world's first electronic computer. Ten Colossi were designed by Tommy Flowers and built at the Post Office Research Labs at Dollis Hill in 1943 during World War 2. They assisted with the breaking of the German Lorenz cipher attachment, a machine created to encipher communications between Hitler and his generals on the front lines.<br><br>To learn more, Virtual Colossus, an online, browser based simulation of a Colossus computer is available at <a href='https://virtualcolossus.co.uk' target='_blank'>virtualcolossus.co.uk</a>.<br><br>A more detailed description of this operation can be found <a href='https://github.com/gchq/CyberChef/wiki/Colossus' target='_blank'>here</a>.";
+        this.description = "Colossus 是世界上第一台电子计算机的名称。十台 Colossus 由 Tommy Flowers 设计，并于 1943 年在二战期间于邮政总局 Dollis Hill 研究实验室建造。它们用于破译德军洛伦兹加密机（Lorenz）所加密的前线通信。<br><br>更多信息可通过在线浏览器模拟器 Virtual Colossus 获取：<a href='https://virtualcolossus.co.uk' target='_blank'>virtualcolossus.co.uk</a>。<br><br>本操作的详细说明见 <a href='https://github.com/gchq/CyberChef/wiki/Colossus' target='_blank'>此处</a>。";
         this.infoURL = "https://wikipedia.org/wiki/Colossus_computer";
         this.inputType = "string";
         this.outputType = "JSON";
         this.presentType = "html";
         this.args = [
             {
-                name: "Input",
+                name: "输入",
                 type: "label"
             },
             {
-                name: "Pattern",
+                name: "模式",
                 type: "option",
                 value: ["KH Pattern", "ZMUG Pattern", "BREAM Pattern"]
             },
             {
-                name: "QBusZ",
+                name: "Q总线Z",
                 type: "option",
                 value: ["", "Z", "ΔZ"]
             },
             {
-                name: "QBusΧ",
+                name: "Q总线Χ",
                 type: "option",
                 value: ["", "Χ", "ΔΧ"]
             },
             {
-                name: "QBusΨ",
+                name: "Q总线Ψ",
                 type: "option",
                 value: ["", "Ψ", "ΔΨ"]
             },
             {
-                name: "Limitation",
+                name: "限制",
                 type: "option",
                 value: ["None", "Χ2", "Χ2 + P5", "X2 + Ψ1", "X2 + Ψ1 + P5"]
             },
             {
-                name: "K Rack Option",
+                name: "K机架选项",
                 type: "argSelector",
                 value: [
                     {
@@ -88,12 +88,12 @@ class Colossus extends Operation {
                 ]
             },
             {
-                name: "Program to run",
+                name: "运行的程序",
                 type: "option",
                 value: ["", "Letter Count", "1+2=. (1+2 Break In, Find X1,X2)", "4=5=/1=2 (Given X1,X2 find X4,X5)", "/,5,U (Count chars to find X3)"]
             },
             {
-                name: "K Rack: Conditional",
+                name: "K机架：条件",
                 type: "label"
             },
             {
@@ -127,12 +127,12 @@ class Colossus extends Operation {
                 defaultIndex: 1
             },
             {
-                name: "R1-Negate",
+                name: "R1-取反",
                 type: "boolean",
                 value: false
             },
             {
-                name: "R1-Counter",
+                name: "R1-计数器",
                 type: "option",
                 value: ["", "1", "2", "3", "4", "5"]
             },
@@ -167,12 +167,12 @@ class Colossus extends Operation {
                 defaultIndex: 1
             },
             {
-                name: "R2-Negate",
+                name: "R2-取反",
                 type: "boolean",
                 value: false
             },
             {
-                name: "R2-Counter",
+                name: "R2-计数器",
                 type: "option",
                 value: ["", "1", "2", "3", "4", "5"]
             },
@@ -207,147 +207,147 @@ class Colossus extends Operation {
                 defaultIndex: 1
             },
             {
-                name: "R3-Negate",
+                name: "R3-取反",
                 type: "boolean",
                 value: false
             },
             {
-                name: "R3-Counter",
+                name: "R3-计数器",
                 type: "option",
                 value: ["", "1", "2", "3", "4", "5"]
             },
             {
-                name: "Negate All",
+                name: "全部取反",
                 type: "boolean",
                 value: false
             },
             {
-                name: "K Rack: Addition",
+                name: "K机架：加法",
                 type: "label"
             },
             {
-                name: "Add-Q1",
+                name: "加法-Q1",
                 type: "boolean",
                 value: false
             },
             {
-                name: "Add-Q2",
+                name: "加法-Q2",
                 type: "boolean",
                 value: false
             },
             {
-                name: "Add-Q3",
+                name: "加法-Q3",
                 type: "boolean",
                 value: false
             },
             {
-                name: "Add-Q4",
+                name: "加法-Q4",
                 type: "boolean",
                 value: false
             },
             {
-                name: "Add-Q5",
+                name: "加法-Q5",
                 type: "boolean",
                 value: false
             },
             {
-                name: "Add-Equals",
+                name: "加法-等于",
                 type: "editableOptionShort",
                 value: SWITCHES,
                 defaultIndex: 1
             },
             {
-                name: "Add-Counter1",
+                name: "加法-计数器1",
                 type: "boolean",
                 value: false
             },
             {
-                name: "Add Negate All",
+                name: "加法-全部取反",
                 type: "boolean",
                 value: false
             },
             {
-                name: "Total Motor",
+                name: "总电机",
                 type: "editableOptionShort",
                 value: SWITCHES,
                 defaultIndex: 1
             },
             {
-                name: "Master Control Panel",
+                name: "主控制面板",
                 type: "label"
             },
             {
-                name: "Set Total",
+                name: "设定总数",
                 type: "number",
                 value: 0
             },
             {
-                name: "Fast Step",
+                name: "快速步进",
                 type: "option",
                 value: ["", "X1", "X2", "X3", "X4", "X5", "M37", "M61", "S1", "S2", "S3", "S4", "S5"]
             },
             {
-                name: "Slow Step",
+                name: "慢速步进",
                 type: "option",
                 value: ["", "X1", "X2", "X3", "X4", "X5", "M37", "M61", "S1", "S2", "S3", "S4", "S5"]
             },
             {
-                name: "Start Χ1",
+                name: "起始 Χ1",
                 type: "number",
                 value: 1
             },
             {
-                name: "Start Χ2",
+                name: "起始 Χ2",
                 type: "number",
                 value: 1
             },
             {
-                name: "Start Χ3",
+                name: "起始 Χ3",
                 type: "number",
                 value: 1
             },
             {
-                name: "Start Χ4",
+                name: "起始 Χ4",
                 type: "number",
                 value: 1
             },
             {
-                name: "Start Χ5",
+                name: "起始 Χ5",
                 type: "number",
                 value: 1
             },
             {
-                name: "Start M61",
+                name: "起始 M61",
                 type: "number",
                 value: 1
             },
             {
-                name: "Start M37",
+                name: "起始 M37",
                 type: "number",
                 value: 1
             },
             {
-                name: "Start Ψ1",
+                name: "起始 Ψ1",
                 type: "number",
                 value: 1
             },
             {
-                name: "Start Ψ2",
+                name: "起始 Ψ2",
                 type: "number",
                 value: 1
             },
             {
-                name: "Start Ψ3",
+                name: "起始 Ψ3",
                 type: "number",
                 value: 1
             },
             {
-                name: "Start Ψ4",
+                name: "起始 Ψ4",
                 type: "number",
                 value: 1
             },
             {
-                name: "Start Ψ5",
+                name: "起始 Ψ5",
                 type: "number",
                 value: 1
             }

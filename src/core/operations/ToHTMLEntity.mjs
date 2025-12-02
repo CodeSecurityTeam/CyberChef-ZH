@@ -20,18 +20,18 @@ class ToHTMLEntity extends Operation {
 
         this.name = "To HTML Entity";
         this.module = "Encodings";
-        this.description = "Converts characters to HTML entities<br><br>e.g. <code>&amp;</code> becomes <code>&amp;<span>amp;</span></code>";
+        this.description = "将字符转换为 HTML 实体<br><br>例如：<code>&amp;</code> 变为 <code>&amp;<span>amp;</span></code>";
         this.infoURL = "https://wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Convert all characters",
+                "name": "转换全部字符",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Convert to",
+                "name": "转换为",
                 "type": "option",
                 "value": ["Named entities", "Numeric entities", "Hex entities"]
             }

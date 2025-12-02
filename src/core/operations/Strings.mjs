@@ -22,23 +22,23 @@ class Strings extends Operation {
 
         this.name = "Strings";
         this.module = "Regex";
-        this.description = "Extracts all strings from the input.";
+        this.description = "从输入中提取所有字符串。";
         this.infoURL = "https://wikipedia.org/wiki/Strings_(Unix)";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "Encoding",
+                name: "编码",
                 type: "option",
                 value: ["Single byte", "16-bit littleendian", "16-bit bigendian", "All"]
             },
             {
-                name: "Minimum length",
+                name: "最小长度",
                 type: "number",
                 value: 4
             },
             {
-                name: "Match",
+                name: "匹配",
                 type: "option",
                 value: [
                     "[ASCII]", "Alphanumeric + punctuation (A)", "All printable chars (A)", "Null-terminated strings (A)",
@@ -46,17 +46,17 @@ class Strings extends Operation {
                 ]
             },
             {
-                name: "Display total",
+                name: "显示总数",
                 type: "boolean",
                 value: false
             },
             {
-                name: "Sort",
+                name: "排序",
                 type: "boolean",
                 value: false
             },
             {
-                name: "Unique",
+                name: "去重",
                 type: "boolean",
                 value: false
             }

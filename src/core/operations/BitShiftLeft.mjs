@@ -19,13 +19,13 @@ class BitShiftLeft extends Operation {
 
         this.name = "Bit shift left";
         this.module = "Default";
-        this.description = "Shifts the bits in each byte towards the left by the specified amount.";
+        this.description = "将每个字节中的位向左移动指定的位数";
         this.infoURL = "https://wikipedia.org/wiki/Bitwise_operation#Bit_shifts";
         this.inputType = "ArrayBuffer";
         this.outputType = "ArrayBuffer";
         this.args = [
             {
-                "name": "Amount",
+                "name": "数量",
                 "type": "number",
                 "value": 1
             }

@@ -20,18 +20,18 @@ class AffineCipherEncode extends Operation {
 
         this.name = "Affine Cipher Encode";
         this.module = "Ciphers";
-        this.description = "The Affine cipher is a type of monoalphabetic substitution cipher, wherein each letter in an alphabet is mapped to its numeric equivalent, encrypted using simple mathematical function, <code>(ax + b) % 26</code>, and converted back to a letter.";
+        this.description = "仿射密码是一种单表替换密码，其中每个字母映射为其数字等价，使用数学函数 <code>(ax + b) % 26</code> 加密，再转换回字母。";
         this.infoURL = "https://wikipedia.org/wiki/Affine_cipher";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "a",
+                "name": "a 值",
                 "type": "number",
                 "value": 1
             },
             {
-                "name": "b",
+                "name": "b 值",
                 "type": "number",
                 "value": 0
             }

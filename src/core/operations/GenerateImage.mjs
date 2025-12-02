@@ -25,24 +25,24 @@ class GenerateImage extends Operation {
 
         this.name = "Generate Image";
         this.module = "Image";
-        this.description = "Generates an image using the input as pixel values.";
+        this.description = "将输入数据作为像素值生成图像。";
         this.infoURL = "";
         this.inputType = "ArrayBuffer";
         this.outputType = "ArrayBuffer";
         this.presentType = "html";
         this.args = [
             {
-                "name": "Mode",
+                "name": "模式",
                 "type": "option",
                 "value": ["Greyscale", "RG", "RGB", "RGBA", "Bits"]
             },
             {
-                "name": "Pixel Scale Factor",
+                "name": "像素缩放因子",
                 "type": "number",
                 "value": 8,
             },
             {
-                "name": "Pixels per row",
+                "name": "每行像素数",
                 "type": "number",
                 "value": 64,
             }

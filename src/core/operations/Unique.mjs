@@ -21,17 +21,17 @@ class Unique extends Operation {
 
         this.name = "Unique";
         this.module = "Default";
-        this.description = "Removes duplicate strings from the input.";
+        this.description = "移除输入中的重复字符串。";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "Delimiter",
+                name: "分隔符",
                 type: "option",
                 value: INPUT_DELIM_OPTIONS
             },
             {
-                name: "Display count",
+                name: "显示计数",
                 type: "boolean",
                 value: false
             }

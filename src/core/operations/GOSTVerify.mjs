@@ -23,19 +23,19 @@ class GOSTVerify extends Operation {
 
         this.name = "GOST Verify";
         this.module = "Ciphers";
-        this.description = "Verify the signature of a plaintext message using one of the GOST block ciphers. Enter the signature in the MAC field.";
+        this.description = "使用 GOST 分组密码验证明文消息的签名。请在 MAC 字段输入签名。";
         this.infoURL = "https://wikipedia.org/wiki/GOST_(block_cipher)";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "Key",
+                name: "密钥",
                 type: "toggleString",
                 value: "",
                 toggleValues: ["Hex", "UTF8", "Latin1", "Base64"]
             },
             {
-                name: "IV",
+                name: "初始向量",
                 type: "toggleString",
                 value: "",
                 toggleValues: ["Hex", "UTF8", "Latin1", "Base64"]
@@ -47,12 +47,12 @@ class GOSTVerify extends Operation {
                 toggleValues: ["Hex", "UTF8", "Latin1", "Base64"]
             },
             {
-                name: "Input type",
+                name: "输入类型",
                 type: "option",
                 value: ["Raw", "Hex"]
             },
             {
-                name: "Algorithm",
+                name: "算法",
                 type: "argSelector",
                 value: [
                     {

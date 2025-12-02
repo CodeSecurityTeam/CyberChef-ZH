@@ -22,13 +22,13 @@ class GetTime extends Operation {
 
         this.name = "Get Time";
         this.module = "Default";
-        this.description = "Generates a timestamp showing the amount of time since the UNIX epoch (1970-01-01 00:00:00 UTC). Uses the W3C High Resolution Time API.";
+        this.description = "生成自 UNIX 纪元（1970-01-01 00:00:00 UTC）以来的时间戳。使用 W3C 高精度时间 API。";
         this.infoURL = "https://wikipedia.org/wiki/Unix_time";
         this.inputType = "string";
         this.outputType = "number";
         this.args = [
             {
-                name: "Granularity",
+                name: "粒度",
                 type: "option",
                 value: UNITS
             }

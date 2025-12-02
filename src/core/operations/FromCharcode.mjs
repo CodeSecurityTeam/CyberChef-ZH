@@ -23,18 +23,18 @@ class FromCharcode extends Operation {
 
         this.name = "From Charcode";
         this.module = "Default";
-        this.description = "Converts unicode character codes back into text.<br><br>e.g. <code>0393 03b5 03b9 03ac 20 03c3 03bf 03c5</code> becomes <code>Γειά σου</code>";
+        this.description = "将 Unicode 字符码转换回文本。<br><br>例如：<code>0393 03b5 03b9 03ac 20 03c3 03bf 03c5</code> 变为 <code>Γειά σου</code>";
         this.infoURL = "https://wikipedia.org/wiki/Plane_(Unicode)";
         this.inputType = "string";
         this.outputType = "ArrayBuffer";
         this.args = [
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "option",
                 "value": DELIM_OPTIONS
             },
             {
-                "name": "Base",
+                "name": "进制",
                 "type": "number",
                 "value": 16
             }

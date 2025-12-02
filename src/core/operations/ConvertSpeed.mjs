@@ -19,18 +19,18 @@ class ConvertSpeed extends Operation {
 
         this.name = "Convert speed";
         this.module = "Default";
-        this.description = "Converts a unit of speed to another format.";
+        this.description = "将速度单位转换为另一种格式。";
         this.infoURL = "https://wikipedia.org/wiki/Orders_of_magnitude_(speed)";
         this.inputType = "BigNumber";
         this.outputType = "BigNumber";
         this.args = [
             {
-                "name": "Input units",
+                "name": "输入单位",
                 "type": "option",
                 "value": SPEED_UNITS
             },
             {
-                "name": "Output units",
+                "name": "输出单位",
                 "type": "option",
                 "value": SPEED_UNITS
             }

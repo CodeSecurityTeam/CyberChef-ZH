@@ -21,18 +21,18 @@ class ToHexContent extends Operation {
 
         this.name = "To Hex Content";
         this.module = "Default";
-        this.description = "Converts special characters in a string to hexadecimal. This format is used by SNORT for representing hex within ASCII text.<br><br>e.g. <code>foo=bar</code> becomes <code>foo|3d|bar</code>.";
+        this.description = "将字符串中的特殊字符转换为十六进制。此格式由 SNORT 用于在 ASCII 文本中表示十六进制。<br><br>例如：<code>foo=bar</code> 变为 <code>foo|3d|bar</code>。";
         this.infoURL = "http://manual-snort-org.s3-website-us-east-1.amazonaws.com/node32.html#SECTION00451000000000000000";
         this.inputType = "ArrayBuffer";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Convert",
+                "name": "转换范围",
                 "type": "option",
                 "value": ["Only special chars", "Only special chars including spaces", "All chars"]
             },
             {
-                "name": "Print spaces between bytes",
+                "name": "字节间打印空格",
                 "type": "boolean",
                 "value": false
             }

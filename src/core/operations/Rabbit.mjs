@@ -22,35 +22,35 @@ class Rabbit extends Operation {
 
         this.name = "Rabbit";
         this.module = "Ciphers";
-        this.description = "Rabbit is a high-speed stream cipher introduced in 2003 and defined in RFC 4503.<br><br>The cipher uses a 128-bit key and an optional 64-bit initialization vector (IV).<br><br>big-endian: based on RFC4503 and RFC3447<br>little-endian: compatible with Crypto++";
+        this.description = "Rabbit 是一种高速流密码，于 2003 年提出并在 RFC 4503 中定义。<br><br>该密码使用 128 位密钥以及可选的 64 位初始向量（IV）。<br><br>大端：基于 RFC4503 与 RFC3447<br>小端：兼容 Crypto++";
         this.infoURL = "https://wikipedia.org/wiki/Rabbit_(cipher)";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Key",
+                "name": "密钥",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["Hex", "UTF8", "Latin1", "Base64"]
             },
             {
-                "name": "IV",
+                "name": "初始向量（IV）",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["Hex", "UTF8", "Latin1", "Base64"]
             },
             {
-                "name": "Endianness",
+                "name": "字节序",
                 "type": "option",
                 "value": ["Big", "Little"]
             },
             {
-                "name": "Input",
+                "name": "输入",
                 "type": "option",
                 "value": ["Raw", "Hex"]
             },
             {
-                "name": "Output",
+                "name": "输出",
                 "type": "option",
                 "value": ["Raw", "Hex"]
             }

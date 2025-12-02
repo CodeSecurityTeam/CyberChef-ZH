@@ -21,7 +21,7 @@ class StripUDPHeader extends Operation {
 
         this.name = "Strip UDP header";
         this.module = "Default";
-        this.description = "Strips the UDP header from a UDP datagram, outputting the payload.";
+        this.description = "从 UDP 数据报中去除 UDP 头部，输出有效负载。";
         this.infoURL = "https://wikipedia.org/wiki/User_Datagram_Protocol";
         this.inputType = "ArrayBuffer";
         this.outputType = "ArrayBuffer";

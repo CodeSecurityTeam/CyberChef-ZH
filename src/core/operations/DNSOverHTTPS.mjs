@@ -20,11 +20,11 @@ class DNSOverHTTPS extends Operation {
         this.name = "DNS over HTTPS";
         this.module = "Default";
         this.description = [
-            "Takes a single domain name and performs a DNS lookup using DNS over HTTPS.",
+            "对单个域名使用基于 HTTPS 的 DNS（DoH）进行查询。",
             "<br><br>",
-            "By default, <a href='https://developers.cloudflare.com/1.1.1.1/dns-over-https/'>Cloudflare</a> and <a href='https://developers.google.com/speed/public-dns/docs/dns-over-https'>Google</a> DNS over HTTPS services are supported.",
+            "默认支持 <a href='https://developers.cloudflare.com/1.1.1.1/dns-over-https/'>Cloudflare</a> 与 <a href='https://developers.google.com/speed/public-dns/docs/dns-over-https'>Google</a> 的 DoH 服务。",
             "<br><br>",
-            "Can be used with any service that supports the GET parameters <code>name</code> and <code>type</code>."
+            "可用于任何支持 GET 参数 <code>name</code> 与 <code>type</code> 的服务。"
         ].join("\n");
         this.infoURL = "https://wikipedia.org/wiki/DNS_over_HTTPS";
         this.inputType = "string";
@@ -32,7 +32,7 @@ class DNSOverHTTPS extends Operation {
         this.manualBake = true;
         this.args = [
             {
-                name: "Resolver",
+                name: "解析器",
                 type: "editableOption",
                 value: [
                     {
@@ -46,7 +46,7 @@ class DNSOverHTTPS extends Operation {
                 ]
             },
             {
-                name: "Request Type",
+                name: "请求类型",
                 type: "option",
                 value: [
                     "A",
@@ -75,12 +75,12 @@ class DNSOverHTTPS extends Operation {
                 ]
             },
             {
-                name: "Answer Data Only",
+                name: "仅返回数据",
                 type: "boolean",
                 value: false
             },
             {
-                name: "Disable DNSSEC validation",
+                name: "禁用 DNSSEC 验证",
                 type: "boolean",
                 value: false
             }

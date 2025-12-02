@@ -23,28 +23,28 @@ class FromBCD extends Operation {
 
         this.name = "From BCD";
         this.module = "Default";
-        this.description = "Binary-Coded Decimal (BCD) is a class of binary encodings of decimal numbers where each decimal digit is represented by a fixed number of bits, usually four or eight. Special bit patterns are sometimes used for a sign.";
+        this.description = "二-十进制编码（BCD）是一类对十进制数字进行二进制编码的方法，其中每个十进制数字由固定数量的位表示，通常为4或8位。某些位模式可用于表示符号。";
         this.infoURL = "https://wikipedia.org/wiki/Binary-coded_decimal";
         this.inputType = "string";
         this.outputType = "BigNumber";
         this.args = [
             {
-                "name": "Scheme",
+                "name": "编码方案",
                 "type": "option",
                 "value": ENCODING_SCHEME
             },
             {
-                "name": "Packed",
+                "name": "压缩（Packed）",
                 "type": "boolean",
                 "value": true
             },
             {
-                "name": "Signed",
+                "name": "有符号",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Input format",
+                "name": "输入格式",
                 "type": "option",
                 "value": FORMAT
             }

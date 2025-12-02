@@ -25,14 +25,14 @@ class Entropy extends Operation {
 
         this.name = "Entropy";
         this.module = "Charts";
-        this.description = "Shannon Entropy, in the context of information theory, is a measure of the rate at which information is produced by a source of data. It can be used, in a broad sense, to detect whether data is likely to be structured or unstructured. 8 is the maximum, representing highly unstructured, 'random' data. English language text usually falls somewhere between 3.5 and 5. Properly encrypted or compressed data should have an entropy of over 7.5.";
+        this.description = "在信息论中，香农熵用于衡量数据源产生信息的速率。它可用于粗略判断数据是否更可能是结构化或非结构化。最大值为 8，表示高度非结构化的“随机”数据。英文文本通常在 3.5 到 5 之间。正确加密或压缩的数据通常熵值应超过 7.5。";
         this.infoURL = "https://wikipedia.org/wiki/Entropy_(information_theory)";
         this.inputType = "ArrayBuffer";
         this.outputType = "json";
         this.presentType = "html";
         this.args = [
             {
-                "name": "Visualisation",
+                "name": "可视化",
                 "type": "option",
                 "value": ["Shannon scale", "Histogram (Bar)", "Histogram (Line)", "Curve", "Image"]
             }

@@ -21,13 +21,13 @@ class SUB extends Operation {
 
         this.name = "SUB";
         this.module = "Default";
-        this.description = "SUB the input with the given key (e.g. <code>fe023da5</code>), MOD 255";
+        this.description = "使用给定密钥对输入执行 SUB（逐字节相减），模 255（例如 <code>fe023da5</code>）";
         this.infoURL = "https://wikipedia.org/wiki/Bitwise_operation#Bitwise_operators";
         this.inputType = "byteArray";
         this.outputType = "byteArray";
         this.args = [
             {
-                "name": "Key",
+                "name": "密钥",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": BITWISE_OP_DELIMS

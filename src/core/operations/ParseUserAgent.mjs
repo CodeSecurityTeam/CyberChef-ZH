@@ -20,7 +20,7 @@ class ParseUserAgent extends Operation {
 
         this.name = "Parse User Agent";
         this.module = "UserAgent";
-        this.description = "Attempts to identify and categorise information contained in a user-agent string.";
+        this.description = "尝试识别并分类 User-Agent 字符串中包含的信息。";
         this.infoURL = "https://wikipedia.org/wiki/User_agent";
         this.inputType = "string";
         this.outputType = "string";

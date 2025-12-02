@@ -21,13 +21,13 @@ class XORChecksum extends Operation {
 
         this.name = "XOR Checksum";
         this.module = "Crypto";
-        this.description = "XOR Checksum splits the input into blocks of a configurable size and performs the XOR operation on these blocks.";
+        this.description = "异或校验和将输入按可配置大小切分为块，并对这些块执行异或运算。";
         this.infoURL = "https://wikipedia.org/wiki/XOR";
         this.inputType = "ArrayBuffer";
         this.outputType = "string";
         this.args = [
             {
-                name: "Blocksize",
+                name: "块大小",
                 type: "number",
                 value: 4
             },

@@ -21,13 +21,13 @@ class Jq extends Operation {
 
         this.name = "Jq";
         this.module = "Jq";
-        this.description = "jq is a lightweight and flexible command-line JSON processor.";
+        this.description = "jq 是一个轻量且灵活的命令行 JSON 处理器。";
         this.infoURL = "https://github.com/jqlang/jq";
         this.inputType = "JSON";
         this.outputType = "string";
         this.args = [
             {
-                name: "Query",
+                name: "查询",
                 type: "string",
                 value: ""
             }

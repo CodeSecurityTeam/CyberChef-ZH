@@ -23,23 +23,23 @@ class RSASign extends Operation {
 
         this.name = "RSA Sign";
         this.module = "Ciphers";
-        this.description = "Sign a plaintext message with a PEM encoded RSA key.";
+        this.description = "使用 PEM 编码的 RSA 私钥对明文消息进行签名。";
         this.infoURL = "https://wikipedia.org/wiki/RSA_(cryptosystem)";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "RSA Private Key (PEM)",
+                name: "RSA 私钥（PEM）",
                 type: "text",
                 value: "-----BEGIN RSA PRIVATE KEY-----"
             },
             {
-                name: "Key Password",
+                name: "密钥口令",
                 type: "text",
                 value: ""
             },
             {
-                name: "Message Digest Algorithm",
+                name: "消息摘要算法",
                 type: "option",
                 value: Object.keys(MD_ALGORITHMS)
             }

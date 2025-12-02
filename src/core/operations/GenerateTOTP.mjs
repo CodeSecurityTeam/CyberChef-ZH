@@ -18,28 +18,28 @@ class GenerateTOTP extends Operation {
         super();
         this.name = "Generate TOTP";
         this.module = "Default";
-        this.description = "The Time-based One-Time Password algorithm (TOTP) is an algorithm that computes a one-time password from a shared secret key and the current time. It has been adopted as Internet Engineering Task Force standard RFC 6238, is the cornerstone of Initiative For Open Authentication (OAUTH), and is used in a number of two-factor authentication systems. A TOTP is an HOTP where the counter is the current time.<br><br>Enter the secret as the input or leave it blank for a random secret to be generated. T0 and T1 are in seconds.";
+        this.description = "时间型一次性密码算法（TOTP）从共享密钥与当前时间计算一次性口令。其已被 IETF 标准 RFC 6238 采纳，是开放认证（OATH）的基石，并广泛用于双因素认证系统。TOTP 可视为计数器为当前时间的 HOTP。<br><br>将密钥作为输入，或留空以随机生成。T0 与 T1 为秒。";
         this.infoURL = "https://wikipedia.org/wiki/Time-based_One-time_Password_algorithm";
         this.inputType = "ArrayBuffer";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Name",
+                "name": "名称",
                 "type": "string",
                 "value": ""
             },
             {
-                "name": "Code length",
+                "name": "验证码长度",
                 "type": "number",
                 "value": 6
             },
             {
-                "name": "Epoch offset (T0)",
+                "name": "纪元偏移（T0）",
                 "type": "number",
                 "value": 0
             },
             {
-                "name": "Interval (T1)",
+                "name": "时间步长（T1）",
                 "type": "number",
                 "value": 30
             }

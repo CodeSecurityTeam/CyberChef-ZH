@@ -22,13 +22,13 @@ class FromFloat extends Operation {
 
         this.name = "From Float";
         this.module = "Default";
-        this.description = "Convert from IEEE754 Floating Point Numbers";
+        this.description = "从 IEEE754 浮点数转换为字节序列。";
         this.infoURL = "https://wikipedia.org/wiki/IEEE_754";
         this.inputType = "string";
         this.outputType = "byteArray";
         this.args = [
             {
-                "name": "Endianness",
+                "name": "字节序",
                 "type": "option",
                 "value": [
                     "Big Endian",
@@ -36,7 +36,7 @@ class FromFloat extends Operation {
                 ]
             },
             {
-                "name": "Size",
+                "name": "大小",
                 "type": "option",
                 "value": [
                     "Float (4 bytes)",
@@ -44,7 +44,7 @@ class FromFloat extends Operation {
                 ]
             },
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "option",
                 "value": DELIM_OPTIONS
             }

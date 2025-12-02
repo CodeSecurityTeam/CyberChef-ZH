@@ -21,18 +21,18 @@ class GenerateLoremIpsum extends Operation {
 
         this.name = "Generate Lorem Ipsum";
         this.module = "Default";
-        this.description = "Generate varying length lorem ipsum placeholder text.";
+        this.description = "生成不同长度的 Lorem Ipsum 占位文本。";
         this.infoURL = "https://wikipedia.org/wiki/Lorem_ipsum";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Length",
+                "name": "长度",
                 "type": "number",
                 "value": "3"
             },
             {
-                "name": "Length in",
+                "name": "长度单位",
                 "type": "option",
                 "value": ["Paragraphs", "Sentences", "Words", "Bytes"]
             }

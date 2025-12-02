@@ -24,21 +24,21 @@ class ImageBrightnessContrast extends Operation {
 
         this.name = "Image Brightness / Contrast";
         this.module = "Image";
-        this.description = "Adjust the brightness or contrast of an image.";
+        this.description = "调整图像的亮度或对比度。";
         this.infoURL = "";
         this.inputType = "ArrayBuffer";
         this.outputType = "ArrayBuffer";
         this.presentType = "html";
         this.args = [
             {
-                name: "Brightness",
+                name: "亮度",
                 type: "number",
                 value: 0,
                 min: -100,
                 max: 100
             },
             {
-                name: "Contrast",
+                name: "对比度",
                 type: "number",
                 value: 0,
                 min: -100,

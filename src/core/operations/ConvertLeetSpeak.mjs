@@ -18,13 +18,13 @@ class ConvertLeetSpeak extends Operation {
 
         this.name = "Convert Leet Speak";
         this.module = "Default";
-        this.description = "Converts to and from Leet Speak.";
+        this.description = "在普通文本与 Leet 黑客语之间转换。";
         this.infoURL = "https://wikipedia.org/wiki/Leet";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "Direction",
+                name: "方向",
                 type: "option",
                 value: ["To Leet Speak", "From Leet Speak"],
                 defaultIndex: 0
@@ -113,4 +113,3 @@ const fromLeetMap = {
 };
 
 export default ConvertLeetSpeak;
-

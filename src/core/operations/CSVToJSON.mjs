@@ -21,23 +21,23 @@ class CSVToJSON extends Operation {
 
         this.name = "CSV to JSON";
         this.module = "Default";
-        this.description = "Converts a CSV file to JSON format.";
+        this.description = "将 CSV 文件转换为 JSON 格式。";
         this.infoURL = "https://wikipedia.org/wiki/Comma-separated_values";
         this.inputType = "string";
         this.outputType = "JSON";
         this.args = [
             {
-                name: "Cell delimiters",
+                name: "单元格分隔符",
                 type: "binaryShortString",
                 value: ","
             },
             {
-                name: "Row delimiters",
+                name: "行分隔符",
                 type: "binaryShortString",
                 value: "\\r\\n"
             },
             {
-                name: "Format",
+                name: "格式",
                 type: "option",
                 value: ["Array of dictionaries", "Array of arrays"]
             }

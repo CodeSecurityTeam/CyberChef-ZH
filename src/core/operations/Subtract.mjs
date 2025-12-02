@@ -24,13 +24,13 @@ class Subtract extends Operation {
 
         this.name = "Subtract";
         this.module = "Default";
-        this.description = "Subtracts a list of numbers. If an item in the string is not a number it is excluded from the list.<br><br>e.g. <code>0x0a 8 .5</code> becomes <code>1.5</code>";
+        this.description = "对数字列表执行减法。如果字符串中的某项不是数字，则会被排除在列表之外。<br><br>例如：<code>0x0a 8 .5</code> 将变为 <code>1.5</code>";
         this.infoURL = "https://wikipedia.org/wiki/Subtraction";
         this.inputType = "string";
         this.outputType = "BigNumber";
         this.args = [
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "option",
                 "value": ARITHMETIC_DELIM_OPTIONS,
             }

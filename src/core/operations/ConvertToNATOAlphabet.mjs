@@ -18,7 +18,7 @@ class ConvertToNATOAlphabet extends Operation {
 
         this.name = "Convert to NATO alphabet";
         this.module = "Default";
-        this.description = "Converts characters to their representation in the NATO phonetic alphabet.";
+        this.description = "将字符转换为北约音标字母的表示。";
         this.infoURL = "https://wikipedia.org/wiki/NATO_phonetic_alphabet";
         this.inputType = "string";
         this.outputType = "string";

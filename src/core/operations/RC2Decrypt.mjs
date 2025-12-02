@@ -21,30 +21,30 @@ class RC2Decrypt extends Operation {
 
         this.name = "RC2 Decrypt";
         this.module = "Ciphers";
-        this.description = "RC2 (also known as ARC2) is a symmetric-key block cipher designed by Ron Rivest in 1987. 'RC' stands for 'Rivest Cipher'.<br><br><b>Key:</b> RC2 uses a variable size key.<br><br><b>IV:</b> To run the cipher in CBC mode, the Initialization Vector should be 8 bytes long. If the IV is left blank, the cipher will run in ECB mode.<br><br><b>Padding:</b> In both CBC and ECB mode, PKCS#7 padding will be used.";
+        this.description = "RC2（亦称 ARC2）是 Ron Rivest 于 1987 年设计的对称分组密码，“RC”代表 Rivest Cipher。<br><br><b>密钥：</b>RC2 使用可变长度密钥。<br><br><b>IV：</b>在 CBC 模式下运行时，初始向量应为 8 字节；若 IV 为空则以 ECB 模式运行。<br><br><b>填充：</b>CBC 与 ECB 模式均使用 PKCS#7 填充。";
         this.infoURL = "https://wikipedia.org/wiki/RC2";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Key",
+                "name": "密钥",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["Hex", "UTF8", "Latin1", "Base64"]
             },
             {
-                "name": "IV",
+                "name": "初始向量（IV）",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["Hex", "UTF8", "Latin1", "Base64"]
             },
             {
-                "name": "Input",
+                "name": "输入",
                 "type": "option",
                 "value": ["Hex", "Raw"]
             },
             {
-                "name": "Output",
+                "name": "输出",
                 "type": "option",
                 "value": ["Raw", "Hex"]
             }

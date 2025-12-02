@@ -22,24 +22,24 @@ class ShowOnMap extends Operation {
 
         this.name = "Show on map";
         this.module = "Hashing";
-        this.description = "Displays co-ordinates on a slippy map.<br><br>Co-ordinates will be converted to decimal degrees before being shown on the map.<br><br>Supported formats:<ul><li>Degrees Minutes Seconds (DMS)</li><li>Degrees Decimal Minutes (DDM)</li><li>Decimal Degrees (DD)</li><li>Geohash</li><li>Military Grid Reference System (MGRS)</li><li>Ordnance Survey National Grid (OSNG)</li><li>Universal Transverse Mercator (UTM)</li></ul><br>This operation will not work offline.";
+        this.description = "在可滑动地图上显示坐标。<br><br>坐标将在显示前转换为十进制度数。<br><br>支持格式：<ul><li>度-分-秒（DMS）</li><li>度-十进制分（DDM）</li><li>十进制度数（DD）</li><li>Geohash</li><li>军事方格参考系统（MGRS）</li><li>英国国家测绘网格（OSNG）</li><li>通用横轴墨卡托投影（UTM）</li></ul><br>此操作在离线环境下无法工作。";
         this.infoURL = "https://osmfoundation.org/wiki/Terms_of_Use";
         this.inputType = "string";
         this.outputType = "string";
         this.presentType = "html";
         this.args = [
             {
-                name: "Zoom Level",
+                name: "缩放级别",
                 type: "number",
                 value: 13
             },
             {
-                name: "Input Format",
+                name: "输入格式",
                 type: "option",
                 value: ["Auto"].concat(FORMATS)
             },
             {
-                name: "Input Delimiter",
+                name: "输入分隔符",
                 type: "option",
                 value: [
                     "Auto",

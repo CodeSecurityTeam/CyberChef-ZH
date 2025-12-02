@@ -23,23 +23,23 @@ class GroupIPAddresses extends Operation {
 
         this.name = "Group IP addresses";
         this.module = "Default";
-        this.description = "Groups a list of IP addresses into subnets. Supports both IPv4 and IPv6 addresses.";
+        this.description = "将一组 IP 地址按子网分组，支持 IPv4 与 IPv6。";
         this.infoURL = "https://wikipedia.org/wiki/Subnetwork";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "option",
                 "value": IP_DELIM_OPTIONS
             },
             {
-                "name": "Subnet (CIDR)",
+                "name": "子网（CIDR）",
                 "type": "number",
                 "value": 24
             },
             {
-                "name": "Only show the subnets",
+                "name": "仅显示子网",
                 "type": "boolean",
                 "value": false,
             }

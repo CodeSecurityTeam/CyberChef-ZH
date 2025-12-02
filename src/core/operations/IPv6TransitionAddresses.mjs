@@ -19,18 +19,18 @@ class IPv6TransitionAddresses extends Operation {
 
         this.name = "IPv6 Transition Addresses";
         this.module = "Default";
-        this.description = "Converts IPv4 addresses to their IPv6 Transition addresses. IPv6 Transition addresses can also be converted back into their original IPv4 address. MAC addresses can also be converted into the EUI-64 format, this can them be appended to your IPv6 /64 range to obtain a full /128 address.<br><br>Transition technologies enable translation between IPv4 and IPv6 addresses or tunneling to allow traffic to pass through the incompatible network, allowing the two standards to coexist.<br><br>Only /24 ranges and currently handled. Remove headers to easily copy out results.";
+        this.description = "将 IPv4 地址转换为其对应的 IPv6 过渡地址；IPv6 过渡地址也可还原为原始 IPv4 地址。MAC 地址可转换为 EUI-64 格式，并附加至 IPv6 /64 前缀以得到完整的 /128 地址。<br><br>过渡技术通过地址转换或隧道使 IPv4 与 IPv6 共存并互通。<br><br>当前仅支持 /24 范围。可移除标题以便于复制结果。";
         this.infoURL = "https://wikipedia.org/wiki/IPv6_transition_mechanism";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
 	    {
-                "name": "Ignore ranges",
-                "type": "boolean",
-	        "value": true
+	                "name": "忽略范围",
+	                "type": "boolean",
+	        	"value": true
 	    },
             {
-                "name": "Remove headers",
+	                "name": "移除标题",
                 "type": "boolean",
                 "value": false
             }

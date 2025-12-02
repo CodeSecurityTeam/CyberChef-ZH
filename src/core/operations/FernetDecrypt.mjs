@@ -20,13 +20,13 @@ class FernetDecrypt extends Operation {
 
         this.name = "Fernet Decrypt";
         this.module = "Default";
-        this.description = "Fernet is a symmetric encryption method which makes sure that the message encrypted cannot be manipulated/read without the key. It uses URL safe encoding for the keys. Fernet uses 128-bit AES in CBC mode and PKCS7 padding, with HMAC using SHA256 for authentication. The IV is created from os.random().<br><br><b>Key:</b> The key must be 32 bytes (256 bits) encoded with Base64.";
+        this.description = "Fernet 是一种对称加密方法，确保加密消息在无密钥的情况下无法被篡改或读取。使用 URL 安全编码作为密钥格式。Fernet 基于 128 位 AES 的 CBC 模式与 PKCS7 填充，并使用 SHA256 的 HMAC 进行认证。IV 由操作系统随机生成。<br><br><b>密钥：</b>密钥必须为 32 字节（256 位），并以 Base64 编码。";
         this.infoURL = "https://asecuritysite.com/encryption/fer";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Key",
+                "name": "密钥",
                 "type": "string",
                 "value": ""
             },

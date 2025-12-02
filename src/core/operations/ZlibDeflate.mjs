@@ -23,13 +23,13 @@ class ZlibDeflate extends Operation {
 
         this.name = "Zlib Deflate";
         this.module = "Compression";
-        this.description = "Compresses data using the deflate algorithm adding zlib headers.";
+        this.description = "使用 deflate 算法压缩数据并添加 zlib 头部。";
         this.infoURL = "https://wikipedia.org/wiki/Zlib";
         this.inputType = "ArrayBuffer";
         this.outputType = "ArrayBuffer";
         this.args = [
             {
-                name: "Compression type",
+                name: "压缩类型",
                 type: "option",
                 value: COMPRESSION_TYPE
             }

@@ -22,7 +22,7 @@ class ParseTLSRecord extends Operation {
 
         this.name = "Parse TLS record";
         this.module = "Default";
-        this.description = "Parses one or more TLS records";
+        this.description = "解析一个或多个 TLS 记录";
         this.infoURL = "https://wikipedia.org/wiki/Transport_Layer_Security";
         this.inputType = "ArrayBuffer";
         this.outputType = "json";

@@ -22,30 +22,30 @@ class SM2Encrypt extends Operation {
 
         this.name = "SM2 Encrypt";
         this.module = "Crypto";
-        this.description = "Encrypts a message utilizing the SM2 standard";
+        this.description = "使用 SM2 标准对消息进行加密";
         this.infoURL = ""; // Usually a Wikipedia link. Remember to remove localisation (i.e. https://wikipedia.org/etc rather than https://en.wikipedia.org/etc)
         this.inputType = "ArrayBuffer";
         this.outputType = "string";
 
         this.args = [
             {
-                name: "Public Key X",
+                name: "公钥 X",
                 type: "string",
                 value: "DEADBEEF"
             },
             {
-                name: "Public Key Y",
+                name: "公钥 Y",
                 type: "string",
                 value: "DEADBEEF"
             },
             {
-                "name": "Output Format",
+                "name": "输出格式",
                 "type": "option",
                 "value": ["C1C3C2", "C1C2C3"],
                 "defaultIndex": 0
             },
             {
-                name: "Curve",
+                name: "曲线",
                 type: "option",
                 "value": ["sm2p256v1"],
                 "defaultIndex": 0

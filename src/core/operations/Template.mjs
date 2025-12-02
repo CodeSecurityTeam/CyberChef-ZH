@@ -21,13 +21,13 @@ class Template extends Operation {
 
         this.name = "Template";
         this.module = "Handlebars";
-        this.description = "Render a template with Handlebars/Mustache substituting variables using JSON input. Templates will be rendered to plain-text only, to prevent XSS.";
+        this.description = "使用 Handlebars/Mustache 根据 JSON 输入替换变量并渲染模板。为防止 XSS，模板仅渲染为纯文本。";
         this.infoURL = "https://handlebarsjs.com/";
         this.inputType = "JSON";
         this.outputType = "string";
         this.args = [
             {
-                name: "Template definition (.handlebars)",
+                name: "模板定义（.handlebars）",
                 type: "text",
                 value: ""
             }

@@ -19,7 +19,7 @@ class GetAllCasings extends Operation {
 
         this.name = "Get All Casings";
         this.module = "Default";
-        this.description = "Outputs all possible casing variations of a string.";
+        this.description = "输出字符串的所有可能大小写变体组合。";
         this.infoURL = "";
         this.inputType = "string";
         this.outputType = "string";

@@ -19,13 +19,13 @@ class BitShiftRight extends Operation {
 
         this.name = "Bit shift right";
         this.module = "Default";
-        this.description = "Shifts the bits in each byte towards the right by the specified amount.<br><br><i>Logical shifts</i> replace the leftmost bits with zeros.<br><i>Arithmetic shifts</i> preserve the most significant bit (MSB) of the original byte keeping the sign the same (positive or negative).";
+        this.description = "将每个字节中的位向右移动指定的位数。<br><br><i>逻辑移位</i> 将最左边的位替换为零。<br><i>算术移位</i> 保留原始字节的最高有效位 (MSB)，并保持符号不变（正或负）";
         this.infoURL = "https://wikipedia.org/wiki/Bitwise_operation#Bit_shifts";
         this.inputType = "ArrayBuffer";
         this.outputType = "ArrayBuffer";
         this.args = [
             {
-                "name": "Amount",
+                "name": "数量",
                 "type": "number",
                 "value": 1
             },

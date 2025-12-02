@@ -21,13 +21,13 @@ class FromBase extends Operation {
 
         this.name = "From Base";
         this.module = "Default";
-        this.description = "Converts a number to decimal from a given numerical base.";
+        this.description = "将给定进制的数字转换为十进制。";
         this.infoURL = "https://wikipedia.org/wiki/Radix";
         this.inputType = "string";
         this.outputType = "BigNumber";
         this.args = [
             {
-                "name": "Radix",
+                "name": "进制",
                 "type": "number",
                 "value": 36
             }

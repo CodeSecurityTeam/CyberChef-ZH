@@ -23,28 +23,28 @@ class Register extends Operation {
         this.name = "Register";
         this.flowControl = true;
         this.module = "Regex";
-        this.description = "Extract data from the input and store it in registers which can then be passed into subsequent operations as arguments. Regular expression capture groups are used to select the data to extract.<br><br>To use registers in arguments, refer to them using the notation <code>$Rn</code> where n is the register number, starting at 0.<br><br>For example:<br>Input: <code>Test</code><br>Extractor: <code>(.*)</code><br>Argument: <code>$R0</code> becomes <code>Test</code><br><br>Registers can be escaped in arguments using a backslash. e.g. <code>\\$R0</code> would become <code>$R0</code> rather than <code>Test</code>.";
+        this.description = "从输入中提取数据并存入寄存器，随后可作为参数传递给后续操作。使用正则表达式捕获组选择要提取的数据。<br><br>在参数中使用寄存器时，使用 <code>$Rn</code> 进行引用，其中 n 为寄存器编号，从 0 开始。<br><br>例如：<br>输入：<code>Test</code><br>提取器：<code>(.*)</code><br>参数：<code>$R0</code> 将变为 <code>Test</code><br><br>可在参数中通过反斜杠对寄存器引用进行转义，例如 <code>\\$R0</code> 将变为 <code>$R0</code> 而非 <code>Test</code>。";
         this.infoURL = "https://wikipedia.org/wiki/Regular_expression#Syntax";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Extractor",
+                "name": "提取器",
                 "type": "binaryString",
                 "value": "([\\s\\S]*)"
             },
             {
-                "name": "Case insensitive",
+                "name": "不区分大小写",
                 "type": "boolean",
                 "value": true
             },
             {
-                "name": "Multiline matching",
+                "name": "多行匹配",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Dot matches all",
+                "name": "点匹配全部",
                 "type": "boolean",
                 "value": false
             }

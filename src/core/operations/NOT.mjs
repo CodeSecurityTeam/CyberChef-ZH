@@ -20,7 +20,7 @@ class NOT extends Operation {
 
         this.name = "NOT";
         this.module = "Default";
-        this.description = "Returns the inverse of each byte.";
+        this.description = "返回每个字节的按位取反值。";
         this.infoURL = "https://wikipedia.org/wiki/Bitwise_operation#NOT";
         this.inputType = "ArrayBuffer";
         this.outputType = "byteArray";

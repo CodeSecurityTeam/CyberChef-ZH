@@ -21,13 +21,13 @@ class RisonDecode extends Operation {
 
         this.name = "Rison Decode";
         this.module = "Encodings";
-        this.description = "Rison, a data serialization format optimized for compactness in URIs. Rison is a slight variation of JSON that looks vastly superior after URI encoding. Rison still expresses exactly the same set of data structures as JSON, so data can be translated back and forth without loss or guesswork.";
+        this.description = "Rison 是一种针对 URI 紧凑性优化的数据序列化格式。它是 JSON 的轻微变体，在进行 URI 编码后更为优雅。Rison 与 JSON 表达相同的数据结构，因此可无损双向转换。";
         this.infoURL = "https://github.com/Nanonid/rison";
         this.inputType = "string";
         this.outputType = "Object";
         this.args = [
             {
-                name: "Decode Option",
+                name: "解码选项",
                 type: "editableOption",
                 value: ["Decode", "Decode Object", "Decode Array"]
             },

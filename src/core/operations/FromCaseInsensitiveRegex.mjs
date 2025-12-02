@@ -19,7 +19,7 @@ class FromCaseInsensitiveRegex extends Operation {
 
         this.name = "From Case Insensitive Regex";
         this.module = "Default";
-        this.description = "Converts a case-insensitive regex string to a case sensitive regex string (no guarantee on it being the proper original casing) in case the i flag wasn't available at the time but now is, or you need it to be case-sensitive again.<br><br>e.g. <code>[mM][oO][zZ][iI][lL][lL][aA]/[0-9].[0-9] .*</code> becomes <code>Mozilla/[0-9].[0-9] .*</code>";
+        this.description = "将不区分大小写的正则字符串转换为区分大小写的正则字符串（不保证恢复为正确的原始大小写），适用于当时无法使用 i 标志、而现在可用，或需要重新区分大小写的场景。<br><br>例如：<code>[mM][oO][zZ][iI][lL][lL][aA]/[0-9].[0-9] .*</code> 变为 <code>Mozilla/[0-9].[0-9] .*</code>";
         this.infoURL = "https://wikipedia.org/wiki/Regular_expression";
         this.inputType = "string";
         this.outputType = "string";

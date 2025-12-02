@@ -20,13 +20,13 @@ class ToBase extends Operation {
 
         this.name = "To Base";
         this.module = "Default";
-        this.description = "Converts a decimal number to a given numerical base.";
+        this.description = "将十进制数字转换为指定的数值进制。";
         this.infoURL = "https://wikipedia.org/wiki/Radix";
         this.inputType = "BigNumber";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Radix",
+                "name": "基数",
                 "type": "number",
                 "value": 36
             }

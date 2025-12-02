@@ -21,17 +21,17 @@ class Jump extends Operation {
         this.name = "Jump";
         this.flowControl = true;
         this.module = "Default";
-        this.description = "Jump forwards or backwards to the specified Label";
+        this.description = "向前或向后跳转到指定标签";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Label name",
+                "name": "标签名",
                 "type": "string",
                 "value": ""
             },
             {
-                "name": "Maximum jumps (if jumping backwards)",
+                "name": "最大跳转次数（向后跳转时）",
                 "type": "number",
                 "value": 10
             }

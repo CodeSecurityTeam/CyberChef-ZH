@@ -20,7 +20,7 @@ class ParseURI extends Operation {
 
         this.name = "Parse URI";
         this.module = "URL";
-        this.description = "Pretty prints complicated Uniform Resource Identifier (URI) strings for ease of reading. Particularly useful for Uniform Resource Locators (URLs) with a lot of arguments.";
+        this.description = "美化并易读地展示复杂的统一资源标识符（URI）字符串，尤其适用于包含大量参数的统一资源定位符（URL）。";
         this.infoURL = "https://wikipedia.org/wiki/Uniform_Resource_Identifier";
         this.inputType = "string";
         this.outputType = "string";

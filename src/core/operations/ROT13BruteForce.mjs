@@ -19,43 +19,43 @@ class ROT13BruteForce extends Operation {
 
         this.name = "ROT13 Brute Force";
         this.module = "Default";
-        this.description = "Try all meaningful amounts for ROT13.<br><br>Optionally you can enter your known plaintext (crib) to filter the result.";
+        this.description = "尝试 ROT13 的所有有效位移量。<br><br>可选地输入已知明文（辅助字符串）来过滤结果。";
         this.infoURL = "https://wikipedia.org/wiki/ROT13";
         this.inputType = "byteArray";
         this.outputType = "string";
         this.args = [
             {
-                name: "Rotate lower case chars",
+                name: "旋转小写字符",
                 type: "boolean",
                 value: true
             },
             {
-                name: "Rotate upper case chars",
+                name: "旋转大写字符",
                 type: "boolean",
                 value: true
             },
             {
-                name: "Rotate numbers",
+                name: "旋转数字",
                 type: "boolean",
                 value: false
             },
             {
-                name: "Sample length",
+                name: "样本长度",
                 type: "number",
                 value: 100
             },
             {
-                name: "Sample offset",
+                name: "样本偏移",
                 type: "number",
                 value: 0
             },
             {
-                name: "Print amount",
+                name: "打印位移量",
                 type: "boolean",
                 value: true
             },
             {
-                name: "Crib (known plaintext string)",
+                name: "辅助字符串（已知明文）",
                 type: "string",
                 value: ""
             }

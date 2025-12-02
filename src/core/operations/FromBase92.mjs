@@ -19,7 +19,7 @@ class FromBase92 extends Operation {
 
         this.name = "From Base92";
         this.module = "Default";
-        this.description = "Base92 is a notation for encoding arbitrary byte data using a restricted set of symbols that can be conveniently used by humans and processed by computers.";
+        this.description = "Base92 是一种使用受限字符集对任意字节数据进行编码的表示法，便于人类使用并能被计算机处理。";
         this.infoURL = "https://wikipedia.org/wiki/List_of_numeral_systems";
         this.inputType = "string";
         this.outputType = "byteArray";

@@ -22,27 +22,27 @@ class ConditionalJump extends Operation {
         this.name = "Conditional Jump";
         this.flowControl = true;
         this.module = "Default";
-        this.description = "Conditionally jump forwards or backwards to the specified Label  based on whether the data matches the specified regular expression.";
+        this.description = "根据数据是否匹配指定的正则表达式，条件性地向前或向后跳转到指定的标签。";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Match (regex)",
+                "name": "匹配（正则）",
                 "type": "string",
                 "value": ""
             },
             {
-                "name": "Invert match",
+                "name": "取反匹配",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Label name",
+                "name": "标签名",
                 "type": "shortString",
                 "value": ""
             },
             {
-                "name": "Maximum jumps (if jumping backwards)",
+                "name": "最大跳转次数（向后）",
                 "type": "number",
                 "value": 10
             }

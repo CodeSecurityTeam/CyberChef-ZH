@@ -20,18 +20,18 @@ class SetIntersection extends Operation {
 
         this.name = "Set Intersection";
         this.module = "Default";
-        this.description = "Calculates the intersection of two sets.";
+        this.description = "计算两个集合的交集。";
         this.infoURL = "https://wikipedia.org/wiki/Intersection_(set_theory)";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "Sample delimiter",
+                name: "样本分隔符",
                 type: "binaryString",
                 value: "\\n\\n"
             },
             {
-                name: "Item delimiter",
+                name: "项分隔符",
                 type: "binaryString",
                 value: ","
             },

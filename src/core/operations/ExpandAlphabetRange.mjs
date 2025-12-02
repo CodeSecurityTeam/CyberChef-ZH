@@ -20,12 +20,12 @@ class ExpandAlphabetRange extends Operation {
 
         this.name = "Expand alphabet range";
         this.module = "Default";
-        this.description = "Expand an alphabet range string into a list of the characters in that range.<br><br>e.g. <code>a-z</code> becomes <code>abcdefghijklmnopqrstuvwxyz</code>.";
+        this.description = "将字母范围字符串展开为该范围内的字符列表。<br><br>例如，<code>a-z</code> 变为 <code>abcdefghijklmnopqrstuvwxyz</code>。";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "binaryString",
                 "value": ""
             }

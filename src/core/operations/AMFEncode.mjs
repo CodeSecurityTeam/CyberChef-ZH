@@ -21,13 +21,13 @@ class AMFEncode extends Operation {
 
         this.name = "AMF Encode";
         this.module = "Encodings";
-        this.description = "Action Message Format (AMF) is a binary format used to serialize object graphs such as ActionScript objects and XML, or send messages between an Adobe Flash client and a remote service, usually a Flash Media Server or third party alternatives.";
+        this.description = "动作消息格式（AMF）是一种二进制格式，用于序列化对象图（如 ActionScript 对象和 XML），或在 Adobe Flash 客户端与远程服务之间发送消息，通常是 Flash Media Server 或第三方替代方案。";
         this.infoURL = "https://wikipedia.org/wiki/Action_Message_Format";
         this.inputType = "JSON";
         this.outputType = "ArrayBuffer";
         this.args = [
             {
-                name: "Format",
+                name: "格式",
                 type: "option",
                 value: ["AMF0", "AMF3"],
                 defaultIndex: 1

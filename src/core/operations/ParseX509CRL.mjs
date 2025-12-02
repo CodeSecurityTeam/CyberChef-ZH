@@ -25,13 +25,13 @@ class ParseX509CRL extends Operation {
 
         this.name = "Parse X.509 CRL";
         this.module = "PublicKey";
-        this.description = "Parse Certificate Revocation List (CRL)";
+        this.description = "解析证书吊销列表（CRL）";
         this.infoURL = "https://wikipedia.org/wiki/Certificate_revocation_list";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Input format",
+                "name": "输入格式",
                 "type": "option",
                 "value": ["PEM", "DER Hex", "Base64", "Raw"]
             }

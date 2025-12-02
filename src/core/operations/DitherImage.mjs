@@ -24,7 +24,7 @@ class DitherImage extends Operation {
 
         this.name = "Dither Image";
         this.module = "Image";
-        this.description = "Apply a dither effect to an image.";
+        this.description = "为图像应用抖动效果。";
         this.infoURL = "https://wikipedia.org/wiki/Dither";
         this.inputType = "ArrayBuffer";
         this.outputType = "ArrayBuffer";

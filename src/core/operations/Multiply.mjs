@@ -24,13 +24,13 @@ class Multiply extends Operation {
 
         this.name = "Multiply";
         this.module = "Default";
-        this.description = "Multiplies a list of numbers. If an item in the string is not a number it is excluded from the list.<br><br>e.g. <code>0x0a 8 .5</code> becomes <code>40</code>";
+        this.description = "对数字列表执行乘法。如果字符串中的某项不是数字，则会被排除在列表之外。<br><br>例如：<code>0x0a 8 .5</code> 将变为 <code>40</code>";
         this.infoURL = "https://wikipedia.org/wiki/Multiplication";
         this.inputType = "string";
         this.outputType = "BigNumber";
         this.args = [
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "option",
                 "value": ARITHMETIC_DELIM_OPTIONS,
             }

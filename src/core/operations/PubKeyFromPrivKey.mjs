@@ -21,7 +21,7 @@ class PubKeyFromPrivKey extends Operation {
 
         this.name = "Public Key from Private Key";
         this.module = "PublicKey";
-        this.description = "Extracts the Public Key from a Private Key.";
+        this.description = "从私钥中提取公钥。";
         this.infoURL = "https://en.wikipedia.org/wiki/PKCS_8";
         this.inputType = "string";
         this.outputType = "string";

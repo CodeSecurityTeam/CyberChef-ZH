@@ -24,13 +24,13 @@ class ParseIPv4Header extends Operation {
 
         this.name = "Parse IPv4 header";
         this.module = "Default";
-        this.description = "Given an IPv4 header, this operations parses and displays each field in an easily readable format.";
+        this.description = "解析并以易读格式显示 IPv4 头部中的各字段。";
         this.infoURL = "https://wikipedia.org/wiki/IPv4#Header";
         this.inputType = "string";
         this.outputType = "html";
         this.args = [
             {
-                "name": "Input format",
+                "name": "输入格式",
                 "type": "option",
                 "value": ["Hex", "Raw"]
             }

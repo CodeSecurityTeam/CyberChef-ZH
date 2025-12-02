@@ -22,13 +22,13 @@ class A1Z26CipherDecode extends Operation {
 
         this.name = "A1Z26 Cipher Decode";
         this.module = "Ciphers";
-        this.description = "Converts alphabet order numbers into their corresponding  alphabet character.<br><br>e.g. <code>1</code> becomes <code>a</code> and <code>2</code> becomes <code>b</code>.";
+        this.description = "将字母序号转换为对应的字母字符。<br><br>例如 <code>1</code> 变为 <code>a</code>，<code>2</code> 变为 <code>b</code>。";
         this.infoURL = "";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "Delimiter",
+                name: "分隔符",
                 type: "option",
                 value: DELIM_OPTIONS
             }

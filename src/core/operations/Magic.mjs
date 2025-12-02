@@ -23,29 +23,29 @@ class Magic extends Operation {
         this.name = "Magic";
         this.flowControl = true;
         this.module = "Default";
-        this.description = "The Magic operation attempts to detect various properties of the input data and suggests which operations could help to make more sense of it.<br><br><b>Options</b><br><u>Depth:</u> If an operation appears to match the data, it will be run and the result will be analysed further. This argument controls the maximum number of levels of recursion.<br><br><u>Intensive mode:</u> When this is turned on, various operations like XOR, bit rotates, and character encodings are brute-forced to attempt to detect valid data underneath. To improve performance, only the first 100 bytes of the data is brute-forced.<br><br><u>Extensive language support:</u> At each stage, the relative byte frequencies of the data will be compared to average frequencies for a number of languages. The default set consists of ~40 of the most commonly used languages on the Internet. The extensive list consists of 284 languages and can result in many languages matching the data if their byte frequencies are similar.<br><br>Optionally enter a regular expression to match a string you expect to find to filter results (crib).";
+        this.description = "Magic 操作尝试检测输入数据的各种属性，并建议哪些操作可以帮助更好地理解数据。<br><br><b>选项</b><br><u>深度：</u>如果某个操作似乎与数据匹配，它将被运行，结果将被进一步分析。该参数控制递归的最大层数。<br><br><u>强化模式：</u>当开启此模式时，将对各种操作（如 XOR、位旋转和字符编码）进行暴力破解，以尝试检测底层的有效数据。为提高性能，仅对数据的前 100 字节进行暴力破解。<br><br><u>扩展语言支持：</u>在每个阶段，数据的相对字节频率将与多种语言的平均频率进行比较。默认集合包含互联网上最常用的约 40 种语言。扩展列表包含 284 种语言，如果它们的字节频率相似，可能会导致许多语言与数据匹配。<br><br>可选地输入一个正则表达式来匹配您期望找到的字符串，以过滤结果（已知明文）。";
         this.infoURL = "https://github.com/gchq/CyberChef/wiki/Automatic-detection-of-encoded-data-using-CyberChef-Magic";
         this.inputType = "ArrayBuffer";
         this.outputType = "JSON";
         this.presentType = "html";
         this.args = [
             {
-                "name": "Depth",
+                "name": "深度",
                 "type": "number",
                 "value": 3
             },
             {
-                "name": "Intensive mode",
+                "name": "强化模式",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Extensive language support",
+                "name": "扩展语言支持",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Crib (known plaintext string or regex)",
+                "name": "已知明文（已知字符串或正则表达式）",
                 "type": "string",
                 "value": ""
             }

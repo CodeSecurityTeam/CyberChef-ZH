@@ -20,12 +20,12 @@ class XMLBeautify extends Operation {
 
         this.name = "XML Beautify";
         this.module = "Code";
-        this.description = "Indents and prettifies eXtensible Markup Language (XML) code.";
+        this.description = "缩进并美化可扩展标记语言（XML）代码。";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Indent string",
+                "name": "缩进字符串",
                 "type": "binaryShortString",
                 "value": "\\t"
             }

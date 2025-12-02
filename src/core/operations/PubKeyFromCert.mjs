@@ -21,7 +21,7 @@ class PubKeyFromCert extends Operation {
 
         this.name = "Public Key from Certificate";
         this.module = "PublicKey";
-        this.description = "Extracts the Public Key from a Certificate.";
+        this.description = "从证书中提取公钥。";
         this.infoURL = "https://en.wikipedia.org/wiki/X.509";
         this.inputType = "string";
         this.outputType = "string";

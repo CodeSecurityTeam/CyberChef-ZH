@@ -21,7 +21,7 @@ class PEMToJWK extends Operation {
 
         this.name = "PEM to JWK";
         this.module = "PublicKey";
-        this.description = "Converts Keys in PEM format to a JSON Web Key format.";
+        this.description = "将 PEM 格式的密钥转换为 JSON Web Key（JWK）格式。";
         this.infoURL = "https://datatracker.ietf.org/doc/html/rfc7517";
         this.inputType = "string";
         this.outputType = "string";

@@ -20,12 +20,12 @@ class UnescapeUnicodeCharacters extends Operation {
 
         this.name = "Unescape Unicode Characters";
         this.module = "Default";
-        this.description = "Converts unicode-escaped character notation back into raw characters.<br><br>Supports the prefixes:<ul><li><code>\\u</code></li><li><code>%u</code></li><li><code>U+</code></li></ul>e.g. <code>\\u03c3\\u03bf\\u03c5</code> becomes <code>σου</code>";
+        this.description = "将 Unicode 转义字符表示还原为原始字符。<br><br>支持的前缀：<ul><li><code>\\u</code></li><li><code>%u</code></li><li><code>U+</code></li></ul>例如：<code>\\u03c3\\u03bf\\u03c5</code> 变为 <code>σου</code>";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Prefix",
+                "name": "前缀",
                 "type": "option",
                 "value": ["\\u", "%u", "U+"]
             }

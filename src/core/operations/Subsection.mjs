@@ -22,28 +22,28 @@ class Subsection extends Operation {
         this.name = "Subsection";
         this.flowControl = true;
         this.module = "Default";
-        this.description = "Select a part of the input data using a regular expression (regex), and run all subsequent operations on each match separately.<br><br>You can use up to one capture group, where the recipe will only be run on the data in the capture group. If there's more than one capture group, only the first one will be operated on.<br><br>Use the Merge operation to reset the effects of subsection.";
+        this.description = "使用正则表达式选择输入数据的一部分，并对每个匹配分别运行后续操作。<br><br>可使用最多一个捕获组，配方将仅在捕获组中的数据上运行；若存在多个捕获组，仅处理第一个。<br><br>使用 Merge 操作可重置子段的效果。";
         this.infoURL = "";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Section (regex)",
+                "name": "片段（正则）",
                 "type": "string",
                 "value": ""
             },
             {
-                "name": "Case sensitive matching",
+                "name": "区分大小写",
                 "type": "boolean",
                 "value": true
             },
             {
-                "name": "Global matching",
+                "name": "全局匹配",
                 "type": "boolean",
                 "value": true
             },
             {
-                "name": "Ignore errors",
+                "name": "忽略错误",
                 "type": "boolean",
                 "value": false
             }

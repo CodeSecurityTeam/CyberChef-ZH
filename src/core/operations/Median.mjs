@@ -23,13 +23,13 @@ class Median extends Operation {
 
         this.name = "Median";
         this.module = "Default";
-        this.description = "Computes the median of a number list. If an item in the string is not a number it is excluded from the list.<br><br>e.g. <code>0x0a 8 1 .5</code> becomes <code>4.5</code>";
+        this.description = "计算数字列表的中位数。如果字符串中的某项不是数字，则会被排除在列表之外。<br><br>例如：<code>0x0a 8 1 .5</code> 将变为 <code>4.5</code>";
         this.infoURL = "https://wikipedia.org/wiki/Median";
         this.inputType = "string";
         this.outputType = "BigNumber";
         this.args = [
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "option",
                 "value": ARITHMETIC_DELIM_OPTIONS,
             }

@@ -22,7 +22,7 @@ class FromHexdump extends Operation {
 
         this.name = "From Hexdump";
         this.module = "Default";
-        this.description = "Attempts to convert a hexdump back into raw data. This operation supports many different hexdump variations, but probably not all. Make sure you verify that the data it gives you is correct before continuing analysis.";
+        this.description = "尝试将十六进制转储转换回原始数据。该操作支持许多不同的转储变体，但可能并不全部支持。继续分析前请务必确认结果数据的正确性。";
         this.infoURL = "https://wikipedia.org/wiki/Hex_dump";
         this.inputType = "string";
         this.outputType = "byteArray";

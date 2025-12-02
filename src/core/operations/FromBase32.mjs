@@ -22,18 +22,18 @@ class FromBase32 extends Operation {
 
         this.name = "From Base32";
         this.module = "Default";
-        this.description = "Base32 is a notation for encoding arbitrary byte data using a restricted set of symbols that can be conveniently used by humans and processed by computers. It uses a smaller set of characters than Base64, usually the uppercase alphabet and the numbers 2 to 7.";
+        this.description = "Base32 是一种使用受限字符集对任意字节数据进行编码的表示法，便于人类使用并能被计算机处理。它使用比 Base64 更小的字符集，通常为大写字母和数字 2 到 7。";
         this.infoURL = "https://wikipedia.org/wiki/Base32";
         this.inputType = "string";
         this.outputType = "byteArray";
         this.args = [
             {
-                name: "Alphabet",
+                name: "字母表",
                 type: "editableOption",
                 value: ALPHABET_OPTIONS
             },
             {
-                name: "Remove non-alphabet chars",
+                name: "移除非字母表字符",
                 type: "boolean",
                 value: true
             }
@@ -103,4 +103,3 @@ class FromBase32 extends Operation {
 }
 
 export default FromBase32;
-

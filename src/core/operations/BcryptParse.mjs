@@ -21,7 +21,7 @@ class BcryptParse extends Operation {
 
         this.name = "Bcrypt parse";
         this.module = "Crypto";
-        this.description = "Parses a bcrypt hash to determine the number of rounds used, the salt, and the password hash.";
+        this.description = "解析 bcrypt 哈希以确定使用的轮次、盐值以及密码哈希。";
         this.infoURL = "https://wikipedia.org/wiki/Bcrypt";
         this.inputType = "string";
         this.outputType = "string";

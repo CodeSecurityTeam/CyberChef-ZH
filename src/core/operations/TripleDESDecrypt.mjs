@@ -22,35 +22,35 @@ class TripleDESDecrypt extends Operation {
 
         this.name = "Triple DES Decrypt";
         this.module = "Ciphers";
-        this.description = "Triple DES applies DES three times to each block to increase key size.<br><br><b>Key:</b> Triple DES uses a key length of 24 bytes (192 bits).<br><br><b>IV:</b> The Initialization Vector should be 8 bytes long. If not entered, it will default to 8 null bytes.<br><br><b>Padding:</b> In CBC and ECB mode, PKCS#7 padding will be used as a default.";
+        this.description = "Triple DES 对每个分组执行三次 DES 以增大密钥长度。<br><br><b>密钥：</b>Triple DES 使用 24 字节（192 位）密钥。<br><br><b>IV：</b>初始向量应为 8 字节；未输入时默认为 8 个空字节。<br><br><b>填充：</b>在 CBC 与 ECB 模式下默认使用 PKCS#7 填充。";
         this.infoURL = "https://wikipedia.org/wiki/Triple_DES";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Key",
+                "name": "密钥",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["Hex", "UTF8", "Latin1", "Base64"]
             },
             {
-                "name": "IV",
+                "name": "初始向量（IV）",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["Hex", "UTF8", "Latin1", "Base64"]
             },
             {
-                "name": "Mode",
+                "name": "模式",
                 "type": "option",
                 "value": ["CBC", "CFB", "OFB", "CTR", "ECB", "CBC/NoPadding", "ECB/NoPadding"]
             },
             {
-                "name": "Input",
+                "name": "输入",
                 "type": "option",
                 "value": ["Hex", "Raw"]
             },
             {
-                "name": "Output",
+                "name": "输出",
                 "type": "option",
                 "value": ["Raw", "Hex"]
             }

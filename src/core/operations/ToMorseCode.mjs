@@ -21,23 +21,23 @@ class ToMorseCode extends Operation {
 
         this.name = "To Morse Code";
         this.module = "Default";
-        this.description = "Translates alphanumeric characters into International Morse Code.<br><br>Ignores non-Morse characters.<br><br>e.g. <code>SOS</code> becomes <code>... --- ...</code>";
+        this.description = "将字母数字字符翻译为国际摩斯电码。<br><br>忽略非摩斯字符。<br><br>例如：<code>SOS</code> 变为 <code>... --- ...</code>";
         this.infoURL = "https://wikipedia.org/wiki/Morse_code";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Format options",
+                "name": "格式选项",
                 "type": "option",
                 "value": ["-/.", "_/.", "Dash/Dot", "DASH/DOT", "dash/dot"]
             },
             {
-                "name": "Letter delimiter",
+                "name": "字母分隔符",
                 "type": "option",
                 "value": LETTER_DELIM_OPTIONS
             },
             {
-                "name": "Word delimiter",
+                "name": "单词分隔符",
                 "type": "option",
                 "value": WORD_DELIM_OPTIONS
             }

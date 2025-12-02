@@ -21,54 +21,54 @@ class FuzzyMatch extends Operation {
 
         this.name = "Fuzzy Match";
         this.module = "Default";
-        this.description = "Conducts a fuzzy search to find a pattern within the input based on weighted criteria.<br><br>e.g. A search for <code>dpan</code> will match on <code><b>D</b>on't <b>Pan</b>ic</code>";
+        this.description = "基于加权条件执行模糊搜索，在输入中查找匹配模式。<br><br>例如：搜索 <code>dpan</code> 将匹配 <code><b>D</b>on't <b>Pan</b>ic</code>";
         this.infoURL = "https://wikipedia.org/wiki/Fuzzy_matching_(computer-assisted_translation)";
         this.inputType = "string";
         this.outputType = "html";
         this.args = [
             {
-                name: "Search",
+                name: "搜索",
                 type: "binaryString",
                 value: ""
             },
             {
-                name: "Sequential bonus",
+                name: "连续匹配加分",
                 type: "number",
                 value: DEFAULT_WEIGHTS.sequentialBonus,
                 hint: "Bonus for adjacent matches"
             },
             {
-                name: "Separator bonus",
+                name: "分隔符后加分",
                 type: "number",
                 value: DEFAULT_WEIGHTS.separatorBonus,
                 hint: "Bonus if match occurs after a separator"
             },
             {
-                name: "Camel bonus",
+                name: "驼峰加分",
                 type: "number",
                 value: DEFAULT_WEIGHTS.camelBonus,
                 hint: "Bonus if match is uppercase and previous is lower"
             },
             {
-                name: "First letter bonus",
+                name: "首字母加分",
                 type: "number",
                 value: DEFAULT_WEIGHTS.firstLetterBonus,
                 hint: "Bonus if the first letter is matched"
             },
             {
-                name: "Leading letter penalty",
+                name: "前导字母惩罚",
                 type: "number",
                 value: DEFAULT_WEIGHTS.leadingLetterPenalty,
                 hint: "Penalty applied for every letter in the input before the first match"
             },
             {
-                name: "Max leading letter penalty",
+                name: "最大前导惩罚",
                 type: "number",
                 value: DEFAULT_WEIGHTS.maxLeadingLetterPenalty,
                 hint: "Maxiumum penalty for leading letters"
             },
             {
-                name: "Unmatched letter penalty",
+                name: "未匹配字母惩罚",
                 type: "number",
                 value: DEFAULT_WEIGHTS.unmatchedLetterPenalty
             },

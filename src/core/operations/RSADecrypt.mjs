@@ -22,23 +22,23 @@ class RSADecrypt extends Operation {
 
         this.name = "RSA Decrypt";
         this.module = "Ciphers";
-        this.description = "Decrypt an RSA encrypted message with a PEM encoded private key.";
+        this.description = "使用 PEM 编码的 RSA 私钥解密消息。";
         this.infoURL = "https://wikipedia.org/wiki/RSA_(cryptosystem)";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "RSA Private Key (PEM)",
+                name: "RSA 私钥（PEM）",
                 type: "text",
                 value: "-----BEGIN RSA PRIVATE KEY-----"
             },
             {
-                name: "Key Password",
+                name: "密钥口令",
                 type: "text",
                 value: ""
             },
             {
-                name: "Encryption Scheme",
+                name: "加密方案",
                 type: "argSelector",
                 value: [
                     {
@@ -55,7 +55,7 @@ class RSADecrypt extends Operation {
                     }]
             },
             {
-                name: "Message Digest Algorithm",
+                name: "消息摘要算法",
                 type: "option",
                 value: Object.keys(MD_ALGORITHMS)
             }

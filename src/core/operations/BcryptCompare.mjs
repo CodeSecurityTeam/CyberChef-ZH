@@ -22,13 +22,13 @@ class BcryptCompare extends Operation {
 
         this.name = "Bcrypt compare";
         this.module = "Crypto";
-        this.description = "Tests whether the input matches the given bcrypt hash. To test multiple possible passwords, use the 'Fork' operation.";
+        this.description = "测试输入是否与给定的 bcrypt 哈希匹配。要测试多个可能的密码，请使用“Fork”操作。";
         this.infoURL = "https://wikipedia.org/wiki/Bcrypt";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Hash",
+                "name": "哈希",
                 "type": "string",
                 "value": ""
             }

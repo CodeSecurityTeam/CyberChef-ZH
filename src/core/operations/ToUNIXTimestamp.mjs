@@ -22,23 +22,23 @@ class ToUNIXTimestamp extends Operation {
 
         this.name = "To UNIX Timestamp";
         this.module = "Default";
-        this.description = "Parses a datetime string in UTC and returns the corresponding UNIX timestamp.<br><br>e.g. <code>Mon 1 January 2001 11:00:00</code> becomes <code>978346800</code><br><br>A UNIX timestamp is a 32-bit value representing the number of seconds since January 1, 1970 UTC (the UNIX epoch).";
+        this.description = "解析 UTC 的日期时间字符串并返回对应的 UNIX 时间戳。<br><br>例如：<code>Mon 1 January 2001 11:00:00</code> 变为 <code>978346800</code><br><br>UNIX 时间戳是一个 32 位值，表示自 1970 年 1 月 1 日 UTC（UNIX 纪元）以来的秒数。";
         this.infoURL = "https://wikipedia.org/wiki/Unix_time";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Units",
+                "name": "单位",
                 "type": "option",
                 "value": UNITS
             },
             {
-                "name": "Treat as UTC",
+                "name": "视为 UTC",
                 "type": "boolean",
                 "value": true
             },
             {
-                "name": "Show parsed datetime",
+                "name": "显示解析后的日期时间",
                 "type": "boolean",
                 "value": true
             }

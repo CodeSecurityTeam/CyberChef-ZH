@@ -21,29 +21,29 @@ class RC4Drop extends Operation {
 
         this.name = "RC4 Drop";
         this.module = "Ciphers";
-        this.description = "It was discovered that the first few bytes of the RC4 keystream are strongly non-random and leak information about the key. We can defend against this attack by discarding the initial portion of the keystream. This modified algorithm is traditionally called RC4-drop.";
+        this.description = "已发现 RC4 密钥流的前若干字节具有强烈的非随机性并泄露密钥信息。可通过丢弃密钥流的初始部分来防御该攻击，此改进算法通常称为 RC4-drop。";
         this.infoURL = "https://wikipedia.org/wiki/RC4#Fluhrer,_Mantin_and_Shamir_attack";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Passphrase",
+                "name": "口令",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": ["UTF8", "UTF16", "UTF16LE", "UTF16BE", "Latin1", "Hex", "Base64"]
             },
             {
-                "name": "Input format",
+                "name": "输入格式",
                 "type": "option",
                 "value": ["Latin1", "UTF8", "UTF16", "UTF16LE", "UTF16BE", "Hex", "Base64"]
             },
             {
-                "name": "Output format",
+                "name": "输出格式",
                 "type": "option",
                 "value": ["Latin1", "UTF8", "UTF16", "UTF16LE", "UTF16BE", "Hex", "Base64"]
             },
             {
-                "name": "Number of dwords to drop",
+                "name": "丢弃的双字数量",
                 "type": "number",
                 "value": 192
             }

@@ -20,28 +20,28 @@ class ToTable extends Operation {
 
         this.name = "To Table";
         this.module = "Default";
-        this.description = "Data can be split on different characters and rendered as an HTML, ASCII or Markdown table with an optional header row.<br><br>Supports the CSV (Comma Separated Values) file format by default. Change the cell delimiter argument to <code>\\t</code> to support TSV (Tab Separated Values) or <code>|</code> for PSV (Pipe Separated Values).<br><br>You can enter as many delimiters as you like. Each character will be treat as a separate possible delimiter.";
+        this.description = "可按不同字符拆分数据，并渲染为带可选表头行的 HTML、ASCII 或 Markdown 表格。<br><br>默认支持 CSV（逗号分隔值）文件格式。将单元格分隔符参数改为 <code>\\t</code> 可支持 TSV（制表符分隔值），或改为 <code>|</code> 可支持 PSV（竖线分隔值）。<br><br>你可以输入任意多个分隔符。每个字符都会被视为一个单独的可能分隔符。";
         this.infoURL = "https://wikipedia.org/wiki/Comma-separated_values";
         this.inputType = "string";
         this.outputType = "html";
         this.args = [
             {
-                "name": "Cell delimiters",
+                "name": "单元格分隔符",
                 "type": "binaryShortString",
                 "value": ","
             },
             {
-                "name": "Row delimiters",
+                "name": "行分隔符",
                 "type": "binaryShortString",
                 "value": "\\r\\n"
             },
             {
-                "name": "Make first row header",
+                "name": "首行作为表头",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Format",
+                "name": "格式",
                 "type": "option",
                 "value": ["ASCII", "HTML", "Markdown"]
             }

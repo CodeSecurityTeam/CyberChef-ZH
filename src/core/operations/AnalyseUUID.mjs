@@ -22,7 +22,7 @@ class AnalyseUUID extends Operation {
 
         this.name = "Analyse UUID";
         this.module = "Crypto";
-        this.description = "Tries to determine information about a given UUID and suggests which version may have been used to generate it";
+        this.description = "尝试确定给定 UUID 的信息，并提示可能使用的版本。";
         this.infoURL = "https://wikipedia.org/wiki/Universally_unique_identifier";
         this.inputType = "string";
         this.outputType = "string";

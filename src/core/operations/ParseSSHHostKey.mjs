@@ -23,13 +23,13 @@ class ParseSSHHostKey extends Operation {
 
         this.name = "Parse SSH Host Key";
         this.module = "Default";
-        this.description = "Parses a SSH host key and extracts fields from it.<br>The key type can be:<ul><li>ssh-rsa</li><li>ssh-dss</li><li>ecdsa-sha2</li><li>ssh-ed25519</li></ul>The key format can be either Hex or Base64.";
+        this.description = "解析 SSH 主机密钥并提取其中的字段。<br>密钥类型可为：<ul><li>ssh-rsa</li><li>ssh-dss</li><li>ecdsa-sha2</li><li>ssh-ed25519</li></ul>密钥格式可为 Hex 或 Base64。";
         this.infoURL = "https://wikipedia.org/wiki/Secure_Shell";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "Input Format",
+                name: "输入格式",
                 type: "option",
                 value: [
                     "Auto",

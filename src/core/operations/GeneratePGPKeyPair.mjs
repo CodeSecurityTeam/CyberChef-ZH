@@ -27,28 +27,28 @@ class GeneratePGPKeyPair extends Operation {
 
         this.name = "Generate PGP Key Pair";
         this.module = "PGP";
-        this.description = `Generates a new public/private PGP key pair. Supports RSA and Eliptic Curve (EC) keys.<br><br>${cryptNotice}`;
+        this.description = `生成新的 PGP 公钥/私钥对，支持 RSA 与椭圆曲线（EC）密钥。<br><br>${cryptNotice}`;
         this.infoURL = "https://wikipedia.org/wiki/Pretty_Good_Privacy";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Key type",
+                "name": "密钥类型",
                 "type": "option",
                 "value": ["RSA-1024", "RSA-2048", "RSA-4096", "ECC-256", "ECC-384", "ECC-521"]
             },
             {
-                "name": "Password (optional)",
+                "name": "密码（可选）",
                 "type": "string",
                 "value": ""
             },
             {
-                "name": "Name (optional)",
+                "name": "名称（可选）",
                 "type": "string",
                 "value": ""
             },
             {
-                "name": "Email (optional)",
+                "name": "邮箱（可选）",
                 "type": "string",
                 "value": ""
             }

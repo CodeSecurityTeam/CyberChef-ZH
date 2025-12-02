@@ -22,35 +22,35 @@ class TranslateDateTimeFormat extends Operation {
 
         this.name = "Translate DateTime Format";
         this.module = "Default";
-        this.description = "Parses a datetime string in one format and re-writes it in another.<br><br>Run with no input to see the relevant format string examples.";
+        this.description = "解析一种格式的日期时间字符串并将其改写为另一种格式。<br><br>在无输入时运行以查看相关格式字符串示例。";
         this.infoURL = "https://momentjs.com/docs/#/parsing/string-format/";
         this.inputType = "string";
         this.outputType = "string";
         this.presentType = "html";
         this.args = [
             {
-                "name": "Built in formats",
+                "name": "内置格式",
                 "type": "populateOption",
                 "value": DATETIME_FORMATS,
                 "target": 1
             },
             {
-                "name": "Input format string",
+                "name": "输入格式字符串",
                 "type": "binaryString",
                 "value": "DD/MM/YYYY HH:mm:ss"
             },
             {
-                "name": "Input timezone",
+                "name": "输入时区",
                 "type": "option",
                 "value": ["UTC"].concat(moment.tz.names())
             },
             {
-                "name": "Output format string",
+                "name": "输出格式字符串",
                 "type": "binaryString",
                 "value": "dddd Do MMMM YYYY HH:mm:ss Z z"
             },
             {
-                "name": "Output timezone",
+                "name": "输出时区",
                 "type": "option",
                 "value": ["UTC"].concat(moment.tz.names())
             }

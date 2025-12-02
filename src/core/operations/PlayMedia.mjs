@@ -24,14 +24,14 @@ class PlayMedia extends Operation {
 
         this.name = "Play Media";
         this.module = "Default";
-        this.description = "Plays the input as audio or video depending on the type.<br><br>Tags: sound, movie, mp3, mp4, mov, webm, wav, ogg";
+        this.description = "根据类型将输入作为音频或视频播放。<br><br>标签：sound、movie、mp3、mp4、mov、webm、wav、ogg";
         this.infoURL = "";
         this.inputType = "string";
         this.outputType = "byteArray";
         this.presentType = "html";
         this.args = [
             {
-                "name": "Input format",
+                "name": "输入格式",
                 "type": "option",
                 "value": ["Raw", "Base64", "Hex"]
             }

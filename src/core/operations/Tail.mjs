@@ -21,18 +21,18 @@ class Tail extends Operation {
 
         this.name = "Tail";
         this.module = "Default";
-        this.description = "Like the UNIX tail utility.<br>Gets the last n lines.<br>Optionally you can select all lines after line n by entering a negative value for n.<br>The delimiter can be changed so that instead of lines, fields (i.e. commas) are selected instead.";
+        this.description = "类似 UNIX 的 tail 工具。<br>获取最后 n 行。<br>可选地通过为 n 输入负值来选择第 n 行之后的所有行。<br>可更改分隔符以按字段（如逗号）而不是按行进行选择。";
         this.infoURL = "https://wikipedia.org/wiki/Tail_(Unix)";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "option",
                 "value": INPUT_DELIM_OPTIONS
             },
             {
-                "name": "Number",
+                "name": "数量",
                 "type": "number",
                 "value": 10
             }

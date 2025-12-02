@@ -20,23 +20,23 @@ class Substitute extends Operation {
 
         this.name = "Substitute";
         this.module = "Default";
-        this.description = "A substitution cipher allowing you to specify bytes to replace with other byte values. This can be used to create Caesar ciphers but is more powerful as any byte value can be substituted, not just letters, and the substitution values need not be in order.<br><br>Enter the bytes you want to replace in the Plaintext field and the bytes to replace them with in the Ciphertext field.<br><br>Non-printable bytes can be specified using string escape notation. For example, a line feed character can be written as either <code>\\n</code> or <code>\\x0a</code>.<br><br>Byte ranges can be specified using a hyphen. For example, the sequence <code>0123456789</code> can be written as <code>0-9</code>.<br><br>Note that blackslash characters are used to escape special characters, so will need to be escaped themselves if you want to use them on their own (e.g.<code>\\\\</code>).";
+        this.description = "一种替换密码，允许将字节替换为其他字节值。它可用于创建凯撒密码，但更强大，因为可以替换任何字节而不仅是字母，且替换值无需按顺序。<br><br>在“明文”字段输入要替换的字节，在“密文”字段输入替换后的字节。<br><br>不可打印字节可使用字符串转义表示。例如，换行可写为 <code>\\n</code> 或 <code>\\x0a</code>。<br><br>字节范围可用连字符表示。例如，序列 <code>0123456789</code> 可写为 <code>0-9</code>。<br><br>注意反斜杠用于转义特殊字符，若要单独使用反斜杠，需要对其本身进行转义（如 <code>\\\\</code>）。";
         this.infoURL = "https://wikipedia.org/wiki/Substitution_cipher";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Plaintext",
+                "name": "明文",
                 "type": "binaryString",
                 "value": "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
             },
             {
-                "name": "Ciphertext",
+                "name": "密文",
                 "type": "binaryString",
                 "value": "XYZABCDEFGHIJKLMNOPQRSTUVW"
             },
             {
-                "name": "Ignore case",
+                "name": "忽略大小写",
                 "type": "boolean",
                 "value": false
             }

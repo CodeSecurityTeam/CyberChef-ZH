@@ -20,23 +20,23 @@ class DropNthBytes extends Operation {
 
         this.name = "Drop nth bytes";
         this.module = "Default";
-        this.description = "Drops every nth byte starting with a given byte.";
+        this.description = "从指定起始字节开始，删除每第 n 个字节。";
         this.infoURL = "";
         this.inputType = "byteArray";
         this.outputType = "byteArray";
         this.args = [
             {
-                name: "Drop every",
+                name: "删除间隔",
                 type: "number",
                 value: 4
             },
             {
-                name: "Starting at",
+                name: "起始索引",
                 type: "number",
                 value: 0
             },
             {
-                name: "Apply to each line",
+                name: "应用到每一行",
                 type: "boolean",
                 value: false
             }

@@ -19,13 +19,13 @@ class DecodeNetBIOSName extends Operation {
 
         this.name = "Decode NetBIOS Name";
         this.module = "Default";
-        this.description = "NetBIOS names as seen across the client interface to NetBIOS are exactly 16 bytes long. Within the NetBIOS-over-TCP protocols, a longer representation is used.<br><br>There are two levels of encoding. The first level maps a NetBIOS name into a domain system name.  The second level maps the domain system name into the 'compressed' representation required for interaction with the domain name system.<br><br>This operation decodes the first level of encoding. See RFC 1001 for full details.";
+        this.description = "NetBIOS 名称在 NetBIOS 客户端接口中长度固定为 16 字节。在 NetBIOS-over-TCP 协议中使用更长的表示。<br><br>存在两级编码：第一级将 NetBIOS 名称映射到域系统名称；第二级将域系统名称映射为与域名系统交互所需的“压缩”表示。<br><br>本操作解码第一级编码。详见 RFC 1001。";
         this.infoURL = "https://wikipedia.org/wiki/NetBIOS";
         this.inputType = "byteArray";
         this.outputType = "byteArray";
         this.args = [
             {
-                "name": "Offset",
+                "name": "偏移量",
                 "type": "number",
                 "value": 65
             }

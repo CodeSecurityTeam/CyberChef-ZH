@@ -55,14 +55,14 @@ class MultipleBombe extends Operation {
 
         this.name = "Multiple Bombe";
         this.module = "Bletchley";
-        this.description = "Emulation of the Bombe machine used to attack Enigma. This version carries out multiple Bombe runs to handle unknown rotor configurations.<br><br>You should test your menu on the single Bombe operation before running it here. See the description of the Bombe operation for instructions on choosing a crib.<br><br>More detailed descriptions of the Enigma, Typex and Bombe operations <a href='https://github.com/gchq/CyberChef/wiki/Enigma,-the-Bombe,-and-Typex'>can be found here</a>.";
+        this.description = "用于攻击 Enigma 的 Bombe 机仿真。本版本执行多次 Bombe 运行以处理未知转子配置。<br><br>在此运行前，应先在单次 Bombe 操作上测试菜单。关于如何选择已知明文（crib），请参阅 Bombe 操作的说明。<br><br>关于 Enigma、Typex 和 Bombe 操作的更详细说明可在 <a href='https://github.com/gchq/CyberChef/wiki/Enigma,-the-Bombe,-and-Typex'>此处</a> 查阅。";
         this.infoURL = "https://wikipedia.org/wiki/Bombe";
         this.inputType = "string";
         this.outputType = "JSON";
         this.presentType = "html";
         this.args = [
             {
-                "name": "Standard Enigmas",
+                "name": "标准 Enigma",
                 "type": "populateMultiOption",
                 "value": [
                     {
@@ -105,32 +105,32 @@ class MultipleBombe extends Operation {
                 "target": [1, 2, 3]
             },
             {
-                name: "Main rotors",
+                name: "主转子",
                 type: "text",
                 value: ""
             },
             {
-                name: "4th rotor",
+                name: "第 4 转子",
                 type: "text",
                 value: ""
             },
             {
-                name: "Reflectors",
+                name: "反射器",
                 type: "text",
                 value: ""
             },
             {
-                name: "Crib",
+                name: "已知明文",
                 type: "string",
                 value: ""
             },
             {
-                name: "Crib offset",
+                name: "明文偏移",
                 type: "number",
                 value: 0
             },
             {
-                name: "Use checking machine",
+                name: "使用检验机",
                 type: "boolean",
                 value: true
             }

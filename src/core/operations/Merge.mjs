@@ -20,12 +20,12 @@ class Merge extends Operation {
         this.name = "Merge";
         this.flowControl = true;
         this.module = "Default";
-        this.description = "Consolidate all branches back into a single trunk. The opposite of Fork. Unticking the Merge All checkbox will only consolidate all branches up to the nearest Fork/Subsection.";
+        this.description = "将所有分支合并回单一主干。与 Fork 相反。取消勾选“合并全部”复选框将只合并到最近的 Fork/子段位置的所有分支。";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "Merge All",
+                name: "合并全部",
                 type: "boolean",
                 value: true,
             }

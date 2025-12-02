@@ -20,13 +20,13 @@ class Argon2Compare extends Operation {
 
         this.name = "Argon2 compare";
         this.module = "Crypto";
-        this.description = "Tests whether the input matches the given Argon2 hash. To test multiple possible passwords, use the 'Fork' operation.";
+        this.description = "测试输入是否与给定的 Argon2 哈希匹配。要测试多个可能的密码，请使用“Fork”操作。";
         this.infoURL = "https://wikipedia.org/wiki/Argon2";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Encoded hash",
+                "name": "编码哈希",
                 "type": "string",
                 "value": ""
             }

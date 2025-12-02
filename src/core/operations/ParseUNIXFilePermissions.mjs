@@ -20,7 +20,7 @@ class ParseUNIXFilePermissions extends Operation {
 
         this.name = "Parse UNIX file permissions";
         this.module = "Default";
-        this.description = "Given a UNIX/Linux file permission string in octal or textual format, this operation explains which permissions are granted to which user groups.<br><br>Input should be in either octal (e.g. <code>755</code>) or textual (e.g. <code>drwxr-xr-x</code>) format.";
+        this.description = "输入八进制或文本格式的 UNIX/Linux 文件权限字符串，本操作将说明各用户组拥有的权限。<br><br>输入应为八进制（如 <code>755</code>）或文本（如 <code>drwxr-xr-x</code>）格式。";
         this.infoURL = "https://wikipedia.org/wiki/File_system_permissions#Traditional_Unix_permissions";
         this.inputType = "string";
         this.outputType = "string";

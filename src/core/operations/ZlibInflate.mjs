@@ -28,33 +28,33 @@ class ZlibInflate extends Operation {
 
         this.name = "Zlib Inflate";
         this.module = "Compression";
-        this.description = "Decompresses data which has been compressed using the deflate algorithm with zlib headers.";
+        this.description = "解压使用 deflate 算法并包含 zlib 头部的数据。";
         this.infoURL = "https://wikipedia.org/wiki/Zlib";
         this.inputType = "ArrayBuffer";
         this.outputType = "ArrayBuffer";
         this.args = [
             {
-                name: "Start index",
+                name: "起始索引",
                 type: "number",
                 value: 0
             },
             {
-                name: "Initial output buffer size",
+                name: "初始输出缓冲区大小",
                 type: "number",
                 value: 0
             },
             {
-                name: "Buffer expansion type",
+                name: "缓冲区扩展类型",
                 type: "option",
                 value: INFLATE_BUFFER_TYPE
             },
             {
-                name: "Resize buffer after decompression",
+                name: "解压后调整缓冲区大小",
                 type: "boolean",
                 value: false
             },
             {
-                name: "Verify result",
+                name: "验证结果",
                 type: "boolean",
                 value: false
             }

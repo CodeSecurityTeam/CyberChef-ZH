@@ -25,18 +25,18 @@ class Lorenz extends Operation {
 
         this.name = "Lorenz";
         this.module = "Bletchley";
-        this.description = "The Lorenz SZ40/42 cipher attachment was a WW2 German rotor cipher machine with twelve rotors which attached in-line between remote teleprinters.<br><br>It used the Vernam cipher with two groups of five rotors (named the psi(ψ) wheels and chi(χ) wheels at Bletchley Park) to create two pseudorandom streams of five bits, encoded in ITA2, which were XOR added to the plaintext. Two other rotors, dubbed the mu(μ) or motor wheels, could hold up the stepping of the psi wheels meaning they stepped intermittently.<br><br>Each rotor has a different number of cams/lugs around their circumference which could be set active or inactive changing the key stream.<br><br>Three models of the Lorenz are emulated, SZ40, SZ42a and SZ42b and three example wheel patterns (the lug settings) are included (KH, ZMUG & BREAM) with the option to set a custom set using the letter 'x' for active or '.' for an inactive lug.<br><br>The input can either be plaintext or ITA2 when sending and ITA2 when receiving.<br><br>To learn more, Virtual Lorenz, an online, browser based simulation of the Lorenz SZ40/42 is available at <a href='https://lorenz.virtualcolossus.co.uk' target='_blank'>lorenz.virtualcolossus.co.uk</a>.<br><br>A more detailed description of this operation can be found <a href='https://github.com/gchq/CyberChef/wiki/Lorenz-SZ' target='_blank'>here</a>.";
+        this.description = "Lorenz SZ40/42 密码附件是二战德国的转子密码机，拥有 12 个转子，串联连接于远程电传打字机之间。<br><br>其使用 Vernam 密码：两组各 5 个的转子（在布莱切利庄园称为 psi(ψ) 轮与 chi(χ) 轮）生成两条 5 位的伪随机比特流（ITA2 编码），并与明文进行异或；另有两枚转子称为 mu(μ) 或电机轮，可控制 psi 轮的步进，使其间歇移动。<br><br>每个转子周围的凸轮/档位数量不同，可设置为激活或未激活，从而改变密钥流。<br><br>本操作仿真三种型号：SZ40、SZ42a、SZ42b，并包含三套示例轮组模式（档位设置）（KH、ZMUG、BREAM），也可自定义，使用字母 'x' 表示激活，'.' 表示未激活。<br><br>发送时输入可为明文或 ITA2，接收时为 ITA2。<br><br>更多信息可参阅在线仿真 Virtual Lorenz：<a href='https://lorenz.virtualcolossus.co.uk' target='_blank'>lorenz.virtualcolossus.co.uk</a>。<br><br>更详细的说明见 <a href='https://github.com/gchq/CyberChef/wiki/Lorenz-SZ' target='_blank'>此处</a>。";
         this.infoURL = "https://wikipedia.org/wiki/Lorenz_cipher";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "Model",
+                name: "型号",
                 type: "option",
                 value: ["SZ40", "SZ42a", "SZ42b"]
             },
             {
-                name: "Wheel Pattern",
+                name: "轮组模式",
                 type: "argSelector",
                 value: [
                     {
@@ -62,12 +62,12 @@ class Lorenz extends Operation {
                 ]
             },
             {
-                name: "KT-Schalter",
+                name: "KT-开关",
                 type: "boolean",
                 value: false
             },
             {
-                name: "Mode",
+                name: "模式",
                 type: "argSelector",
                 value: [
                     {
@@ -83,137 +83,137 @@ class Lorenz extends Operation {
                 ]
             },
             {
-                name: "Input Type",
+                name: "输入类型",
                 type: "option",
                 value: ["Plaintext", "ITA2"]
             },
             {
-                name: "Output Type",
+                name: "输出类型",
                 type: "option",
                 value: ["Plaintext", "ITA2"]
             },
             {
-                name: "ITA2 Format",
+                name: "ITA2 格式",
                 type: "option",
                 value: ["5/8/9", "+/-/."]
             },
             {
-                name: "Ψ1 start (1-43)",
+                name: "Ψ1 起始位置（1-43）",
                 type: "number",
                 value: 1
             },
             {
-                name: "Ψ2 start (1-47)",
+                name: "Ψ2 起始位置（1-47）",
                 type: "number",
                 value: 1
             },
             {
-                name: "Ψ3 start (1-51)",
+                name: "Ψ3 起始位置（1-51）",
                 type: "number",
                 value: 1
             },
             {
-                name: "Ψ4 start (1-53)",
+                name: "Ψ4 起始位置（1-53）",
                 type: "number",
                 value: 1
             },
             {
-                name: "Ψ5 start (1-59)",
+                name: "Ψ5 起始位置（1-59）",
                 type: "number",
                 value: 1
             },
             {
-                name: "Μ37 start (1-37)",
+                name: "Μ37 起始位置（1-37）",
                 type: "number",
                 value: 1
             },
             {
-                name: "Μ61 start (1-61)",
+                name: "Μ61 起始位置（1-61）",
                 type: "number",
                 value: 1
             },
             {
-                name: "Χ1 start (1-41)",
+                name: "Χ1 起始位置（1-41）",
                 type: "number",
                 value: 1
             },
             {
-                name: "Χ2 start (1-31)",
+                name: "Χ2 起始位置（1-31）",
                 type: "number",
                 value: 1
             },
             {
-                name: "Χ3 start (1-29)",
+                name: "Χ3 起始位置（1-29）",
                 type: "number",
                 value: 1
             },
             {
-                name: "Χ4 start (1-26)",
+                name: "Χ4 起始位置（1-26）",
                 type: "number",
                 value: 1
             },
             {
-                name: "Χ5 start (1-23)",
+                name: "Χ5 起始位置（1-23）",
                 type: "number",
                 value: 1
             },
             {
-                name: "Ψ1 lugs (43)",
+                name: "Ψ1 档位（43）",
                 type: "string",
                 value: ".x...xx.x.x..xxx.x.x.xxxx.x.x.x.x.x..x.xx.x"
             },
             {
-                name: "Ψ2 lugs (47)",
+                name: "Ψ2 档位（47）",
                 type: "string",
                 value: ".xx.x.xxx..x.x.x..x.xx.x.xxx.x....x.xx.x.x.x..x"
             },
             {
-                name: "Ψ3 lugs (51)",
+                name: "Ψ3 档位（51）",
                 type: "string",
                 value: ".x.x.x..xxx....x.x.xx.x.x.x..xxx.x.x..x.x.xx..x.x.x"
             },
             {
-                name: "Ψ4 lugs (53)",
+                name: "Ψ4 档位（53）",
                 type: "string",
                 value: ".xx...xxxxx.x.x.xx...x.xx.x.x..x.x.xx.x..x.x.x.x.x.x."
             },
             {
-                name: "Ψ5 lugs (59)",
+                name: "Ψ5 档位（59）",
                 type: "string",
                 value: "xx...xx.x..x.xx.x...x.x.x.x.x.x.x.x.xx..xxxx.x.x...xx.x..x."
             },
             {
-                name: "Μ37 lugs (37)",
+                name: "Μ37 档位（37）",
                 type: "string",
                 value: "x.x.x.x.x.x...x.x.x...x.x.x...x.x...."
             },
             {
-                name: "Μ61 lugs (61)",
+                name: "Μ61 档位（61）",
                 type: "string",
                 value: ".xxxx.xxxx.xxx.xxxx.xx....xxx.xxxx.xxxx.xxxx.xxxx.xxx.xxxx..."
             },
             {
-                name: "Χ1 lugs (41)",
+                name: "Χ1 档位（41）",
                 type: "string",
                 value: ".x...xxx.x.xxxx.x...x.x..xxx....xx.xxxx.."
             },
             {
-                name: "Χ2 lugs (31)",
+                name: "Χ2 档位（31）",
                 type: "string",
                 value: "x..xxx...x.xxxx..xx..x..xx.xx.."
             },
             {
-                name: "Χ3 lugs (29)",
+                name: "Χ3 档位（29）",
                 type: "string",
                 value: "..xx..x.xxx...xx...xx..xx.xx."
             },
             {
-                name: "Χ4 lugs (26)",
+                name: "Χ4 档位（26）",
                 type: "string",
                 value: "xx..x..xxxx..xx.xxx....x.."
             },
             {
-                name: "Χ5 lugs (23)",
+                name: "Χ5 档位（23）",
                 type: "string",
                 value: "xx..xx....xxxx.x..x.x.."
             }

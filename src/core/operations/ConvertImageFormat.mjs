@@ -23,14 +23,14 @@ class ConvertImageFormat extends Operation {
 
         this.name = "Convert Image Format";
         this.module = "Image";
-        this.description = "Converts an image between different formats. Supported formats:<br><ul><li>Joint Photographic Experts Group (JPEG)</li><li>Portable Network Graphics (PNG)</li><li>Bitmap (BMP)</li><li>Tagged Image File Format (TIFF)</li></ul><br>Note: GIF files are supported for input, but cannot be outputted.";
+        this.description = "在不同格式之间转换图像。支持格式：<br><ul><li>联合图像专家组（JPEG）</li><li>便携式网络图形（PNG）</li><li>位图（BMP）</li><li>标签图像文件格式（TIFF）</li></ul><br>注意：GIF 文件支持作为输入，但不能作为输出。";
         this.infoURL = "https://wikipedia.org/wiki/Image_file_formats";
         this.inputType = "ArrayBuffer";
         this.outputType = "ArrayBuffer";
         this.presentType = "html";
         this.args = [
             {
-                name: "Output Format",
+                name: "输出格式",
                 type: "option",
                 value: [
                     "JPEG",
@@ -40,14 +40,14 @@ class ConvertImageFormat extends Operation {
                 ]
             },
             {
-                name: "JPEG Quality",
+                name: "JPEG 质量",
                 type: "number",
                 value: 80,
                 min: 1,
                 max: 100
             },
             {
-                name: "PNG Filter Type",
+                name: "PNG 滤波类型",
                 type: "option",
                 value: [
                     "Auto",
@@ -59,7 +59,7 @@ class ConvertImageFormat extends Operation {
                 ]
             },
             {
-                name: "PNG Deflate Level",
+                name: "PNG 压缩等级",
                 type: "number",
                 value: 9,
                 min: 0,

@@ -35,38 +35,38 @@ class Zip extends Operation {
 
         this.name = "Zip";
         this.module = "Compression";
-        this.description = "Compresses data using the PKZIP algorithm with the given filename.<br><br>No support for multiple files at this time.";
+        this.description = "使用给定文件名通过 PKZIP 算法压缩数据。<br><br>目前不支持多个文件。";
         this.infoURL = "https://wikipedia.org/wiki/Zip_(file_format)";
         this.inputType = "ArrayBuffer";
         this.outputType = "File";
         this.args = [
             {
-                name: "Filename",
+                name: "文件名",
                 type: "string",
                 value: "file.txt"
             },
             {
-                name: "Comment",
+                name: "注释",
                 type: "string",
                 value: ""
             },
             {
-                name: "Password",
+                name: "密码",
                 type: "binaryString",
                 value: ""
             },
             {
-                name: "Compression method",
+                name: "压缩方法",
                 type: "option",
                 value: ["Deflate", "None (Store)"]
             },
             {
-                name: "Operating system",
+                name: "操作系统",
                 type: "option",
                 value: ["MSDOS", "Unix", "Macintosh"]
             },
             {
-                name: "Compression type",
+                name: "压缩类型",
                 type: "option",
                 value: COMPRESSION_TYPE
             }

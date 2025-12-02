@@ -21,13 +21,13 @@ class AND extends Operation {
 
         this.name = "AND";
         this.module = "Default";
-        this.description = "AND the input with the given key.<br>e.g. <code>fe023da5</code>";
+        this.description = "将输入与给定密钥按位与。<br>例如 <code>fe023da5</code>";
         this.infoURL = "https://wikipedia.org/wiki/Bitwise_operation#AND";
         this.inputType = "byteArray";
         this.outputType = "byteArray";
         this.args = [
             {
-                "name": "Key",
+                "name": "密钥",
                 "type": "toggleString",
                 "value": "",
                 "toggleValues": BITWISE_OP_DELIMS

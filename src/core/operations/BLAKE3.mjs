@@ -20,16 +20,16 @@ class BLAKE3 extends Operation {
 
         this.name = "BLAKE3";
         this.module = "Hashing";
-        this.description = "Hashes the input using BLAKE3 (UTF-8 encoded), with an optional key (also UTF-8), and outputs the result in hexadecimal format.";
+        this.description = "使用 BLAKE3（UTF-8 编码）对输入进行哈希，支持可选密钥（同为 UTF-8），以十六进制格式输出结果。";
         this.infoURL = "https://en.wikipedia.org/wiki/BLAKE_(hash_function)#BLAKE3";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Size (bytes)",
+                "name": "大小（字节）",
                 "type": "number"
             }, {
-                "name": "Key",
+                "name": "密钥",
                 "type": "string",
                 "value": ""
             }

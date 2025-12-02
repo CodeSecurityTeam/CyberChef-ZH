@@ -20,13 +20,13 @@ class SyntaxHighlighter extends Operation {
 
         this.name = "Syntax highlighter";
         this.module = "Code";
-        this.description = "Adds syntax highlighting to a range of source code languages. Note that this will not indent the code. Use one of the 'Beautify' operations for that.";
+        this.description = "为多种源代码语言添加语法高亮。注意此操作不会为代码添加缩进，可结合“Beautify”类操作使用。";
         this.infoURL = "https://wikipedia.org/wiki/Syntax_highlighting";
         this.inputType = "string";
         this.outputType = "html";
         this.args = [
             {
-                "name": "Language",
+                "name": "语言",
                 "type": "option",
                 "value": ["auto detect"].concat(hljs.listLanguages())
             }

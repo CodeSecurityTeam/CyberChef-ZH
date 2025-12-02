@@ -23,18 +23,18 @@ class PseudoRandomNumberGenerator extends Operation {
 
         this.name = "Pseudo-Random Number Generator";
         this.module = "Ciphers";
-        this.description = "A cryptographically-secure pseudo-random number generator (PRNG).<br><br>This operation uses the browser's built-in <code>crypto.getRandomValues()</code> method if available. If this cannot be found, it falls back to a Fortuna-based PRNG algorithm.";
+        this.description = "加密安全的伪随机数生成器（PRNG）。<br><br>此操作在可用时使用浏览器内置的 <code>crypto.getRandomValues()</code> 方法；若不可用，则回退到基于 Fortuna 的 PRNG 算法。";
         this.infoURL = "https://wikipedia.org/wiki/Pseudorandom_number_generator";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Number of bytes",
+                "name": "字节数",
                 "type": "number",
                 "value": 32
             },
             {
-                "name": "Output as",
+                "name": "输出格式",
                 "type": "option",
                 "value": ["Hex", "Integer", "Byte array", "Raw"]
             }

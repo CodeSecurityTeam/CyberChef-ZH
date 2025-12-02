@@ -23,48 +23,48 @@ class XORBruteForce extends Operation {
 
         this.name = "XOR Brute Force";
         this.module = "Default";
-        this.description = "Enumerate all possible XOR solutions. Current maximum key length is 2 due to browser performance.<br><br>Optionally enter a string that you expect to find in the plaintext to filter results (crib).";
+        this.description = "枚举所有可能的异或解。由于浏览器性能限制，当前最大密钥长度为 2。<br><br>可选地输入你预计在明文中出现的字符串用于过滤结果（辅助字符串）。";
         this.infoURL = "https://wikipedia.org/wiki/Exclusive_or";
         this.inputType = "ArrayBuffer";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Key length",
+                "name": "密钥长度",
                 "type": "number",
                 "value": 1
             },
             {
-                "name": "Sample length",
+                "name": "样本长度",
                 "type": "number",
                 "value": 100
             },
             {
-                "name": "Sample offset",
+                "name": "样本偏移",
                 "type": "number",
                 "value": 0
             },
             {
-                "name": "Scheme",
+                "name": "方案",
                 "type": "option",
                 "value": ["Standard", "Input differential", "Output differential"]
             },
             {
-                "name": "Null preserving",
+                "name": "空值保持",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Print key",
+                "name": "打印密钥",
                 "type": "boolean",
                 "value": true
             },
             {
-                "name": "Output as hex",
+                "name": "十六进制输出",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Crib (known plaintext string)",
+                "name": "辅助字符串（已知明文）",
                 "type": "binaryString",
                 "value": ""
             }

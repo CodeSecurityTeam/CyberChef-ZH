@@ -19,9 +19,9 @@ class AvroToJSON extends Operation {
     constructor() {
         super();
 
-        this.name = "Avro to JSON";
+        this.name = "Avro To JSON";
         this.module = "Serialise";
-        this.description = "Converts Avro encoded data into JSON.";
+        this.description = "将 Avro 编码的数据转换为 JSON";
         this.infoURL = "https://wikipedia.org/wiki/Apache_Avro";
         this.inputType = "ArrayBuffer";
         this.outputType = "string";

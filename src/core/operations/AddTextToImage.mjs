@@ -24,45 +24,45 @@ class AddTextToImage extends Operation {
 
         this.name = "Add Text To Image";
         this.module = "Image";
-        this.description = "Adds text onto an image.<br><br>Text can be horizontally or vertically aligned, or the position can be manually specified.<br>Variants of the Roboto font face are available in any size or colour.";
+        this.description = "在图像上添加文字。<br><br>文字可水平或垂直对齐，也可手动指定位置。<br>提供多种 Roboto 字体变体，可任意大小和颜色。";
         this.infoURL = "";
         this.inputType = "ArrayBuffer";
         this.outputType = "ArrayBuffer";
         this.presentType = "html";
         this.args = [
             {
-                name: "Text",
+                name: "文字",
                 type: "string",
                 value: ""
             },
             {
-                name: "Horizontal align",
+                name: "水平对齐",
                 type: "option",
                 value: ["None", "Left", "Center", "Right"]
             },
             {
-                name: "Vertical align",
+                name: "垂直对齐",
                 type: "option",
                 value: ["None", "Top", "Middle", "Bottom"]
             },
             {
-                name: "X position",
+                name: "X 位置",
                 type: "number",
                 value: 0
             },
             {
-                name: "Y position",
+                name: "Y 位置",
                 type: "number",
                 value: 0
             },
             {
-                name: "Size",
+                name: "尺寸",
                 type: "number",
                 value: 32,
                 min: 8
             },
             {
-                name: "Font face",
+                name: "字体",
                 type: "option",
                 value: [
                     "Roboto",
@@ -72,28 +72,28 @@ class AddTextToImage extends Operation {
                 ]
             },
             {
-                name: "Red",
+                name: "红",
                 type: "number",
                 value: 255,
                 min: 0,
                 max: 255
             },
             {
-                name: "Green",
+                name: "绿",
                 type: "number",
                 value: 255,
                 min: 0,
                 max: 255
             },
             {
-                name: "Blue",
+                name: "蓝",
                 type: "number",
                 value: 255,
                 min: 0,
                 max: 255
             },
             {
-                name: "Alpha",
+                name: "透明度",
                 type: "number",
                 value: 255,
                 min: 0,

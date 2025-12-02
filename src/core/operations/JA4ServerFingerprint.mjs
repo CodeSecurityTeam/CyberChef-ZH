@@ -21,18 +21,18 @@ class JA4ServerFingerprint extends Operation {
 
         this.name = "JA4Server Fingerprint";
         this.module = "Crypto";
-        this.description = "Generates a JA4Server Fingerprint (JA4S) to help identify TLS servers or sessions based on hashing together values from the Server Hello.<br><br>Input: A hex stream of the TLS or QUIC Server Hello packet application layer.";
+        this.description = "生成 JA4Server 指纹（JA4S），以通过对 Server Hello 中的字段进行哈希来识别 TLS 服务器或会话。<br><br>输入：TLS 或 QUIC Server Hello 记录的应用层十六进制数据流。";
         this.infoURL = "https://medium.com/foxio/ja4-network-fingerprinting-9376fe9ca637";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "Input format",
+                name: "输入格式",
                 type: "option",
                 value: ["Hex", "Base64", "Raw"]
             },
             {
-                name: "Output format",
+                name: "输出格式",
                 type: "option",
                 value: ["JA4S", "JA4S Raw", "Both"]
             }

@@ -20,12 +20,12 @@ class SQLBeautify extends Operation {
 
         this.name = "SQL Beautify";
         this.module = "Code";
-        this.description = "Indents and prettifies Structured Query Language (SQL) code.";
+        this.description = "缩进并美化结构化查询语言（SQL）代码。";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Indent string",
+                "name": "缩进字符串",
                 "type": "binaryShortString",
                 "value": "\\t"
             }

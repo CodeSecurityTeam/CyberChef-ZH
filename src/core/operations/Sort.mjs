@@ -22,22 +22,22 @@ class Sort extends Operation {
 
         this.name = "Sort";
         this.module = "Default";
-        this.description = "Alphabetically sorts strings separated by the specified delimiter.<br><br>The IP address option supports IPv4 only.";
+        this.description = "按指定分隔符分隔的字符串进行字典序排序。<br><br>IP 地址选项仅支持 IPv4。";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "option",
                 "value": INPUT_DELIM_OPTIONS
             },
             {
-                "name": "Reverse",
+                "name": "反转",
                 "type": "boolean",
                 "value": false
             },
             {
-                "name": "Order",
+                "name": "排序方式",
                 "type": "option",
                 "value": ["Alphabetical (case sensitive)", "Alphabetical (case insensitive)", "IP address", "Numeric", "Numeric (hexadecimal)", "Length"]
             }

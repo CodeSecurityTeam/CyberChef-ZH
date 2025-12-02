@@ -19,7 +19,7 @@ class XKCDRandomNumber extends Operation {
 
         this.name = "XKCD Random Number";
         this.module = "Default";
-        this.description = "RFC 1149.5 specifies 4 as the standard IEEE-vetted random number.";
+        this.description = "RFC 1149.5 指定 4 作为标准的 IEEE 认证随机数。";
         this.infoURL = "https://xkcd.com/221/";
         this.inputType = "string";
         this.outputType = "number";

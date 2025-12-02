@@ -25,20 +25,20 @@ class GenerateAllChecksums extends Operation {
 
         this.name = "Generate all checksums";
         this.module = "Crypto";
-        this.description = "Generates all available checksums for the input.";
+        this.description = "为输入生成所有可用的校验和。";
         this.infoURL = "https://wikipedia.org/wiki/Checksum";
         this.inputType = "ArrayBuffer";
         this.outputType = "string";
         this.args = [
             {
-                name: "Length (bits)",
+                name: "长度（位）",
                 type: "option",
                 value: [
                     "All", "3", "4", "5", "6", "7", "8", "10", "11", "12", "13", "14", "15", "16", "17", "21", "24", "30", "31", "32", "40", "64", "82"
                 ]
             },
             {
-                name: "Include names",
+                name: "包含名称",
                 type: "boolean",
                 value: true
             },

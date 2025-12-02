@@ -22,13 +22,13 @@ class HTTPRequest extends Operation {
         this.name = "HTTP request";
         this.module = "Default";
         this.description = [
-            "Makes an HTTP request and returns the response.",
+            "发起 HTTP 请求并返回响应。",
             "<br><br>",
-            "This operation supports different HTTP verbs like GET, POST, PUT, etc.",
+            "支持多种 HTTP 动词，如 GET、POST、PUT 等。",
             "<br><br>",
-            "You can add headers line by line in the format <code>Key: Value</code>",
+            "可按行添加请求头，格式为 <code>Key: Value</code>",
             "<br><br>",
-            "The status code of the response, along with a limited selection of exposed headers, can be viewed by checking the 'Show response metadata' option. Only a limited set of response headers are exposed by the browser for security reasons.",
+            "勾选“显示响应元数据”可查看响应状态码及浏览器暴露的部分响应头（出于安全原因仅暴露有限集合）。",
         ].join("\n");
         this.infoURL = "https://wikipedia.org/wiki/List_of_HTTP_header_fields#Request_fields";
         this.inputType = "string";
@@ -36,7 +36,7 @@ class HTTPRequest extends Operation {
         this.manualBake = true;
         this.args = [
             {
-                "name": "Method",
+                "name": "方法",
                 "type": "option",
                 "value": [
                     "GET", "POST", "HEAD",
@@ -50,12 +50,12 @@ class HTTPRequest extends Operation {
                 "value": ""
             },
             {
-                "name": "Headers",
+                "name": "请求头",
                 "type": "text",
                 "value": ""
             },
             {
-                "name": "Mode",
+                "name": "模式",
                 "type": "option",
                 "value": [
                     "Cross-Origin Resource Sharing",
@@ -63,7 +63,7 @@ class HTTPRequest extends Operation {
                 ]
             },
             {
-                "name": "Show response metadata",
+                "name": "显示响应元数据",
                 "type": "boolean",
                 "value": false
             }

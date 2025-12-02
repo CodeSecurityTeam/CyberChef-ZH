@@ -21,13 +21,13 @@ class ToBase32 extends Operation {
 
         this.name = "To Base32";
         this.module = "Default";
-        this.description = "Base32 is a notation for encoding arbitrary byte data using a restricted set of symbols that can be conveniently used by humans and processed by computers. It uses a smaller set of characters than Base64, usually the uppercase alphabet and the numbers 2 to 7.";
+        this.description = "Base32 是一种使用受限符号集来编码任意字节数据的表示法，便于人类使用并可由计算机处理。它使用比 Base64 更少的字符集，通常为大写字母和数字 2 到 7。";
         this.infoURL = "https://wikipedia.org/wiki/Base32";
         this.inputType = "ArrayBuffer";
         this.outputType = "string";
         this.args = [
             {
-                name: "Alphabet",
+                name: "字母表",
                 type: "editableOption",
                 value: ALPHABET_OPTIONS
             }
@@ -84,4 +84,3 @@ class ToBase32 extends Operation {
 }
 
 export default ToBase32;
-

@@ -21,18 +21,18 @@ class FileTree extends Operation {
 
         this.name = "File Tree";
         this.module = "Default";
-        this.description = "Creates a file tree from a list of file paths (similar to the tree command in Linux)";
+        this.description = "根据文件路径列表生成文件树（类似于 Linux 的 tree 命令）";
         this.infoURL = "https://wikipedia.org/wiki/Tree_(command)";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
             {
-                name: "File Path Delimiter",
+                name: "文件路径分隔符",
                 type: "binaryString",
                 value: "/"
             },
             {
-                name: "Delimiter",
+                name: "分隔符",
                 type: "option",
                 value: INPUT_DELIM_OPTIONS
             }

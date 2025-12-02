@@ -22,18 +22,18 @@ class FromBinary extends Operation {
 
         this.name = "From Binary";
         this.module = "Default";
-        this.description = "Converts a binary string back into its raw form.<br><br>e.g. <code>01001000 01101001</code> becomes <code>Hi</code>";
+        this.description = "将二进制字符串转换回其原始形式。<br><br>例如：<code>01001000 01101001</code> 变为 <code>Hi</code>";
         this.infoURL = "https://wikipedia.org/wiki/Binary_code";
         this.inputType = "string";
         this.outputType = "byteArray";
         this.args = [
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "option",
                 "value": BIN_DELIM_OPTIONS
             },
             {
-                "name": "Byte Length",
+                "name": "字节长度",
                 "type": "number",
                 "value": 8,
                 "min": 1

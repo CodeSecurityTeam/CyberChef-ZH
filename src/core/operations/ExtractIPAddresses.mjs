@@ -21,7 +21,7 @@ class ExtractIPAddresses extends Operation {
 
         this.name = "Extract IP addresses";
         this.module = "Regex";
-        this.description = "Extracts all IPv4 and IPv6 addresses.<br><br>Warning: Given a string <code>1.2.3.4.5.6.7.8</code>, this will match <code>1.2.3.4 and 5.6.7.8</code> so always check the original input!";
+        this.description = "提取所有 IPv4 与 IPv6 地址。<br><br>警告：对于字符串 <code>1.2.3.4.5.6.7.8</code>，将匹配 <code>1.2.3.4</code> 和 <code>5.6.7.8</code>，请务必核对原始输入！";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
@@ -36,22 +36,22 @@ class ExtractIPAddresses extends Operation {
                 value: false
             },
             {
-                name: "Remove local IPv4 addresses",
+                name: "移除本地IPv4地址",
                 type: "boolean",
                 value: false
             },
             {
-                name: "Display total",
+                name: "显示总数",
                 type: "boolean",
                 value: false
             },
             {
-                name: "Sort",
+                name: "排序",
                 type: "boolean",
                 value: false
             },
             {
-                name: "Unique",
+                name: "去重",
                 type: "boolean",
                 value: false
             }

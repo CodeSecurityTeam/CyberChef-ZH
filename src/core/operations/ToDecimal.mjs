@@ -22,17 +22,17 @@ class ToDecimal extends Operation {
 
         this.name = "To Decimal";
         this.module = "Default";
-        this.description = "Converts the input data to an ordinal integer array.<br><br>e.g. <code>Hello</code> becomes <code>72 101 108 108 111</code>";
+        this.description = "将输入数据转换为序数整数数组。<br><br>例如：<code>Hello</code> 变为 <code>72 101 108 108 111</code>";
         this.inputType = "ArrayBuffer";
         this.outputType = "string";
         this.args = [
             {
-                "name": "Delimiter",
+                "name": "分隔符",
                 "type": "option",
                 "value": DELIM_OPTIONS
             },
             {
-                "name": "Support signed values",
+                "name": "支持有符号值",
                 "type": "boolean",
                 "value": false
             }

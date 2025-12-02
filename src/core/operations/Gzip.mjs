@@ -23,28 +23,28 @@ class Gzip extends Operation {
 
         this.name = "Gzip";
         this.module = "Compression";
-        this.description = "Compresses data using the deflate algorithm with gzip headers.";
+        this.description = "使用 deflate 算法并添加 gzip 头进行压缩。";
         this.infoURL = "https://wikipedia.org/wiki/Gzip";
         this.inputType = "ArrayBuffer";
         this.outputType = "ArrayBuffer";
         this.args = [
             {
-                name: "Compression type",
+                name: "压缩类型",
                 type: "option",
                 value: COMPRESSION_TYPE
             },
             {
-                name: "Filename (optional)",
+                name: "文件名（可选）",
                 type: "string",
                 value: ""
             },
             {
-                name: "Comment (optional)",
+                name: "注释（可选）",
                 type: "string",
                 value: ""
             },
             {
-                name: "Include file checksum",
+                name: "包含文件校验和",
                 type: "boolean",
                 value: false
             }

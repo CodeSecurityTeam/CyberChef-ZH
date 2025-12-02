@@ -22,7 +22,7 @@ class ExtractID3 extends Operation {
 
         this.name = "Extract ID3";
         this.module = "Default";
-        this.description = "This operation extracts ID3 metadata from an MP3 file.<br><br>ID3 is a metadata container most often used in conjunction with the MP3 audio file format. It allows information such as the title, artist, album, track number, and other information about the file to be stored in the file itself.";
+        this.description = "从 MP3 文件中提取 ID3 元数据。<br><br>ID3 是与 MP3 音频文件格式常用的元数据容器，可将标题、艺术家、专辑、曲目编号以及其他信息存储在文件内部。";
         this.infoURL = "https://wikipedia.org/wiki/ID3";
         this.inputType = "ArrayBuffer";
         this.outputType = "JSON";

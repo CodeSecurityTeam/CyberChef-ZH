@@ -20,23 +20,23 @@ class TakeNthBytes extends Operation {
 
         this.name = "Take nth bytes";
         this.module = "Default";
-        this.description = "Takes every nth byte starting with a given byte.";
+        this.description = "从给定起始字节开始，每隔 n 个字节取一个字节。";
         this.infoURL = "";
         this.inputType = "byteArray";
         this.outputType = "byteArray";
         this.args = [
             {
-                name: "Take every",
+                name: "步长（每隔）",
                 type: "number",
                 value: 4
             },
             {
-                name: "Starting at",
+                name: "起始位置",
                 type: "number",
                 value: 0
             },
             {
-                name: "Apply to each line",
+                name: "应用到每行",
                 type: "boolean",
                 value: false
             }
